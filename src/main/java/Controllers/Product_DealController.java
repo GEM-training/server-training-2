@@ -14,12 +14,13 @@ import org.springframework.web.bind.annotation.RestController;
 @Transactional
 public class Product_DealController {
     @Autowired
-    Product_dealerDao product_dealerDao;
+    //Product_dealerDao product_dealerDao;
 
 
     @RequestMapping("/list")
     public String listProductDeals(){
-        return  product_dealerDao.getAllProduct_dealer()
+        return  "";
+        //return  product_dealerDao.getAllProduct_dealer()
     }
 
 
