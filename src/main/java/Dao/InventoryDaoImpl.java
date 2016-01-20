@@ -27,6 +27,7 @@ public class InventoryDaoImpl extends AbstractDao implements InventoryDao  {
     }
 
     public Inventory findById(Integer inventoryId) {
+
         return (Inventory) getObjectById(inventoryId);
     }
 
