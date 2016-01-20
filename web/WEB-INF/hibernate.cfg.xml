@@ -13,12 +13,19 @@
         <!-- Disable the second-level cache -->
         <!-- Echo all executed SQL to stdout -->
         <property name="show_sql">true</property>
-        <property name="hbm2ddl.auto">create</property>
+       <!-- <property name="hbm2ddl.auto">create</property> -->
 
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hbm2ddl.auto">update</property> -->
         <mapping class="Models.Make"/>
-        <mapping class="Models.Products"/>
-
+        <mapping class="Models.Product"/>
+        <mapping class="Models.Inventory"/>
+        <mapping class="Models.Customer"/>
+        <mapping class="Models.Dealer"/>
+        <mapping class="Models.Product_inventory"/>
+        <mapping class="Models.Sale"/>
+        <mapping class="Models.SaleDetail"/>
+        <mapping class="Models.Staff"/>
+        <mapping class="Models.Product_dealer"/>
     </session-factory>
 </hibernate-configuration>

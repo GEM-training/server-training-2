@@ -9,7 +9,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "Products")
-public class Products {
+public class Product {
     @Id
     private int product_id;
     private String name;
@@ -19,10 +19,14 @@ public class Products {
     @JoinColumn(name = "make_id")
     private Make make;
 
+    @ManyToOne
+    @JoinColumn(name = "of_unit_id")
+    private Product unit;
+
     private Date created_date;
     private Date updated_date;
 
-    public Products() {
+    public Product() {
     }
 
     public int getProduct_id() {
