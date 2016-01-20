@@ -13,7 +13,11 @@
         <!-- Disable the second-level cache -->
         <!-- Echo all executed SQL to stdout -->
         <property name="show_sql">true</property>
+<<<<<<< HEAD
        <property name="hbm2ddl.auto">create</property>
+=======
+       <!-- <property name="hbm2ddl.auto">create</property> -->
+>>>>>>> 511a92bd0f2f07986501755e6ddf14a333bde63d
 
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hbm2ddl.auto">update</property> -->

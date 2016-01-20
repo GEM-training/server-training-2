@@ -25,6 +25,9 @@ public class Sale {
     @JoinTable(name = "Sale_details",joinColumns = @JoinColumn(name = "sale_id"),inverseJoinColumns = @JoinColumn(name = "product_id"))
     private Set<Product> listProducts;
 
+    @OneToMany(mappedBy = "sale")
+    private Set<SaleDetail> listSaleDetails;
+
     private int status;
     private Date created_date;
     private Date updated_date;
@@ -86,5 +89,13 @@ public class Sale {
 
     public void setUpdated_date(Date updated_date) {
         this.updated_date = updated_date;
+    }
+
+    public Set<SaleDetail> getListSaleDetails() {
+        return listSaleDetails;
+    }
+
+    public void setListSaleDetails(Set<SaleDetail> listSaleDetails) {
+        this.listSaleDetails = listSaleDetails;
     }
 }
