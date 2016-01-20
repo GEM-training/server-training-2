@@ -2,6 +2,7 @@ package Models;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.Set;
 
 /**
  * Created by hoapham on 19/01/2016.
@@ -17,6 +18,9 @@ public class Make {
     private String name;
     private Date created_date;
     private Date updated_date;
+
+    @OneToMany(mappedBy = "make")
+    Set<Product> setProducts;
 
     public Make() {
     }
@@ -69,5 +73,11 @@ public class Make {
         this.updated_date = updated_date;
     }
 
+    public Set<Product> getSetProducts() {
+        return setProducts;
+    }
 
+    public void setSetProducts(Set<Product> setProducts) {
+        this.setProducts = setProducts;
+    }
 }
