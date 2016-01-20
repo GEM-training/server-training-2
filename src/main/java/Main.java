@@ -48,6 +48,7 @@ public class Main {
             }
         } finally {
             session.close();
+
         }
     }
 }
