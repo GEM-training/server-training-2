@@ -13,13 +13,8 @@ public class Product_inventory {
     @GeneratedValue
     private int product_inventory_id;
 
-    @ManyToOne
-    @JoinColumn(name = "product_id")
-    private Product product;
-
-    @ManyToOne
-    @JoinColumn(name = "inventory_id")
-    private Inventory inventory;
+    private int product_id;
+    private int inventory_id;
 
     private int quantity;
 
@@ -37,20 +32,20 @@ public class Product_inventory {
         this.product_inventory_id = product_inventory_id;
     }
 
-    public Product getProduct() {
-        return product;
+    public int getProduct_id() {
+        return product_id;
     }
 
-    public void setProduct(Product product) {
-        this.product = product;
+    public void setProduct_id(int product_id) {
+        this.product_id = product_id;
     }
 
-    public Inventory getInventory() {
-        return inventory;
+    public int getInventory_id() {
+        return inventory_id;
     }
 
-    public void setInventory(Inventory inventory) {
-        this.inventory = inventory;
+    public void setInventory_id(int inventory_id) {
+        this.inventory_id = inventory_id;
     }
 
     public int getQuantity() {

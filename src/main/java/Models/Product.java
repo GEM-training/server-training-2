@@ -2,6 +2,7 @@ package Models;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.Set;
 
 /**
  * Created by hoapham on 19/01/2016.
@@ -15,13 +16,25 @@ public class Product {
     private String name;
     private String description;
 
-    @ManyToOne
+    @ManyToOne(cascade=CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "make_id")
     private Make make;
 
-    @ManyToOne
+    @ManyToOne(cascade=CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "of_unit_id")
     private Product unit;
+
+    @OneToMany(mappedBy = "unit")
+    private Set<Product> listParts;
+
+    @ManyToMany(mappedBy = "listProducts")
+    private Set<Dealer> listDealers;
+
+    @ManyToMany(mappedBy = "listProducts")
+    private Set<Inventory> listInventories;
+
+    @ManyToMany(mappedBy = "listProducts")
+    private Set<Sale> listSales;
 
     private Date created_date;
     private Date updated_date;
@@ -59,6 +72,46 @@ public class Product {
 
     public void setMake(Make make) {
         this.make = make;
+    }
+
+    public Product getUnit() {
+        return unit;
+    }
+
+    public void setUnit(Product unit) {
+        this.unit = unit;
+    }
+
+    public Set<Product> getListParts() {
+        return listParts;
+    }
+
+    public void setListParts(Set<Product> listParts) {
+        this.listParts = listParts;
+    }
+
+    public Set<Dealer> getListDealers() {
+        return listDealers;
+    }
+
+    public void setListDealers(Set<Dealer> listDealers) {
+        this.listDealers = listDealers;
+    }
+
+    public Set<Inventory> getListInventories() {
+        return listInventories;
+    }
+
+    public void setListInventories(Set<Inventory> listInventories) {
+        this.listInventories = listInventories;
+    }
+
+    public Set<Sale> getListSales() {
+        return listSales;
+    }
+
+    public void setListSales(Set<Sale> listSales) {
+        this.listSales = listSales;
     }
 
     public Date getCreated_date() {
