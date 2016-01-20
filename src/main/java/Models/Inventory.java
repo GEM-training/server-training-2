@@ -2,6 +2,7 @@ package Models;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.Set;
 
 /**
  * Created by hoapham on 20/01/2016.
@@ -17,9 +18,13 @@ public class Inventory {
     private String address;
     private String phone;
 
-    @ManyToOne
+    @ManyToOne(cascade=CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "dealer_id")
     private Dealer dealer;
+
+   @ManyToMany
+   @JoinTable(name = "Product_inventory",joinColumns = @JoinColumn(name = "inventory_id"),inverseJoinColumns = @JoinColumn(name = "product_id"))
+   private Set<Product> listProducts;
 
     private Date created_date;
     private Date updated_date;
@@ -65,6 +70,14 @@ public class Inventory {
 
     public void setDealer(Dealer dealer) {
         this.dealer = dealer;
+    }
+
+    public Set<Product> getListProducts() {
+        return listProducts;
+    }
+
+    public void setListProducts(Set<Product> listProducts) {
+        this.listProducts = listProducts;
     }
 
     public Date getCreated_date() {

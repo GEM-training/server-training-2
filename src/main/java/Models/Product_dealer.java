@@ -12,13 +12,9 @@ public class Product_dealer {
     @Id
     @GeneratedValue
     private int product_dealer_id;
-
-    @ManyToOne
-    @JoinColumn(name = "product_id")
-    private Product product;
-
+    private int product_id;
+    private int dealer_id;
     private float price;
-
     private Date created_date;
     private Date updated_date;
 
@@ -33,16 +29,25 @@ public class Product_dealer {
         this.product_dealer_id = product_dealer_id;
     }
 
-    public Product getProduct() {
-        return product;
-    }
-
-    public void setProduct(Product product) {
-        this.product = product;
-    }
 
     public float getPrice() {
         return price;
+    }
+
+    public int getProduct_id() {
+        return product_id;
+    }
+
+    public void setProduct_id(int product_id) {
+        this.product_id = product_id;
+    }
+
+    public int getDealer_id() {
+        return dealer_id;
+    }
+
+    public void setDealer_id(int dealer_id) {
+        this.dealer_id = dealer_id;
     }
 
     public void setPrice(float price) {
