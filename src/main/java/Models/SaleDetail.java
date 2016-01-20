@@ -13,13 +13,13 @@ public class SaleDetail {
     @GeneratedValue
     private int sale_detail_id;
 
-    @ManyToOne
+    @ManyToOne(cascade=CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
     private Product product;
 
     private int quantity;
 
-    @ManyToOne
+    @ManyToOne(cascade=CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "sale_id")
     private Sale sale;
 

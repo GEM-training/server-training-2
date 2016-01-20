@@ -2,8 +2,10 @@ package Models;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import java.util.Date;
+import java.util.Set;
 
 /**
  * Created by hoapham on 20/01/2016.
@@ -20,6 +22,9 @@ public class Customer {
     private Date birthday;
     private Date created_date;
     private Date updated_date;
+
+    @OneToMany(mappedBy = "customer")
+    private Set<Sale> setSales;
 
     public Customer() {
     }
@@ -86,5 +91,13 @@ public class Customer {
 
     public void setUpdated_date(Date updated_date) {
         this.updated_date = updated_date;
+    }
+
+    public Set<Sale> getSetSales() {
+        return setSales;
+    }
+
+    public void setSetSales(Set<Sale> setSales) {
+        this.setSales = setSales;
     }
 }
