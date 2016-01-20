@@ -1,6 +1,7 @@
 package Dao;
 
 import Models.Sale;
+import Models.SaleDetail;
 import org.hibernate.Criteria;
 
 import java.util.List;
@@ -8,8 +9,8 @@ import java.util.List;
 /**
  * Created by jojo on 20/01/2016.
  */
-public class SalesDaoImpl extends AbstractDao implements SalesDao {
-    public List<Sale> getAllMakes(){
+public class SaleDaoImpl extends AbstractDao implements SaleDao {
+    public List<Sale> getAllSales(){
         Criteria crt = getSession().createCriteria(Sale.class);
         return (List<Sale>)crt;
     }
@@ -29,4 +30,5 @@ public class SalesDaoImpl extends AbstractDao implements SalesDao {
     public Sale findById(Integer saleId){
         return (Sale)getObjectById(saleId);
     }
+
 }

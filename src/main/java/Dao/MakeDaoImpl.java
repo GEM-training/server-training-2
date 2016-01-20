@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by hoapham on 19/01/2016.
  */
-public class MakeDaoImpl extends AbstractDao implements MakesDao {
+public class MakeDaoImpl extends AbstractDao implements MakeDao {
 
 
     public List<Make> getAllMakes() {
