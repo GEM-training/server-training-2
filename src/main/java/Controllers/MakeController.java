@@ -3,6 +3,7 @@ package Controllers;
 import Dao.MakeDao;
 import Dao.StaffDao;
 import Models.Make;
+import Services.MakeServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,26 +19,24 @@ import org.springframework.web.bind.annotation.RestController;
 @Transactional
 public class MakeController {
     @Autowired
-    MakeDao makeDao;
-    @Autowired
-    StaffDao staffDao;
+    MakeServices makeServices;
 
     @RequestMapping(value = "/list",method= RequestMethod.GET)
     public String getListMakes(){
-        return makeDao.getAllMakes().toString();
+        return makeServices.getAllMakes().toString();
     }
 
     @RequestMapping(value = "/add-one")
     public String addOneMake(){
         Make make = new Make();
-        make.setName("Make demo no "+makeDao.getAllMakes().size());
-        makeDao.save(make);
+        make.setName("Make demo no "+makeServices.getAllMakes().size());
+        makeServices.save(make);
         return "Successful";
     }
 
     @RequestMapping(value = "/delete/{makeId}")
     public String deleteMake(@PathVariable("makeId")Integer makeId){
-        makeDao.delete(makeId);
+        makeServices.delete(makeId);
         return "deleted";
     }
 }

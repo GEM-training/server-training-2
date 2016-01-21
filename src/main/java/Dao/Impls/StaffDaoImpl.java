@@ -1,5 +1,7 @@
-package Dao;
+package Dao.Impls;
 
+import Dao.AbstractDao;
+import Dao.StaffDao;
 import Models.Staff;
 import org.hibernate.Criteria;
 

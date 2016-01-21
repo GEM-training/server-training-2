@@ -1,5 +1,7 @@
-package Dao;
+package Dao.Impls;
 
+import Dao.AbstractDao;
+import Dao.DealersDao;
 import Models.Dealer;
 import org.hibernate.Criteria;
 

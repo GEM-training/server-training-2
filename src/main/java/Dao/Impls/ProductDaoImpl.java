@@ -1,5 +1,7 @@
-package Dao;
+package Dao.Impls;
 
+import Dao.AbstractDao;
+import Dao.ProductDao;
 import Models.Dealer;
 import Models.Make;
 import Models.Product;

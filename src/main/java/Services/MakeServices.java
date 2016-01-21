@@ -1,4 +1,4 @@
-package Dao;
+package Services;
 
 import Models.Make;
 import Models.Product;
@@ -6,9 +6,9 @@ import Models.Product;
 import java.util.List;
 
 /**
- * Created by hoapham on 19/01/2016.
+ * Created by hoak57uet on 1/21/16.
  */
-public interface MakeDao {
+public interface MakeServices {
     List<Make> getAllMakes();
 
     Integer save(Make make);

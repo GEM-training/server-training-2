@@ -1,6 +1,9 @@
-package Dao;
+package Dao.Impls;
 
+import Dao.AbstractDao;
+import Dao.MakeDao;
 import Models.Make;
+import Models.Product;
 import org.hibernate.Criteria;
 
 import java.util.List;
@@ -20,6 +23,10 @@ public class MakeDaoImpl extends AbstractDao implements MakeDao {
         return (Integer) getSession().save(make);
     }
 
+    public List<Product> getAllProducts(Integer makeId) {
+        return (List<Product>) findById(makeId).getSetProducts();
+    }
+
     public void delete(Integer makeId) {
         Make make = getSession().load(Make.class, makeId);
         if (make != null)
@@ -27,7 +34,7 @@ public class MakeDaoImpl extends AbstractDao implements MakeDao {
     }
 
     public Make findById(Integer makeId) {
-        return (Make) getObjectById(makeId);
+        return getSession().get(Make.class, makeId);
     }
 
 }
