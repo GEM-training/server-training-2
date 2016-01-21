@@ -1,8 +1,11 @@
 package Dao;
 
+import Models.Customer;
 import Models.Dealer;
 import Models.Make;
 import org.hibernate.Criteria;
+import org.hibernate.SQLQuery;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
@@ -28,6 +31,8 @@ public class DealerDaoImpl  extends AbstractDao implements  DealersDao{
     }
 
     public Dealer findById(Integer id) {
-        return (Dealer) getObjectById(id);
+        return getSession().get(Dealer.class,id);
     }
+
+
 }

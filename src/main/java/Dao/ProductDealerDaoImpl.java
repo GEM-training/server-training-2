@@ -30,8 +30,8 @@ public class ProductDealerDaoImpl extends AbstractDao implements ProductDealerDa
 
 
 
-    public ProductDealer findById(Integer makeId) {
-        return (ProductDealer) getObjectById(makeId);
+    public ProductDealer findById(Integer id) {
+        return getSession().get(ProductDealer.class,id);
     }
 
 }
