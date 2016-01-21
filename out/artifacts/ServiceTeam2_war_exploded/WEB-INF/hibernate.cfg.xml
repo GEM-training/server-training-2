@@ -13,11 +13,7 @@
         <!-- Disable the second-level cache -->
         <!-- Echo all executed SQL to stdout -->
         <property name="show_sql">true</property>
-<<<<<<< HEAD
-       <property name="hbm2ddl.auto">create</property>
-=======
-       <!-- <property name="hbm2ddl.auto">create</property> -->
->>>>>>> 511a92bd0f2f07986501755e6ddf14a333bde63d
+           <!--<property name="hbm2ddl.auto">update</property>-->
 
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hbm2ddl.auto">update</property> -->
@@ -26,10 +22,10 @@
         <mapping class="Models.Inventory"/>
         <mapping class="Models.Customer"/>
         <mapping class="Models.Dealer"/>
-        <mapping class="Models.Product_inventory"/>
+        <mapping class="Models.ProductInventory"/>
         <mapping class="Models.Sale"/>
         <mapping class="Models.SaleDetail"/>
         <mapping class="Models.Staff"/>
-        <mapping class="Models.Product_dealer"/>
+        <mapping class="Models.ProductDealer"/>
     </session-factory>
 </hibernate-configuration>
