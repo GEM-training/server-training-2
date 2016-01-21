@@ -1,10 +1,11 @@
 package Controllers;
 
-import Dao.MakesDao;
+import Dao.MakeDao;
 import Models.Make;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -15,11 +16,11 @@ import org.springframework.web.bind.annotation.RestController;
 @Transactional
 public class MakeController {
     @Autowired
-    MakesDao makesDao;
+    MakeDao makesDao;
 
-    @RequestMapping(value = "/list")
-    public String listMakes(){
-        return ""+makesDao.getAllMakes().size();
+    @RequestMapping(value = "/list",method= RequestMethod.GET)
+    public String getListMakes(){
+        return ""+makesDao.getAllMakes();
     }
 
     @RequestMapping(value = "/add-one")

@@ -23,7 +23,7 @@ public class Inventory {
     private Dealer dealer;
 
    @ManyToMany
-   @JoinTable(name = "Product_inventory",joinColumns = @JoinColumn(name = "inventory_id"),inverseJoinColumns = @JoinColumn(name = "product_id"))
+   @JoinTable(name = "ProductInventory",joinColumns = @JoinColumn(name = "inventory_id"),inverseJoinColumns = @JoinColumn(name = "product_id"))
    private Set<Product> listProducts;
 
     private Date created_date;
