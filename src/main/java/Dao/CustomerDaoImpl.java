@@ -28,7 +28,8 @@ public class CustomerDaoImpl extends AbstractDao implements CustomerDao {
 
 
     public Customer findById(Integer customerId) {
-        return (Customer) getObjectById(customerId);
+        Customer customer = getSession().get(Customer.class, customerId);
+        return customer;
     }
 
     public List<Sale> getAllSale(Integer customerId) {

@@ -30,6 +30,17 @@ public class SaleController {
         saleDao.save(sale);
         return "Successful";
     }
+
+    @RequestMapping(value = "/delete-one")
+    public void delete(){
+        Sale customer = new Sale();
+        saleDao.delete(1);
+    }
+
+    @RequestMapping(value = "/find-one")
+    public String findCustomer(){
+        return saleDao.findById(1).getCustomer().getName();
+    }
 }
 
 

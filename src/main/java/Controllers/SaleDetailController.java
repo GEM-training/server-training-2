@@ -1,6 +1,7 @@
 package Controllers;
 
 import Dao.SaleDetailDao;
+import Models.Sale;
 import Models.SaleDetail;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
@@ -30,5 +31,16 @@ public class SaleDetailController {
         SaleDetail saleDetail = new SaleDetail();
         saleDetailDao.save(saleDetail);
         return "Successful";
+    }
+
+    @RequestMapping(value = "/delete-one")
+    public void delete(){
+        SaleDetail SaleDetail = new SaleDetail();
+        saleDetailDao.delete(1);
+    }
+
+    @RequestMapping(value = "/find-one")
+    public Sale findSaleDetail(){
+        return saleDetailDao.findById(1).getSale();
     }
 }

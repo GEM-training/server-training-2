@@ -34,6 +34,17 @@ public class CustomerController {
         customerDao.save(customer);
         return "Successful";
     }
+
+    @RequestMapping(value = "/delete-one")
+    public void delete(){
+        Customer customer = new Customer();
+        customerDao.delete(1);
+    }
+
+    @RequestMapping(value = "/find-one")
+    public String findCustomer(){
+        return customerDao.findById(1).getName();
+    }
 }
 
 
