@@ -37,7 +37,7 @@ public class DealerController {
 
     @RequestMapping(value = "/delete/{id}")
     public String deleteDealer(@PathVariable("id") int id) {
-        dealersDao.deleteDeal(id);
+        dealersDao.delete(id);
         return "Delete";
 
     }
