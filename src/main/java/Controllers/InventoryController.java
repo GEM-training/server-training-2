@@ -1,10 +1,14 @@
 package Controllers;
 import Dao.InventoryDao;
+import Dao.InventoryDaoImpl;
 import Models.Inventory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * Created by nguyenkhoi on 1/21/16.
@@ -19,7 +23,7 @@ public class InventoryController {
 
     @RequestMapping("/list")
     public String listInventory() {
-        return ""+inventoryDao.getAllInventory().size();
+        return " "+inventoryDao.getAllInventory().size();
     }
 
     @RequestMapping("/add-one")
@@ -28,5 +32,13 @@ public class InventoryController {
         inventory.setName("Inventory no:" +inventoryDao.getAllInventory().size() );
         return "Add inventory success";
     }
+
+    @RequestMapping(value="/delete{id}")
+    public String deleteInventory(@PathVariable("id") int inventoryId) {
+        inventoryDao.deleteInventory(inventoryId);
+        return "delete inventory sucess";
+    }
+
+
 
 }
