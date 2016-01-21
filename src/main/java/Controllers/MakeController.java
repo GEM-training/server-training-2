@@ -16,18 +16,18 @@ import org.springframework.web.bind.annotation.RestController;
 @Transactional
 public class MakeController {
     @Autowired
-    MakeDao makesDao;
+    MakeDao makeDao;
 
     @RequestMapping(value = "/list",method= RequestMethod.GET)
     public String getListMakes(){
-        return ""+makesDao.getAllMakes();
+        return ""+makeDao.getAllMakes();
     }
 
     @RequestMapping(value = "/add-one")
     public String addOneMake(){
         Make make = new Make();
-        make.setName("Make demo no "+makesDao.getAllMakes().size());
-        makesDao.save(make);
+        make.setName("Make demo no "+makeDao.getAllMakes().size());
+        makeDao.save(make);
         return "Successful";
     }
 }
