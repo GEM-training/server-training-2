@@ -11,14 +11,14 @@ import java.util.Set;
 @Table(name = "Inventories")
 public class Inventory {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private int inventory_id;
 
     private String name;
     private String address;
     private String phone;
 
-    @ManyToOne(cascade=CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "dealer_id")
     private Dealer dealer;
 

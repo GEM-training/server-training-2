@@ -15,15 +15,15 @@ public class ProductInventoryDaoImpl extends AbstractDao implements ProductInven
         return (List<ProductInventory>) criteria.list();
     }
 
-    public Integer save(ProductInventory product_inventory) {
-
-        return (Integer) getSession().save(product_inventory);
-    }
-
-    public void deleteProductInventory(Integer productInventoryId) {
+    public void delete(Integer productInventoryId) {
         ProductInventory product_inventory = getSession().load(ProductInventory.class, productInventoryId);
         if (product_inventory != null)
             getSession().delete(product_inventory);
+    }
+
+    public Integer save(ProductInventory product_inventory) {
+
+        return (Integer) getSession().save(product_inventory);
     }
 
     public ProductInventory findById(Integer productInventoryId) {

@@ -1,8 +1,6 @@
 package Dao;
 
-import Models.Make;
 import Models.ProductDealer;
-
 
 import java.util.List;
 
@@ -11,7 +9,10 @@ import java.util.List;
  */
 public interface ProductDealerDao {
     public List<ProductDealer> getAllProductDeals();
+
     public Integer save(ProductDealer product_dealer);
-    public void deleteProductDealer(Integer id);
+
+    public void delete(Integer id);
+
     public ProductDealer findById(Integer id);
 }

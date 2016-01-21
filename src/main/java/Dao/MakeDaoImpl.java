@@ -20,7 +20,7 @@ public class MakeDaoImpl extends AbstractDao implements MakeDao {
         return (Integer) getSession().save(make);
     }
 
-    public void deleteMake(Integer makeId) {
+    public void delete(Integer makeId) {
         Make make = getSession().load(Make.class, makeId);
         if (make != null)
             getSession().delete(make);
