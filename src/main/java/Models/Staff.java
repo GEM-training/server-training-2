@@ -9,25 +9,25 @@ import javax.persistence.*;
 @Table(name = "Staffs")
 public class Staff {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
-    private int staff_id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int staffId;
     private String name;
     private String phone;
     private String address;
 
-    @ManyToOne(cascade=CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "dealer_id")
     private Dealer dealer;
 
     public Staff() {
     }
 
-    public int getStaff_id() {
-        return staff_id;
+    public int getStaffId() {
+        return staffId;
     }
 
-    public void setStaff_id(int staff_id) {
-        this.staff_id = staff_id;
+    public void setStaffId(int staff_id) {
+        this.staffId = staffId;
     }
 
     public String getName() {
@@ -60,5 +60,11 @@ public class Staff {
 
     public void setDealer(Dealer dealer) {
         this.dealer = dealer;
+    }
+
+
+    @Override
+    public String toString() {
+        return "ID: " + staffId + ", name: " + name;
     }
 }

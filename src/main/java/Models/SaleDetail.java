@@ -11,7 +11,8 @@ import java.util.Date;
 public class SaleDetail {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    private int sale_detail_id;
+    @Column(name = "sale_detail_id")
+    private int saleDetailId;
 
     @ManyToOne(cascade=CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
@@ -22,19 +23,20 @@ public class SaleDetail {
     @ManyToOne(cascade=CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "sale_id")
     private Sale sale;
-
-    private Date created_date;
-    private Date updated_date;
+    @Column(name = "created_date")
+    private Date createdDate;
+    @Column(name = "updated_date")
+    private Date updatedDate;
 
     public SaleDetail() {
     }
 
-    public int getSale_detail_id() {
-        return sale_detail_id;
+    public int getSaleDetailId() {
+        return saleDetailId;
     }
 
-    public void setSale_detail_id(int sale_detail_id) {
-        this.sale_detail_id = sale_detail_id;
+    public void setSaleDetailId(int sale_detail_id) {
+        this.saleDetailId = sale_detail_id;
     }
 
     public Product getProduct() {
@@ -61,19 +63,19 @@ public class SaleDetail {
         this.sale = sale;
     }
 
-    public Date getCreated_date() {
-        return created_date;
+    public Date getCreatedDate() {
+        return createdDate;
     }
 
-    public void setCreated_date(Date created_date) {
-        this.created_date = created_date;
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
     }
 
-    public Date getUpdated_date() {
-        return updated_date;
+    public Date getUpdatedDate() {
+        return updatedDate;
     }
 
-    public void setUpdated_date(Date updated_date) {
-        this.updated_date = updated_date;
+    public void setUpdatedDate(Date updatedDate) {
+        this.updatedDate = updatedDate;
     }
 }

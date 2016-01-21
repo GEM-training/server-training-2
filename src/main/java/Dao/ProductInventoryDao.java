@@ -8,12 +8,12 @@ import java.util.List;
  * Created by nguyenkhoi on 1/20/16.
  */
 public interface ProductInventoryDao {
-    public List<ProductInventory> getAllProductInventory();
+    List<ProductInventory> getAllProductInventory();
 
-    public void delete(Integer productInventoryId);
+    void delete(Integer productInventoryId);
 
-    public ProductInventory findById(Integer productInventoryId);
+    ProductInventory findById(Integer productInventoryId);
 
-    public Integer save(ProductInventory product_inventory);
+    Integer save(ProductInventory product_inventory);
 
 }

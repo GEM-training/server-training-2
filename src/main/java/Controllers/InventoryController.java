@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -23,19 +24,17 @@ public class InventoryController {
 
     @RequestMapping("/list")
     public String listInventory() {
-        return " "+inventoryDao.getAllInventory().size();
+        return inventoryDao.getAllInventory().toString();
     }
 
-    @RequestMapping("/add-one")
-    public String addOneInventory() {
-        Inventory inventory = new Inventory();
-        inventory.setName("Inventory no:" +inventoryDao.getAllInventory().size() );
-        return "Add inventory success";
+    @RequestMapping("/add")
+    public void addInventory() {
+        inventoryDao.save(new Inventory());
     }
 
-    @RequestMapping(value="/delete{id}")
-    public String deleteInventory(@PathVariable("inventoryId")Integer inventoryid) {
-        inventoryDao.delete(inventoryid);
+    @RequestMapping(value="/delete/{inventoryId}", method = RequestMethod.GET)
+    public String deleteInventory(@PathVariable("inventoryId")Integer inventoryId) {
+        inventoryDao.delete(inventoryId);
         return "delete inventory sucess";
     }
 

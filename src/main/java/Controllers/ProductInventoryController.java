@@ -4,7 +4,6 @@ import Dao.ProductInventoryDao;
 import Models.ProductInventory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,14 +21,12 @@ public class ProductInventoryController {
 
     @RequestMapping("/list")
     public String getListProductInventory() {
-        return ""+productInventoryDao.getAllProductInventory().size();
+        return productInventoryDao.getAllProductInventory().toString();
     }
 
-    @RequestMapping("/delete")
-    public String deleteProductInventory(@PathVariable("productInventoryId") Integer productInventoryId) {
-        productInventoryDao.delete(productInventoryId);
-        return "delete productInventory sucess";
+    @RequestMapping("/add")
+    public void addOneProductInventory() {
+         productInventoryDao.save(new ProductInventory());
     }
-
 
 }

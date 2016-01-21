@@ -11,15 +11,18 @@ import java.util.Set;
 @Table(name = "Customers")
 public class Customer {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    private int customer_id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "customer_id")
+    private int customerId;
     private String phone;
     private String name;
     private String address;
     private boolean gender;
     private Date birthday;
-    private Date created_date;
-    private Date updated_date;
+    @Column(name = "created_date")
+    private Date createdDate;
+    @Column(name = "updated_date")
+    private Date updatedDate;
 
     @OneToMany(mappedBy = "customer")
     private Set<Sale> setSales;
@@ -27,12 +30,12 @@ public class Customer {
     public Customer() {
     }
 
-    public int getCustomer_id() {
-        return customer_id;
+    public int getCustomerId() {
+        return customerId;
     }
 
-    public void setCustomer_id(int customer_id) {
-        this.customer_id = customer_id;
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
     }
 
     public String getPhone() {
@@ -75,20 +78,20 @@ public class Customer {
         this.birthday = birthday;
     }
 
-    public Date getCreated_date() {
-        return created_date;
+    public Date getCreatedDate() {
+        return createdDate;
     }
 
-    public void setCreated_date(Date created_date) {
-        this.created_date = created_date;
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
     }
 
-    public Date getUpdated_date() {
-        return updated_date;
+    public Date getUpdatedDate() {
+        return updatedDate;
     }
 
-    public void setUpdated_date(Date updated_date) {
-        this.updated_date = updated_date;
+    public void setUpdatedDate(Date updateddate) {
+        this.updatedDate = updatedDate;
     }
 
     public Set<Sale> getSetSales() {
@@ -97,5 +100,10 @@ public class Customer {
 
     public void setSetSales(Set<Sale> setSales) {
         this.setSales = setSales;
+    }
+
+    @Override
+    public String toString() {
+        return "Id : " + customerId + "\t name :" + name;
     }
 }

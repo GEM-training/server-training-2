@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class StaffDaoImpl extends AbstractDao implements StaffDao {
 
-    public List<Staff> getStaffs() {
+    public List<Staff> getAllStaffs() {
         Criteria criteria = getSession().createCriteria(Staff.class);
         return (List<Staff>) criteria.list();
     }
@@ -27,6 +27,6 @@ public class StaffDaoImpl extends AbstractDao implements StaffDao {
 
 
     public Staff findById(Integer id) {
-        return (Staff) getObjectById(id);
+        return getSession().get(Staff.class,id);
     }
 }

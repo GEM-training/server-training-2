@@ -11,41 +11,44 @@ import java.util.Date;
 public class ProductInventory {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    private int product_inventory_id;
-
-    private int product_id;
-    private int inventory_id;
+    @Column(name = "product_inventory_id")
+    private int productInventoryId;
+    @Column(name = "product_id")
+    private int productId;
+    @Column(name = "inventory_id")
+    private int inventoryId;
 
     private int quantity;
-
-    private Date created_date;
-    private Date updated_date;
+    @Column(name = "created_date")
+    private Date createdDate;
+    @Column(name = "updated_date")
+    private Date updatedDate;
 
     public ProductInventory() {
     }
 
-    public int getProduct_inventory_id() {
-        return product_inventory_id;
+    public int getProductInventoryId() {
+        return productInventoryId;
     }
 
-    public void setProduct_inventory_id(int product_inventory_id) {
-        this.product_inventory_id = product_inventory_id;
+    public void setProductInventoryId(int product_inventory_id) {
+        this.productInventoryId = product_inventory_id;
     }
 
-    public int getProduct_id() {
-        return product_id;
+    public int getProductId() {
+        return productId;
     }
 
-    public void setProduct_id(int product_id) {
-        this.product_id = product_id;
+    public void setProductId(int product_id) {
+        this.productId = product_id;
     }
 
-    public int getInventory_id() {
-        return inventory_id;
+    public int getInventoryId() {
+        return inventoryId;
     }
 
-    public void setInventory_id(int inventory_id) {
-        this.inventory_id = inventory_id;
+    public void setInventoryId(int inventory_id) {
+        this.inventoryId = inventory_id;
     }
 
     public int getQuantity() {
@@ -56,19 +59,19 @@ public class ProductInventory {
         this.quantity = quantity;
     }
 
-    public Date getCreated_date() {
-        return created_date;
+    public Date getCreatedDate() {
+        return createdDate;
     }
 
-    public void setCreated_date(Date created_date) {
-        this.created_date = created_date;
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
     }
 
-    public Date getUpdated_date() {
-        return updated_date;
+    public Date getUpdatedDate() {
+        return updatedDate;
     }
 
-    public void setUpdated_date(Date updated_date) {
-        this.updated_date = updated_date;
+    public void setUpdatedDate(Date updatedDate) {
+        this.updatedDate = updatedDate;
     }
 }

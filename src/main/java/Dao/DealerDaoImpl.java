@@ -27,6 +27,8 @@ public class DealerDaoImpl extends AbstractDao implements DealersDao {
 
 
     public Dealer findById(Integer id) {
-        return (Dealer) getObjectById(id);
+        return getSession().get(Dealer.class,id);
     }
+
+
 }

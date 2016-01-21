@@ -1,9 +1,11 @@
 package Controllers;
 
 import Dao.MakeDao;
+import Dao.StaffDao;
 import Models.Make;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,10 +19,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class MakeController {
     @Autowired
     MakeDao makeDao;
+    @Autowired
+    StaffDao staffDao;
 
     @RequestMapping(value = "/list",method= RequestMethod.GET)
     public String getListMakes(){
-        return ""+makeDao.getAllMakes();
+        return makeDao.getAllMakes().toString();
     }
 
     @RequestMapping(value = "/add-one")
@@ -31,4 +35,9 @@ public class MakeController {
         return "Successful";
     }
 
+    @RequestMapping(value = "/delete/{makeId}")
+    public String deleteMake(@PathVariable("makeId")Integer makeId){
+        makeDao.delete(makeId);
+        return "deleted";
+    }
 }

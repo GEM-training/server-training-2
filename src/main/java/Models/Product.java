@@ -12,15 +12,16 @@ import java.util.Set;
 @Table(name = "Products")
 public class Product {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
-    private int product_id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "product_id")
+    private int productId;
     private String name;
     private String description;
 
     @Column(name = "is_unit")
     private boolean isUnit;
 
-    @ManyToOne( fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "make_id")
     private Make make;
 
@@ -39,19 +40,20 @@ public class Product {
 
     @ManyToMany(mappedBy = "listProducts")
     private Set<Sale> listSales;
-
-    private Date created_date;
-    private Date updated_date;
+    @Column(name = "created_date")
+    private Date createdDate;
+    @Column(name = "updated_date")
+    private Date updatedDate;
 
     public Product() {
     }
 
-    public int getProduct_id() {
-        return product_id;
+    public int getProductId() {
+        return productId;
     }
 
-    public void setProduct_id(int product_id) {
-        this.product_id = product_id;
+    public void setProductId(int product_id) {
+        this.productId = product_id;
     }
 
     public String getName() {
@@ -118,20 +120,20 @@ public class Product {
         this.listSales = listSales;
     }
 
-    public Date getCreated_date() {
-        return created_date;
+    public Date getCreatedDate() {
+        return createdDate;
     }
 
-    public void setCreated_date(Date created_date) {
-        this.created_date = created_date;
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
     }
 
-    public Date getUpdated_date() {
-        return updated_date;
+    public Date getUpdatedDate() {
+        return updatedDate;
     }
 
-    public void setUpdated_date(Date updated_date) {
-        this.updated_date = updated_date;
+    public void setUpdatedDate(Date updated_date) {
+        this.updatedDate = updated_date;
     }
 
     public boolean isUnit() {
@@ -140,5 +142,11 @@ public class Product {
 
     public void setUnit(boolean unit) {
         isUnit = unit;
+    }
+
+
+    @Override
+    public String toString() {
+        return "ID: " + productId + ", name: " + name;
     }
 }

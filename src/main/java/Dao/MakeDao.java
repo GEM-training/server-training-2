@@ -8,11 +8,11 @@ import java.util.List;
  * Created by hoapham on 19/01/2016.
  */
 public interface MakeDao {
-    public List<Make> getAllMakes();
+    List<Make> getAllMakes();
 
-    public Integer save(Make make);
+    Integer save(Make make);
 
-    public void delete(Integer makeId);
+    void delete(Integer makeId);
 
-    public Make findById(Integer makeId);
+    Make findById(Integer makeId);
 }

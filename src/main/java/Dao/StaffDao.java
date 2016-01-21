@@ -7,12 +7,14 @@ import java.util.List;
 /**
  * Created by phong on 20/01/2016.
  */
+
 public interface StaffDao {
-    public List<Staff> getStaffs();
+    List<Staff> getAllStaffs();
 
-    public Integer save(Staff staff);
 
-    public void delete(Integer id);
+    Integer save(Staff staff);
 
-    public Staff findById(Integer id);
+    void delete(Integer id);
+
+    Staff findById(Integer id);
 }
