@@ -35,7 +35,7 @@ public class InventoryController {
     @RequestMapping(value="/delete/{inventoryId}", method = RequestMethod.GET)
     public String deleteInventory(@PathVariable("inventoryId")Integer inventoryId) {
         inventoryDao.delete(inventoryId);
-        return "delete inventory sucess";
+        return "delete inventory success";
     }
 
 
