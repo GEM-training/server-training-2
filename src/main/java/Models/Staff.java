@@ -10,7 +10,7 @@ import javax.persistence.*;
 public class Staff {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int staff_id;
+    private int staffId;
     private String name;
     private String phone;
     private String address;
@@ -22,12 +22,12 @@ public class Staff {
     public Staff() {
     }
 
-    public int getStaff_id() {
-        return staff_id;
+    public int getStaffId() {
+        return staffId;
     }
 
-    public void setStaff_id(int staff_id) {
-        this.staff_id = staff_id;
+    public void setStaffId(int staff_id) {
+        this.staffId = staffId;
     }
 
     public String getName() {
@@ -65,6 +65,6 @@ public class Staff {
 
     @Override
     public String toString() {
-        return "ID: " + staff_id + ", name: " + name;
+        return "ID: " + staffId + ", name: " + name;
     }
 }
