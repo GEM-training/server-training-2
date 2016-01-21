@@ -1,37 +1,33 @@
 package Controllers;
 
-import Dao.CustomerDao;
-import Dao.MakeDao;
-import Models.Customer;
-import Models.Make;
+import Dao.SaleDao;
+import Models.Sale;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-
 /**
  * Created by jojo on 21/01/2016.
  */
 
 @RestController
-@RequestMapping("/customer")
+@RequestMapping("/sale")
 @Transactional
-public class CustomerController {
+public class SaleController {
     @Autowired
-    CustomerDao customerDao;
+    SaleDao saleDao;
 
     @RequestMapping(value = "/list",method= RequestMethod.GET)
-    public String getListCustomer(){
-        return ""+customerDao.getAllCustomers();
+    public String getListSale(){
+        return ""+saleDao.getAllSales();
     }
 
     @RequestMapping(value = "/add-one")
-    public String addOneCustomer(){
-        Customer customer = new Customer();
-        customer.setName("Make demo no "+customerDao.getAllCustomers().size());
-        customerDao.save(customer);
+    public String addOneSale(){
+        Sale sale = new Sale();
+        saleDao.save(sale);
         return "Successful";
     }
 }
