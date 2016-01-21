@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Created by phong on 20/01/2016.
  */
-public class StaffImpl  extends AbstractDao implements StaffsDao{
+public class StaffDaoImpl extends AbstractDao implements StaffsDao{
 
     public List<Staff> getStaffs() {
         Criteria criteria = getSession().createCriteria(Staff.class);
