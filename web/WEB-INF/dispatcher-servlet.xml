@@ -32,7 +32,7 @@
         <property name="sessionFactory" ref="sessionFactory" />
     </bean>
 
-    <bean id="MakesDao" class="Dao.MakeDaoImpl">
+    <bean id="makeDao" class="Dao.MakeDaoImpl">
     </bean>
 
 </beans>
