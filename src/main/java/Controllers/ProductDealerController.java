@@ -36,8 +36,8 @@ public class ProductDealerController {
         ProductDealer productDealer = new ProductDealer();
         Product product = productDao.findById(0);
         Dealer dealer = dealersDao.findById(0);
-        productDealer.setProduct_id(product.getProduct_id());
-        productDealer.setDealer_id(dealer.getDealer_id());
+        productDealer.setProductId(product.getProductId());
+        productDealer.setDealerId(dealer.getDealerId());
         productDealer.setPrice(100000);
 
         return "Result: " + productDealerDao.save(productDealer);

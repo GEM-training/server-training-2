@@ -9,12 +9,12 @@ import java.util.List;
  */
 
 public interface StaffDao {
-    public List<Staff> getStaffs();
+    List<Staff> getAllStaffs();
 
 
-    public Integer save(Staff staff);
+    Integer save(Staff staff);
 
-    public void delete(Integer id);
+    void delete(Integer id);
 
-    public Staff findById(Integer id);
+    Staff findById(Integer id);
 }
