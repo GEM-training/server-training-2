@@ -9,13 +9,13 @@ import javax.persistence.*;
 @Table(name = "Staffs")
 public class Staff {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int staff_id;
     private String name;
     private String phone;
     private String address;
 
-    @ManyToOne(cascade=CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "dealer_id")
     private Dealer dealer;
 
@@ -60,5 +60,11 @@ public class Staff {
 
     public void setDealer(Dealer dealer) {
         this.dealer = dealer;
+    }
+
+
+    @Override
+    public String toString() {
+        return "ID: " + staff_id + ", name: " + name;
     }
 }

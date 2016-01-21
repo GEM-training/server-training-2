@@ -11,7 +11,7 @@ import java.util.Set;
 @Table(name = "Dealers")
 public class Dealer {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int dealer_id;
     private String name;
     private String address;
@@ -20,10 +20,10 @@ public class Dealer {
     private Date updated_date;
 
     @OneToMany(mappedBy = "dealer")
-    private Set<Inventory>setInventories;
+    private Set<Inventory> setInventories;
 
     @ManyToMany
-    @JoinTable(name = "ProductDealer", joinColumns=@JoinColumn(name = "dealer_id"),inverseJoinColumns = @JoinColumn(name = "product_id"))
+    @JoinTable(name = "ProductDealer", joinColumns = @JoinColumn(name = "dealer_id"), inverseJoinColumns = @JoinColumn(name = "product_id"))
     private Set<Product> listProducts;
 
     @OneToMany(mappedBy = "dealer")
@@ -113,5 +113,10 @@ public class Dealer {
 
     public void setListSales(Set<Sale> listSales) {
         this.listSales = listSales;
+    }
+
+    @Override
+    public String toString() {
+        return "ID: " + dealer_id + ", name: " + name;
     }
 }

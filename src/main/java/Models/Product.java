@@ -12,7 +12,7 @@ import java.util.Set;
 @Table(name = "Products")
 public class Product {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int product_id;
     private String name;
     private String description;
@@ -20,7 +20,7 @@ public class Product {
     @Column(name = "is_unit")
     private boolean isUnit;
 
-    @ManyToOne( fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "make_id")
     private Make make;
 
@@ -140,5 +140,11 @@ public class Product {
 
     public void setUnit(boolean unit) {
         isUnit = unit;
+    }
+
+
+    @Override
+    public String toString() {
+        return "ID: " + product_id + ", name: " + name;
     }
 }

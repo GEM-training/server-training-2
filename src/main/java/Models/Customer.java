@@ -11,7 +11,7 @@ import java.util.Set;
 @Table(name = "Customers")
 public class Customer {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int customer_id;
     private String phone;
     private String name;
@@ -97,5 +97,10 @@ public class Customer {
 
     public void setSetSales(Set<Sale> setSales) {
         this.setSales = setSales;
+    }
+
+    @Override
+    public String toString() {
+        return "Id : " + customer_id + "\t name :" + name;
     }
 }

@@ -19,7 +19,7 @@ public class ProductDaoImpl extends AbstractDao implements ProductDao {
     }
 
     public Product findById(Integer productId) {
-        return (Product) getObjectById(productId);
+        return (Product) getSession().get(Product.class, productId);
     }
 
     public Integer save(Product product) {
