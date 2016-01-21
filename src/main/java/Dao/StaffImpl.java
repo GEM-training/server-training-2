@@ -1,6 +1,5 @@
 package Dao;
 
-import Models.Dealer;
 import Models.Staff;
 import org.hibernate.Criteria;
 
