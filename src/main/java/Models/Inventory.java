@@ -11,7 +11,7 @@ import java.util.Set;
 @Table(name = "Inventories")
 public class Inventory {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int inventory_id;
 
     private String name;
@@ -22,9 +22,9 @@ public class Inventory {
     @JoinColumn(name = "dealer_id")
     private Dealer dealer;
 
-   @ManyToMany
-   @JoinTable(name = "ProductInventory",joinColumns = @JoinColumn(name = "inventory_id"),inverseJoinColumns = @JoinColumn(name = "product_id"))
-   private Set<Product> listProducts;
+    @ManyToMany
+    @JoinTable(name = "ProductInventory", joinColumns = @JoinColumn(name = "inventory_id"), inverseJoinColumns = @JoinColumn(name = "product_id"))
+    private Set<Product> listProducts;
 
     private Date created_date;
     private Date updated_date;
@@ -95,4 +95,12 @@ public class Inventory {
     public void setUpdated_date(Date updated_date) {
         this.updated_date = updated_date;
     }
+
+
+    @Override
+    public String toString() {
+        return "ID: " + inventory_id + ", name: " + name;
+    }
+
+
 }

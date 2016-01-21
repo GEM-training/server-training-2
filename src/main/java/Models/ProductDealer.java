@@ -10,7 +10,7 @@ import java.util.Date;
 @Table(name = "Product_Dealer")
 public class ProductDealer {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int product_dealer_id;
     private int product_id;
     private int dealer_id;
@@ -69,4 +69,6 @@ public class ProductDealer {
     public void setUpdated_date(Date updated_date) {
         this.updated_date = updated_date;
     }
+
+
 }

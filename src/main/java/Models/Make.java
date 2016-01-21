@@ -80,4 +80,10 @@ public class Make {
     public void setSetProducts(Set<Product> setProducts) {
         this.setProducts = setProducts;
     }
+
+
+    @Override
+    public String toString() {
+        return "ID: " + make_id + ", name: " + name;
+    }
 }
