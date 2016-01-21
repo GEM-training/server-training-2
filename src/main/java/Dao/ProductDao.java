@@ -12,12 +12,17 @@ import java.util.List;
  */
 public interface ProductDao {
     public List<Product> getAllProducts();
+
     public Product findById(Integer productId);
+
     public Integer save(Product product);
+
     public void delete(Integer productId);
 
     public List<Dealer> getDealers(Integer productId);
+
     public Make getMake(Integer productId);
+
     public List<Sale> getListSales(Integer productId);
 
 }

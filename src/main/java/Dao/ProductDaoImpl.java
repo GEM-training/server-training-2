@@ -19,19 +19,20 @@ public class ProductDaoImpl extends AbstractDao implements ProductDao {
     }
 
     public Product findById(Integer productId) {
-         return (Product)getObjectById(productId);
+        return (Product) getObjectById(productId);
     }
 
     public Integer save(Product product) {
-        return (Integer)saveObject(product);
+        return (Integer) saveObject(product);
     }
 
     public void delete(Integer productId) {
-        delete(productId);
+        Product product = getSession().get(Product.class, productId);
+        getSession().delete(product);
     }
 
     public List<Dealer> getDealers(Integer productId) {
-        return (List<Dealer>)findById(productId).getListDealers();
+        return (List<Dealer>) findById(productId).getListDealers();
     }
 
     public Make getMake(Integer productId) {
@@ -39,7 +40,7 @@ public class ProductDaoImpl extends AbstractDao implements ProductDao {
     }
 
     public List<Sale> getListSales(Integer productId) {
-        return (List<Sale>)findById(productId).getListSales();
+        return (List<Sale>) findById(productId).getListSales();
     }
 
 }

@@ -10,8 +10,12 @@ import java.util.List;
  */
 public interface CustomerDao {
     public List<Customer> getAllCustomers();
+
     public Integer save(Customer customer);
-    public void deleteCustomer(Integer customerId);
+
+    public void delete(Integer customerId);
+
     public Customer findById(Integer customerId);
+
     public List<Sale> getAllSale(Integer customerId);
 }

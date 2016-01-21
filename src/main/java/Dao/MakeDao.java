@@ -9,7 +9,10 @@ import java.util.List;
  */
 public interface MakeDao {
     public List<Make> getAllMakes();
+
     public Integer save(Make make);
-    public void deleteMake(Integer makeId);
+
+    public void delete(Integer makeId);
+
     public Make findById(Integer makeId);
 }

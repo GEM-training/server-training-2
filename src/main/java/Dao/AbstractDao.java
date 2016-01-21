@@ -17,7 +17,7 @@ public class AbstractDao {
 
     }
 
-    public Session getSession(){
+    public Session getSession() {
         return sessionFactory.getCurrentSession();
     }
 
@@ -25,12 +25,8 @@ public class AbstractDao {
         getSession().persist(entity);
     }
 
-    public void delete(Object entity) {
-        getSession().delete(entity);
-    }
-
     public Object saveObject(Object object) {
-        Object id= getSession().save(object);
+        Object id = getSession().save(object);
         return id;
     }
 
@@ -38,15 +34,10 @@ public class AbstractDao {
         Object obj = getSession().get(getClass(), objectId);
         return obj;
     }
+
     protected List<Object> getAllObjects() {
         List results = getSession().createCriteria(getClass()).list();
         return results;
-    }
-
-    public void deleteObjectById(Integer objectId) {
-        Session session = getSession();
-        Object object = session.get(getClass(), objectId);
-        session.delete(object);
     }
 
 }

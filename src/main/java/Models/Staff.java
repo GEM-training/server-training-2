@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Table(name = "Staffs")
 public class Staff {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private int staff_id;
     private String name;
     private String phone;

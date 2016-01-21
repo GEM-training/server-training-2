@@ -9,7 +9,7 @@ import java.util.List;
  */
 public interface InventoryDao {
     public List<Inventory> getAllInventory();
-    public void deleteInventory(Integer inventoryId);
+    public void delete(Integer inventoryId);
     public Inventory findById(Integer inventoryId);
     public Integer save(Inventory inventory);
 }

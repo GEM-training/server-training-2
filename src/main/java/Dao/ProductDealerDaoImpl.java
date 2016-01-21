@@ -1,6 +1,5 @@
 package Dao;
 
-import Models.Make;
 import Models.ProductDealer;
 import org.hibernate.Criteria;
 
@@ -21,13 +20,11 @@ public class ProductDealerDaoImpl extends AbstractDao implements ProductDealerDa
         return (Integer) getSession().save(product_dealer);
     }
 
-    public void deleteProductDealer(Integer id) {
-        ProductDealer product_dealer = getSession().load(ProductDealer.class,id);
-        if(product_dealer!=null)
+    public void delete(Integer id) {
+        ProductDealer product_dealer = getSession().load(ProductDealer.class, id);
+        if (product_dealer != null)
             getSession().delete(product_dealer);
-
     }
-
 
 
     public ProductDealer findById(Integer makeId) {

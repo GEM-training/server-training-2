@@ -11,13 +11,14 @@ import java.util.Set;
 @Table(name = "SaleDao")
 public class Sale {
     @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private int sale_id;
 
-    @ManyToOne(cascade=CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne( fetch = FetchType.LAZY)
     @JoinColumn(name="customer_id")
     private Customer customer;
 
-    @ManyToOne(cascade=CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "dealer_id")
     private Dealer dealer;
 

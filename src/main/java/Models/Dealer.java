@@ -11,7 +11,7 @@ import java.util.Set;
 @Table(name = "Dealers")
 public class Dealer {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private int dealer_id;
     private String name;
     private String address;
