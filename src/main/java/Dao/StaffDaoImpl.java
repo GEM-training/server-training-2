@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class StaffDaoImpl extends AbstractDao implements StaffDao {
 
-    public List<Staff> getStaffs() {
+    public List<Staff> getAllStaffs() {
         Criteria criteria = getSession().createCriteria(Staff.class);
         return (List<Staff>) criteria.list();
     }

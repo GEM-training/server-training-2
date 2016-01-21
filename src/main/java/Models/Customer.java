@@ -12,7 +12,8 @@ import java.util.Set;
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int customer_id;
+    @Column(name = "customer_id")
+    private int customerId;
     private String phone;
     private String name;
     private String address;
@@ -27,12 +28,12 @@ public class Customer {
     public Customer() {
     }
 
-    public int getCustomer_id() {
-        return customer_id;
+    public int getCustomerId() {
+        return customerId;
     }
 
-    public void setCustomer_id(int customer_id) {
-        this.customer_id = customer_id;
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
     }
 
     public String getPhone() {
@@ -101,6 +102,6 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Id : " + customer_id + "\t name :" + name;
+        return "Id : " + customerId + "\t name :" + name;
     }
 }

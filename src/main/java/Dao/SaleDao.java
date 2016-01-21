@@ -8,12 +8,12 @@ import java.util.List;
  * Created by jojo on 20/01/2016.
  */
 public interface SaleDao {
-    public List<Sale> getAllSales();
+    List<Sale> getAllSales();
 
-    public Integer save(Sale sale);
+    Integer save(Sale sale);
 
-    public void delete(Integer saleId);
+    void delete(Integer saleId);
 
-    public Sale findById(Integer saleId);
+    Sale findById(Integer saleId);
     //public List<SaleDetail> getAllSaleDetails(Integer saleId);
 }

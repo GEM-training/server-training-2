@@ -27,14 +27,8 @@ public class ProductDealerDaoImpl extends AbstractDao implements ProductDealerDa
     }
 
 
-<<<<<<< HEAD
-
     public ProductDealer findById(Integer id) {
-        return getSession().get(ProductDealer.class,id);
-=======
-    public ProductDealer findById(Integer makeId) {
-        return (ProductDealer) getObjectById(makeId);
->>>>>>> origin/master
+        return getSession().get(ProductDealer.class, id);
     }
 
 }

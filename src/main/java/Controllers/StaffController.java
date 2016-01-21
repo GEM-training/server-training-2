@@ -1,7 +1,7 @@
 package Controllers;
 
 import Dao.DealersDao;
-import Dao.StaffsDao;
+import Dao.StaffDao;
 import Models.Dealer;
 import Models.Staff;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Transactional
 public class StaffController {
     @Autowired
-    StaffsDao staffsDao;
+    StaffDao staffsDao;
     @Autowired
     DealersDao dealersDao;
 
@@ -39,7 +39,7 @@ public class StaffController {
 
     @RequestMapping(value = "/delete/{id}")
     public String deleteStaff(@PathVariable("id") int id) {
-        staffsDao.deleteStaff(id);
+        staffsDao.delete(id);
         return "Delete";
 
     }

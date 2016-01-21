@@ -1,10 +1,7 @@
 package Dao;
 
-import Models.Customer;
 import Models.Dealer;
 import org.hibernate.Criteria;
-import org.hibernate.SQLQuery;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
