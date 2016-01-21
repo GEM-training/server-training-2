@@ -19,8 +19,10 @@ public class Customer {
     private String address;
     private boolean gender;
     private Date birthday;
-    private Date created_date;
-    private Date updated_date;
+    @Column(name = "created_date")
+    private Date createdDate;
+    @Column(name = "updated_date")
+    private Date updatedDate;
 
     @OneToMany(mappedBy = "customer")
     private Set<Sale> setSales;
@@ -76,20 +78,20 @@ public class Customer {
         this.birthday = birthday;
     }
 
-    public Date getCreated_date() {
-        return created_date;
+    public Date getCreatedDate() {
+        return createdDate;
     }
 
-    public void setCreated_date(Date created_date) {
-        this.created_date = created_date;
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
     }
 
-    public Date getUpdated_date() {
-        return updated_date;
+    public Date getUpdatedDate() {
+        return updatedDate;
     }
 
-    public void setUpdated_date(Date updated_date) {
-        this.updated_date = updated_date;
+    public void setUpdatedDate(Date updateddate) {
+        this.updatedDate = updatedDate;
     }
 
     public Set<Sale> getSetSales() {

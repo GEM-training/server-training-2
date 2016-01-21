@@ -12,7 +12,8 @@ import java.util.Set;
 public class Sale {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    private int sale_id;
+    @Column(name = "sale_id")
+    private int saleId;
 
     @ManyToOne( fetch = FetchType.LAZY)
     @JoinColumn(name="customer_id")
@@ -30,18 +31,20 @@ public class Sale {
     private Set<SaleDetail> listSaleDetails;
 
     private int status;
-    private Date created_date;
-    private Date updated_date;
+    @Column(name = "created_date")
+    private Date createdDate;
+    @Column(name = "updated_date")
+    private Date updatedDate;
 
     public Sale() {
     }
 
-    public int getSale_id() {
-        return sale_id;
+    public int getSaleId() {
+        return saleId;
     }
 
-    public void setSale_id(int sale_id) {
-        this.sale_id = sale_id;
+    public void setSaleId(int sale_id) {
+        this.saleId = sale_id;
     }
 
     public Customer getCustomer() {
@@ -76,20 +79,20 @@ public class Sale {
         this.status = status;
     }
 
-    public Date getCreated_date() {
-        return created_date;
+    public Date getCreatedDate() {
+        return createdDate;
     }
 
-    public void setCreated_date(Date created_date) {
-        this.created_date = created_date;
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
     }
 
-    public Date getUpdated_date() {
-        return updated_date;
+    public Date getUpdatedDate() {
+        return updatedDate;
     }
 
-    public void setUpdated_date(Date updated_date) {
-        this.updated_date = updated_date;
+    public void setUpdatedDate(Date updatedDate) {
+        this.updatedDate = updatedDate;
     }
 
     public Set<SaleDetail> getListSaleDetails() {
