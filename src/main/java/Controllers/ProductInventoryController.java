@@ -27,7 +27,7 @@ public class ProductInventoryController {
     @RequestMapping("/add-one")
     public String addOneProductInventory() {
         ProductInventory productInventory = new ProductInventory();
-        productInventory.setProduct_inventory_id(productInventory.getProduct_inventory_id());
+        productInventory.setProductInventoryId(productInventory.getProductInventoryId());
         return "Add product inventory success";
     }
 

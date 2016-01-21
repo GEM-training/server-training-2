@@ -47,7 +47,7 @@ public class StaffController {
     @RequestMapping(value = "/show/{id}")
     public String showStaff(@PathVariable("id") int id) {
         Staff staff = staffsDao.findById(id);
-        return staff.getName() + staff.getStaff_id();
+        return staff.getName() + staff.getStaffId();
 
     }
 }
