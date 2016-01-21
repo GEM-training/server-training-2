@@ -12,12 +12,15 @@ import java.util.Set;
 public class Make {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private int make_id;
+    @Column(name = "make_id")
+    private int makeId;
     private String address;
     private String description;
     private String name;
-    private Date created_date;
-    private Date updated_date;
+    @Column(name = "created_date")
+    private Date createdDate;
+    @Column(name = "updated_date")
+    private Date updatedDate;
 
     @OneToMany(mappedBy = "make")
     Set<Product> setProducts;
@@ -25,12 +28,12 @@ public class Make {
     public Make() {
     }
 
-    public int getMake_id() {
-        return make_id;
+    public int getMakeId() {
+        return makeId;
     }
 
-    public void setMake_id(int make_id) {
-        this.make_id = make_id;
+    public void setMakeId(int make_id) {
+        this.makeId = make_id;
     }
 
     public String getAddress() {
@@ -57,20 +60,20 @@ public class Make {
         this.name = name;
     }
 
-    public Date getCreated_date() {
-        return created_date;
+    public Date getCreatedDate() {
+        return createdDate;
     }
 
-    public void setCreated_date(Date created_date) {
-        this.created_date = created_date;
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
     }
 
-    public Date getUpdated_date() {
-        return updated_date;
+    public Date getUpdatedDate() {
+        return updatedDate;
     }
 
-    public void setUpdated_date(Date updated_date) {
-        this.updated_date = updated_date;
+    public void setUpdatedDate(Date updatedDate) {
+        this.updatedDate = updatedDate;
     }
 
     public Set<Product> getSetProducts() {
@@ -84,6 +87,6 @@ public class Make {
 
     @Override
     public String toString() {
-        return "ID: " + make_id + ", name: " + name;
+        return "ID: " + makeId + ", name: " + name;
     }
 }

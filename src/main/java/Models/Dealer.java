@@ -12,12 +12,15 @@ import java.util.Set;
 public class Dealer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int dealer_id;
+    @Column(name = "dealer_id")
+    private int dealerId;
     private String name;
     private String address;
     private String description;
-    private Date created_date;
-    private Date updated_date;
+    @Column(name = "created_date")
+    private Date createdDate;
+    @Column(name = "updated_date")
+    private Date updatedDate;
 
     @OneToMany(mappedBy = "dealer")
     private Set<Inventory> setInventories;
@@ -35,12 +38,12 @@ public class Dealer {
     public Dealer() {
     }
 
-    public int getDealer_id() {
-        return dealer_id;
+    public int getDealerId() {
+        return dealerId;
     }
 
-    public void setDealer_id(int dealer_id) {
-        this.dealer_id = dealer_id;
+    public void setDealerId(int dealerId) {
+        this.dealerId = dealerId;
     }
 
     public String getName() {
@@ -67,20 +70,20 @@ public class Dealer {
         this.description = description;
     }
 
-    public Date getCreated_date() {
-        return created_date;
+    public Date getCreatedDate() {
+        return createdDate;
     }
 
-    public void setCreated_date(Date created_date) {
-        this.created_date = created_date;
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
     }
 
-    public Date getUpdated_date() {
-        return updated_date;
+    public Date getUpdatedDate() {
+        return updatedDate;
     }
 
-    public void setUpdated_date(Date updated_date) {
-        this.updated_date = updated_date;
+    public void setUpdatedDate(Date updated_date) {
+        this.updatedDate = updated_date;
     }
 
     public Set<Inventory> getSetInventories() {
@@ -117,6 +120,6 @@ public class Dealer {
 
     @Override
     public String toString() {
-        return "ID: " + dealer_id + ", name: " + name;
+        return "ID: " + dealerId + ", name: " + name;
     }
 }
