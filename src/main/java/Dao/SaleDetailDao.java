@@ -1,7 +1,6 @@
 package Dao;
 
 import Models.SaleDetail;
-import Models.Sale;
 
 import java.util.List;
 
@@ -10,7 +9,10 @@ import java.util.List;
  */
 public interface SaleDetailDao {
     public List<SaleDetail> getAllSaleDetails();
+
     public Integer save(SaleDetail saleDetail);
-    public void deleteSaleDetail(Integer saleDetailId);
+
+    public void delete(Integer saleDetailId);
+
     public SaleDetail findById(Integer saleDetailId);
 }

@@ -7,10 +7,10 @@ import java.util.Date;
  * Created by hoapham on 20/01/2016.
  */
 @Entity
-@Table(name = "ProductDealer")
+@Table(name = "Product_Dealer")
 public class ProductDealer {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private int product_dealer_id;
     private int product_id;
     private int dealer_id;

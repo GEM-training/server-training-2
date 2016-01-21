@@ -10,7 +10,7 @@ import java.util.Date;
 @Table(name = "ProductInventory")
 public class ProductInventory {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private int product_inventory_id;
 
     private int product_id;

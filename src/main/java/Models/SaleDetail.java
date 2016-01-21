@@ -10,7 +10,7 @@ import java.util.Date;
 @Table(name = "Sale_details")
 public class SaleDetail {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private int sale_detail_id;
 
     @ManyToOne(cascade=CascadeType.ALL, fetch = FetchType.LAZY)

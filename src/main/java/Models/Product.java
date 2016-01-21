@@ -12,15 +12,19 @@ import java.util.Set;
 @Table(name = "Products")
 public class Product {
     @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private int product_id;
     private String name;
     private String description;
 
-    @ManyToOne(cascade=CascadeType.ALL, fetch = FetchType.LAZY)
+    @Column(name = "is_unit")
+    private boolean isUnit;
+
+    @ManyToOne( fetch = FetchType.LAZY)
     @JoinColumn(name = "make_id")
     private Make make;
 
-    @ManyToOne(cascade=CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "of_unit_id")
     private Product unit;
 
@@ -128,5 +132,13 @@ public class Product {
 
     public void setUpdated_date(Date updated_date) {
         this.updated_date = updated_date;
+    }
+
+    public boolean isUnit() {
+        return isUnit;
+    }
+
+    public void setUnit(boolean unit) {
+        isUnit = unit;
     }
 }
