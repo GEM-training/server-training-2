@@ -1,6 +1,6 @@
 package Dao;
 
-import Models.Product_inventory;
+import Models.ProductInventory;
 import org.hibernate.Criteria;
 
 import java.util.List;
@@ -10,25 +10,25 @@ import java.util.List;
  */
 public class ProductInventoryDaoImpl extends AbstractDao implements ProductInventoryDao {
 
-    public List<Product_inventory> getAllProductInventory() {
-        Criteria criteria = getSession().createCriteria(Product_inventory.class);
-        return (List<Product_inventory>) criteria.list();
+    public List<ProductInventory> getAllProductInventory() {
+        Criteria criteria = getSession().createCriteria(ProductInventory.class);
+        return (List<ProductInventory>) criteria.list();
     }
 
-    public Integer save(Product_inventory product_inventory) {
+    public Integer save(ProductInventory product_inventory) {
 
         return (Integer) getSession().save(product_inventory);
     }
 
     public void deleteProductInventory(Integer productInventoryId) {
-        Product_inventory product_inventory = getSession().load(Product_inventory.class, productInventoryId);
+        ProductInventory product_inventory = getSession().load(ProductInventory.class, productInventoryId);
         if (product_inventory != null)
             getSession().delete(product_inventory);
     }
 
-    public Product_inventory findById(Integer productInventoryId) {
+    public ProductInventory findById(Integer productInventoryId) {
 
-        return (Product_inventory) getObjectById(productInventoryId);
+        return (ProductInventory) getObjectById(productInventoryId);
     }
 
 }
