@@ -4,6 +4,8 @@ import Dao.DealersDao;
 import Dao.StaffDao;
 import Models.Dealer;
 import Models.Staff;
+import Services.DealerServices;
+import Services.StaffServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,35 +20,35 @@ import org.springframework.web.bind.annotation.RestController;
 @Transactional
 public class StaffController {
     @Autowired
-    StaffDao staffsDao;
+    StaffServices staffServices;
     @Autowired
-    DealersDao dealersDao;
+    DealerServices dealerServices;
 
     @RequestMapping(value = "/list")
     public String getAllStaffs() {
-        return staffsDao.getAllStaffs().toString();
+        return staffServices.getAllStaffs().toString();
     }
 
     @RequestMapping(value = "/add-one")
     public String addOneStaff() {
         Staff staff = new Staff();
         staff.setAddress("Ameriaca");
-        Dealer dealer = dealersDao.getAllDealers().get(0);
+        Dealer dealer = dealerServices.getAllDealers().get(0);
         staff.setDealer(dealer);
-        int result = staffsDao.save(staff);
+        int result = staffServices.save(staff);
         return "Result:" + result;
     }
 
     @RequestMapping(value = "/delete/{id}")
     public String deleteStaff(@PathVariable("id") int id) {
-        staffsDao.delete(id);
+        staffServices.delete(id);
         return "Delete";
 
     }
 
-    @RequestMapping(value = "/show/{id}")
+    @RequestMapping(value = "/{id}")
     public String showStaff(@PathVariable("id") int id) {
-        Staff staff = staffsDao.findById(id);
+        Staff staff = staffServices.findById(id);
         return staff.getName() + staff.getStaffId();
 
     }

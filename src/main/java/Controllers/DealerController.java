@@ -2,6 +2,7 @@ package Controllers;
 
 import Dao.DealersDao;
 import Models.Dealer;
+import Services.DealerServices;
 import org.hibernate.SQLQuery;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,11 +21,11 @@ import java.util.List;
 @Transactional
 public class DealerController {
     @Autowired
-    DealersDao dealersDao;
+    DealerServices dealerServices;
 
     @RequestMapping(value = "/list")
     public String getAllDeals() {
-        return dealersDao.getAllDealers().toString();
+        return dealerServices.getAllDealers().toString();
     }
 
     @RequestMapping(value = "/add-one")
@@ -32,19 +33,19 @@ public class DealerController {
         Dealer dealer = new Dealer();
         dealer.setAddress("10000 PNt");
         dealer.setDescription("No description");
-        return "Result" + dealersDao.save(dealer);
+        return "Result" + dealerServices.save(dealer);
     }
 
     @RequestMapping(value = "/delete/{id}")
     public String deleteDealer(@PathVariable("id") int id) {
-        dealersDao.delete(id);
+        dealerServices.delete(id);
         return "Delete";
 
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public String getDealById(@PathVariable("id") int id) {
-        Dealer dealer = dealersDao.findById(id);
+        Dealer dealer = dealerServices.findById(id);
 
         return dealer.getName() + ", " + dealer.getAddress() + " have " + dealer.getListSales().size();
 

@@ -1,11 +1,11 @@
 package Controllers;
 
-import Dao.DealersDao;
-import Dao.ProductDao;
-import Dao.ProductDealerDao;
 import Models.Dealer;
 import Models.Product;
 import Models.ProductDealer;
+import Services.DealerServices;
+import Services.ProductDealerServices;
+import Services.ProductServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,27 +20,27 @@ import org.springframework.web.bind.annotation.RestController;
 @Transactional
 public class ProductDealerController {
     @Autowired
-    ProductDealerDao productDealerDao;
+    ProductDealerServices productDealerServices;
     @Autowired
-    ProductDao productDao;
+    ProductServices productServices;
     @Autowired
-    DealersDao dealersDao;
+    DealerServices dealerServices;
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String getListMakes() {
-        return "" + productDealerDao.getAllProductDeals().size();
+        return "" + productDealerServices.getAllProductDealers().size();
     }
 
     @RequestMapping(value = "/add-one")
     public String addOneProductDeal() {
         ProductDealer productDealer = new ProductDealer();
-        Product product = productDao.findById(0);
-        Dealer dealer = dealersDao.findById(0);
+        Product product = productServices.findById(0);
+        Dealer dealer = dealerServices.findById(0);
         productDealer.setProductId(product.getProductId());
         productDealer.setDealerId(dealer.getDealerId());
         productDealer.setPrice(100000);
 
-        return "Result: " + productDealerDao.save(productDealer);
+        return "Result: " + productDealerServices.save(productDealer);
 
     }
 }
