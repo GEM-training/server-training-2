@@ -4,6 +4,7 @@ import Dao.CustomerDao;
 import Dao.MakeDao;
 import Models.Customer;
 import Models.Make;
+import Services.CustomerServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,30 +21,30 @@ import org.springframework.web.bind.annotation.RestController;
 @Transactional
 public class CustomerController {
     @Autowired
-    CustomerDao customerDao;
+    CustomerServices customerServices;
 
     @RequestMapping(value = "/list",method= RequestMethod.GET)
     public String getListCustomer(){
-        return ""+customerDao.getAllCustomers();
+        return ""+customerServices.getAllCustomers();
     }
 
     @RequestMapping(value = "/add-one")
     public String addOneCustomer(){
         Customer customer = new Customer();
-        customer.setName("Make demo no "+customerDao.getAllCustomers().size());
-        customerDao.save(customer);
+        customer.setName("Make demo no "+customerServices.getAllCustomers().size());
+        customerServices.save(customer);
         return "Successful";
     }
 
     @RequestMapping(value = "/delete-one")
     public void delete(){
         Customer customer = new Customer();
-        customerDao.delete(1);
+        customerServices.delete(1);
     }
 
     @RequestMapping(value = "/find-one")
     public String findCustomer(){
-        return customerDao.findById(1).getName();
+        return customerServices.findById(1).getName();
     }
 }
 

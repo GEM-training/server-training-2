@@ -28,7 +28,6 @@ public class CustomerDaoImpl extends AbstractDao implements CustomerDao {
         }
     }
 
-
     public Customer findById(Integer customerId) {
         Customer customer = getSession().get(Customer.class, customerId);
         return customer;
@@ -38,4 +37,5 @@ public class CustomerDaoImpl extends AbstractDao implements CustomerDao {
         Customer c = findById(customerId);
         return (List<Sale>) c.getSetSales();
     }
+
 }
