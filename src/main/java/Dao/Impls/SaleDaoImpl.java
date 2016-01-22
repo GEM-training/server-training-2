@@ -29,7 +29,7 @@ public class SaleDaoImpl extends AbstractDao implements SaleDao {
 
 
     public Sale findById(Integer saleId) {
-        return (Sale) getObjectById(saleId);
+        return getSession().get(Sale.class, saleId);
     }
 
 }

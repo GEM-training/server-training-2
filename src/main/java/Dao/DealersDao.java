@@ -9,7 +9,10 @@ import java.util.List;
  */
 public interface DealersDao {
     List<Dealer> getAllDealers();
+
     Integer save(Dealer dealer);
+
     void delete(Integer id);
+
     Dealer findById(Integer id);
 }

@@ -16,8 +16,8 @@ public class SaleDetailDaoImpl extends AbstractDao implements SaleDetailDao {
         return (List<SaleDetail>) criteria.list();
     }
 
-    public Integer save(SaleDetail SaleDetail) {
-        return (Integer) getSession().save(SaleDetail);
+    public Integer save(SaleDetail saleDetail) {
+        return (Integer) getSession().save(saleDetail);
     }
 
     public void delete(Integer saleDetailId) {
@@ -27,9 +27,7 @@ public class SaleDetailDaoImpl extends AbstractDao implements SaleDetailDao {
         }
     }
 
-    public SaleDetail findById(Integer SaleDetailId) {
-        return (SaleDetail) getObjectById(SaleDetailId);
+    public SaleDetail findById(Integer saleDetailId) {
+        return getSession().get(SaleDetail.class, saleDetailId);
     }
-
-
 }

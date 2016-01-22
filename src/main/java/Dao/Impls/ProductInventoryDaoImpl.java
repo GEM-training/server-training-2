@@ -29,8 +29,7 @@ public class ProductInventoryDaoImpl extends AbstractDao implements ProductInven
     }
 
     public ProductInventory findById(Integer productInventoryId) {
-
-        return (ProductInventory) getObjectById(productInventoryId);
+        return getSession().get(ProductInventory.class, productInventoryId);
     }
 
 }

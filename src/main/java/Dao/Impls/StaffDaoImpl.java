@@ -29,6 +29,6 @@ public class StaffDaoImpl extends AbstractDao implements StaffDao {
 
 
     public Staff findById(Integer id) {
-        return getSession().get(Staff.class,id);
+        return getSession().get(Staff.class, id);
     }
 }
