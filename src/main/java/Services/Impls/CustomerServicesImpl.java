@@ -23,8 +23,13 @@ public class CustomerServicesImpl implements CustomerServices {
         return customerDao.save(customer);
     }
 
-    public void delete(Integer customerId) {
-        customerDao.delete(customerId);
+    public boolean delete(Integer customerId) {
+       try {
+           customerDao.delete(customerId);
+           return true;
+       }catch (Exception e){
+           return false;
+       }
     }
 
     public Customer findById(Integer customerId) {

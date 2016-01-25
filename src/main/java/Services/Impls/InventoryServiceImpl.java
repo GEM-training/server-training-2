@@ -21,6 +21,11 @@ public class InventoryServiceImpl implements InventoryServices{
     public Inventory findById(Integer inventoryId) {
         return inventoryDao.findById(inventoryId);
     }
+
+    public List<Inventory> getAllInventory() {
+        return null;
+    }
+
     public void delete(Integer inventoryId) {
         inventoryDao.delete(inventoryId);
     }

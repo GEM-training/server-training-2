@@ -1,31 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c0759eb-b00c-4062-a3b7-708a854b815a" name="Default" comment="Merge branch 'master' of https://github.com/GEM-training/server-training-2&#10;&#10;Conflicts:&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductController.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductDealerController.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/DealerDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/DealersDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/InventoryDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/InventoryDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/MakeDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDealerDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDealerDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductInventoryDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductInventoryDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDetailDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDetailDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/StaffDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/ProductDealer.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/ProductInventory.class&#10;&#9;src/main/java/Controllers/ProductInventoryController.java&#10;&#9;target/classes/Controllers/ProductController.class&#10;&#9;target/classes/Controllers/ProductDealerController.class&#10;&#9;target/classes/Dao/CustomerDao.class&#10;&#9;target/classes/Dao/CustomerDaoImpl.class&#10;&#9;target/classes/Dao/DealerDaoImpl.class&#10;&#9;target/classes/Dao/DealersDao.class&#10;&#9;target/classes/Dao/InventoryDao.class&#10;&#9;target/classes/Dao/InventoryDaoImpl.class&#10;&#9;target/classes/Dao/MakeDao.class&#10;&#9;target/classes/Dao/MakeDaoImpl.class&#10;&#9;target/classes/Dao/ProductDaoImpl.class&#10;&#9;target/classes/Dao/ProductDealerDao.class&#10;&#9;target/classes/Dao/ProductDealerDaoImpl.class&#10;&#9;target/classes/Dao/ProductInventoryDao.class&#10;&#9;target/classes/Dao/ProductInventoryDaoImpl.class&#10;&#9;target/classes/Dao/SaleDao.class&#10;&#9;target/classes/Dao/SaleDaoImpl.class&#10;&#9;target/classes/Dao/SaleDetailDao.class&#10;&#9;target/classes/Dao/SaleDetailDaoImpl.class&#10;&#9;target/classes/Dao/StaffDaoImpl.class&#10;&#9;target/classes/Models/ProductDealer.class&#10;&#9;target/classes/Models/ProductInventory.class&#10;&#9;target/classes/Models/Sale.class&#10;&#9;target/classes/Models/SaleDetail.class&#10;&#9;target/classes/Models/Staff.class&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/InventoryServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/ProductInventoryServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Services/InventoryServices.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Services/ProductInventoryServices.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Tests/CustomerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/DealerController.class" afterPath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/DealerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/InventoryController.class" afterPath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/InventoryController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductDealerController.class" afterPath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductDealerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductInventoryController.class" afterPath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductInventoryController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/SaleController.class" afterPath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/SaleController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/SaleDetailController.class" afterPath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/SaleDetailController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/StaffController.class" afterPath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/StaffController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Controllers/ProductInventoryController.class" afterPath="$PROJECT_DIR$/target/classes/Controllers/ProductInventoryController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/CustomerServices.java" afterPath="$PROJECT_DIR$/src/main/java/Services/CustomerServices.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Tests/DealerTest.java" afterPath="$PROJECT_DIR$/src/main/java/Tests/DealerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Tests/ProductDealerTest.java" afterPath="$PROJECT_DIR$/src/main/java/Tests/ProductDealerTest.java" />
+    <list default="true" id="7c0759eb-b00c-4062-a3b7-708a854b815a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Controllers/CustomerController.class" afterPath="$PROJECT_DIR$/target/classes/Controllers/CustomerController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controllers/ProductController.java" afterPath="$PROJECT_DIR$/src/main/java/Controllers/ProductController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Models/Dealer.java" afterPath="$PROJECT_DIR$/src/main/java/Models/Dealer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Models/Inventory.java" afterPath="$PROJECT_DIR$/src/main/java/Models/Inventory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Models/Product.java" afterPath="$PROJECT_DIR$/src/main/java/Models/Product.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Models/Sale.java" afterPath="$PROJECT_DIR$/src/main/java/Models/Sale.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/Impls/CustomerServicesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/CustomerServicesImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/Impls/InventoryServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/InventoryServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Tests/ProductTest.java" afterPath="$PROJECT_DIR$/src/main/java/Tests/ProductTest.java" />
     </list>
-    <list id="d737f3f1-eec0-49b6-8f12-729e5eb658e5" name="Failed commit: Default" comment="test">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controllers/InventoryController.java" afterPath="$PROJECT_DIR$/src/main/java/Controllers/InventoryController.java" />
-    </list>
-    <list id="dfce0dd9-0cce-4b05-82bd-03a756a96ed7" name="Failed commit: Default (2)" comment="Merge branch 'master' of https://github.com/GEM-training/server-training-2&#10;&#10;Conflicts:&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductController.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductDealerController.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/DealerDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/DealersDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/InventoryDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/InventoryDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/MakeDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDealerDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDealerDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductInventoryDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductInventoryDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDetailDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDetailDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/StaffDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/ProductDealer.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/ProductInventory.class&#10;&#9;src/main/java/Controllers/ProductInventoryController.java&#10;&#9;target/classes/Controllers/ProductController.class&#10;&#9;target/classes/Controllers/ProductDealerController.class&#10;&#9;target/classes/Dao/CustomerDao.class&#10;&#9;target/classes/Dao/CustomerDaoImpl.class&#10;&#9;target/classes/Dao/DealerDaoImpl.class&#10;&#9;target/classes/Dao/DealersDao.class&#10;&#9;target/classes/Dao/InventoryDao.class&#10;&#9;target/classes/Dao/InventoryDaoImpl.class&#10;&#9;target/classes/Dao/MakeDao.class&#10;&#9;target/classes/Dao/MakeDaoImpl.class&#10;&#9;target/classes/Dao/ProductDaoImpl.class&#10;&#9;target/classes/Dao/ProductDealerDao.class&#10;&#9;target/classes/Dao/ProductDealerDaoImpl.class&#10;&#9;target/classes/Dao/ProductInventoryDao.class&#10;&#9;target/classes/Dao/ProductInventoryDaoImpl.class&#10;&#9;target/classes/Dao/SaleDao.class&#10;&#9;target/classes/Dao/SaleDaoImpl.class&#10;&#9;target/classes/Dao/SaleDetailDao.class&#10;&#9;target/classes/Dao/SaleDetailDaoImpl.class&#10;&#9;target/classes/Dao/StaffDaoImpl.class&#10;&#9;target/classes/Models/ProductDealer.class&#10;&#9;target/classes/Models/ProductInventory.class&#10;&#9;target/classes/Models/Sale.class&#10;&#9;target/classes/Models/SaleDetail.class&#10;&#9;target/classes/Models/Staff.class&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controllers/ProductInventoryController.java" afterPath="$PROJECT_DIR$/src/main/java/Controllers/ProductInventoryController.java" />
-    </list>
+    <list id="d737f3f1-eec0-49b6-8f12-729e5eb658e5" name="Failed commit: Default" comment="test" />
+    <list id="dfce0dd9-0cce-4b05-82bd-03a756a96ed7" name="Failed commit: Default (2)" comment="Merge branch 'master' of https://github.com/GEM-training/server-training-2&#10;&#10;Conflicts:&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductController.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductDealerController.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/DealerDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/DealersDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/InventoryDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/InventoryDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/MakeDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDealerDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDealerDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductInventoryDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductInventoryDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDetailDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDetailDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/StaffDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/ProductDealer.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/ProductInventory.class&#10;&#9;src/main/java/Controllers/ProductInventoryController.java&#10;&#9;target/classes/Controllers/ProductController.class&#10;&#9;target/classes/Controllers/ProductDealerController.class&#10;&#9;target/classes/Dao/CustomerDao.class&#10;&#9;target/classes/Dao/CustomerDaoImpl.class&#10;&#9;target/classes/Dao/DealerDaoImpl.class&#10;&#9;target/classes/Dao/DealersDao.class&#10;&#9;target/classes/Dao/InventoryDao.class&#10;&#9;target/classes/Dao/InventoryDaoImpl.class&#10;&#9;target/classes/Dao/MakeDao.class&#10;&#9;target/classes/Dao/MakeDaoImpl.class&#10;&#9;target/classes/Dao/ProductDaoImpl.class&#10;&#9;target/classes/Dao/ProductDealerDao.class&#10;&#9;target/classes/Dao/ProductDealerDaoImpl.class&#10;&#9;target/classes/Dao/ProductInventoryDao.class&#10;&#9;target/classes/Dao/ProductInventoryDaoImpl.class&#10;&#9;target/classes/Dao/SaleDao.class&#10;&#9;target/classes/Dao/SaleDaoImpl.class&#10;&#9;target/classes/Dao/SaleDetailDao.class&#10;&#9;target/classes/Dao/SaleDetailDaoImpl.class&#10;&#9;target/classes/Dao/StaffDaoImpl.class&#10;&#9;target/classes/Models/ProductDealer.class&#10;&#9;target/classes/Models/ProductInventory.class&#10;&#9;target/classes/Models/Sale.class&#10;&#9;target/classes/Models/SaleDetail.class&#10;&#9;target/classes/Models/Staff.class&#10;" />
     <ignored path="ServiceTeam2.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -48,53 +37,102 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StaffController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Controllers/StaffController.java">
+      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Models/Product.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <caret line="34" column="15" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Controllers/ProductController.java">
+      <file leaf-file-name="ProductDealer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Models/ProductDealer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-              <folding>
-                <element signature="e#1167#1168#0" expanded="true" />
-                <element signature="e#1228#1229#0" expanded="true" />
-                <element signature="e#1324#1325#0" expanded="true" />
-                <element signature="e#1370#1371#0" expanded="true" />
-              </folding>
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InventoryController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Controllers/InventoryController.java">
+      <file leaf-file-name="ProductInventory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Models/ProductInventory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.119403">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductInventoryController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Controllers/ProductInventoryController.java">
+      <file leaf-file-name="Dealer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Models/Dealer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#632#633#0" expanded="true" />
-                <element signature="e#710#711#0" expanded="true" />
-              </folding>
+              <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sale.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Models/Sale.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.538206">
+              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Inventory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Models/Inventory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Make.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Models/Make.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Tests/ProductTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Models/Customer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SaleDetail.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Models/SaleDetail.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -118,6 +156,14 @@
         <option value="$PROJECT_DIR$/src/main/java/Controllers/InventoryController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Controllers/ProductInventoryController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Services/Impls/CustomerServicesImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Services/Impls/InventoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controllers/ProductController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Models/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Models/Dealer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Models/Inventory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Models/Sale.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Tests/ProductTest.java" />
       </list>
     </option>
   </component>
@@ -181,6 +227,148 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -194,7 +382,59 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
-  <component name="RunManager" selected="Tomcat Server.test">
+  <component name="RunManager" selected="JUnit.ProductTest">
+    <configuration default="false" name="Tests in ServiceTeam2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ServiceTeam2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ServiceTeam2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ProductTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings />
@@ -616,8 +856,7 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="false" name="test" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.671" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8000/team/" />
+    <configuration default="false" name="test" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.67" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="ServiceTeam2:war exploded">
@@ -690,9 +929,17 @@
         </option>
       </method>
     </configuration>
-    <list size="1">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.test" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Tests in ServiceTeam2" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ProductTest" />
     </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ProductTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Tests in ServiceTeam2" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
@@ -720,13 +967,33 @@
       <option name="number" value="Default" />
       <updated>1453694585922</updated>
       <workItem from="1453694587069" duration="41000" />
-      <workItem from="1453694690576" duration="18000" />
+      <workItem from="1453694690576" duration="1347000" />
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="merge code&#10;">
+      <created>1453694719891</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1453694719891</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ProductTest - 2016.01.25 at 11h 23m 49s.xml">
+      <configuration name="ProductTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductTest - 2016.01.25 at 11h 26m 16s.xml">
+      <configuration name="ProductTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_in_ServiceTeam2 - 2016.01.25 at 11h 14m 13s.xml">
+      <configuration name="Tests in ServiceTeam2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Tests_in_ServiceTeam2 - 2016.01.25 at 11h 17m 28s.xml">
+      <configuration name="Tests in ServiceTeam2" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5434000" />
+    <option name="totallyTimeSpent" value="6763000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1295" height="744" extended-state="6" />
@@ -743,22 +1010,22 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3552239" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985073" sideWeight="0.5027027" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40308088" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985073" sideWeight="0.49420848" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.49111968" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24401544" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24401544" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.05671642" sideWeight="0.4972973" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
@@ -802,7 +1069,8 @@
     <MESSAGE value="New changelist" />
     <MESSAGE value="Merge branch 'master' of https://github.com/GEM-training/server-training-2&#10;&#10;Conflicts:&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductController.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductDealerController.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/DealerDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/DealersDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/InventoryDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/InventoryDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/MakeDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDealerDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDealerDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductInventoryDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductInventoryDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDetailDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDetailDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/StaffDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/ProductDealer.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/ProductInventory.class&#10;&#9;src/main/java/Controllers/ProductInventoryController.java&#10;&#9;target/classes/Controllers/ProductController.class&#10;&#9;target/classes/Controllers/ProductDealerController.class&#10;&#9;target/classes/Dao/CustomerDao.class&#10;&#9;target/classes/Dao/CustomerDaoImpl.class&#10;&#9;target/classes/Dao/DealerDaoImpl.class&#10;&#9;target/classes/Dao/DealersDao.class&#10;&#9;target/classes/Dao/InventoryDao.class&#10;&#9;target/classes/Dao/InventoryDaoImpl.class&#10;&#9;target/classes/Dao/MakeDao.class&#10;&#9;target/classes/Dao/MakeDaoImpl.class&#10;&#9;target/classes/Dao/ProductDaoImpl.class&#10;&#9;target/classes/Dao/ProductDealerDao.class&#10;&#9;target/classes/Dao/ProductDealerDaoImpl.class&#10;&#9;target/classes/Dao/ProductInventoryDao.class&#10;&#9;target/classes/Dao/ProductInventoryDaoImpl.class&#10;&#9;target/classes/Dao/SaleDao.class&#10;&#9;target/classes/Dao/SaleDaoImpl.class&#10;&#9;target/classes/Dao/SaleDetailDao.class&#10;&#9;target/classes/Dao/SaleDetailDaoImpl.class&#10;&#9;target/classes/Dao/StaffDaoImpl.class&#10;&#9;target/classes/Models/ProductDealer.class&#10;&#9;target/classes/Models/ProductInventory.class&#10;&#9;target/classes/Models/Sale.class&#10;&#9;target/classes/Models/SaleDetail.class&#10;&#9;target/classes/Models/Staff.class&#10;" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="merge code&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge code&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -825,12 +1093,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-          <folding>
-            <element signature="e#1167#1168#0" expanded="true" />
-            <element signature="e#1228#1229#0" expanded="true" />
-            <element signature="e#1324#1325#0" expanded="true" />
-            <element signature="e#1370#1371#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -868,12 +1131,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-          <folding>
-            <element signature="e#1167#1168#0" expanded="true" />
-            <element signature="e#1228#1229#0" expanded="true" />
-            <element signature="e#1324#1325#0" expanded="true" />
-            <element signature="e#1370#1371#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -913,14 +1171,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40243903">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Models/Make.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3292683">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -970,16 +1220,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Models/Inventory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#938#939#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Dao/ProductInventoryDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1020,38 +1260,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6842103">
-          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Models/ProductInventory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29268292">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Controllers/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-          <folding>
-            <element signature="e#1167#1168#0" expanded="true" />
-            <element signature="e#1228#1229#0" expanded="true" />
-            <element signature="e#1324#1325#0" expanded="true" />
-            <element signature="e#1370#1371#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Controllers/ProductInventoryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.759375">
           <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1061,13 +1272,152 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Services/Impls/CustomerServicesImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50625">
+          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Services/Impls/InventoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.421875">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Tests/ProductDealerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.309375">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Controllers/InventoryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.119403">
+        <state vertical-scroll-proportion="0.703125">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controllers/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.675">
+          <caret line="54" column="51" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.6842103">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Models/SaleDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Tests/ProductTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Models/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Models/Dealer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Models/Inventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Models/Make.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Models/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="15" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Models/ProductDealer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Models/ProductInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Models/Sale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.538206">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -24,7 +24,7 @@ public class Sale {
     private Dealer dealer;
 
     @ManyToMany
-    @JoinTable(name = "Sale_details", joinColumns = @JoinColumn(name = "sale_id"), inverseJoinColumns = @JoinColumn(name = "product_id"))
+    @JoinTable(name = "sale_details", joinColumns = @JoinColumn(name = "sale_id"), inverseJoinColumns = @JoinColumn(name = "product_id"))
     private Set<Product> listProducts;
 
     @OneToMany(mappedBy = "sale")

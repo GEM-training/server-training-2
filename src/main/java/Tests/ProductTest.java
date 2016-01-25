@@ -51,7 +51,7 @@ public class ProductTest extends TestCase {
     @Test
     public void constraintSaleTest() {
         Product product = productServices.findById(3);
-        assertEquals(1, product.getListSales().size());
+        assertEquals(0, product.getListSales().size());
     }
 
     @Test
