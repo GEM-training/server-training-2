@@ -3,6 +3,7 @@ package Controllers;
 import Dao.SaleDetailDao;
 import Models.Sale;
 import Models.SaleDetail;
+import Services.SaleDetailServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,28 +20,28 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class SaleDetailController {
     @Autowired
-    SaleDetailDao saleDetailDao;
+    SaleDetailServices saleDetailServices;
 
     @RequestMapping(value = "/list",method= RequestMethod.GET)
     public String getListSaleDetail(){
-            return ""+saleDetailDao.getAllSaleDetails();
+            return ""+saleDetailServices.getAllSaleDetails();
         }
 
     @RequestMapping(value = "/add-one")
     public String addOneSaleDetail(){
         SaleDetail saleDetail = new SaleDetail();
-        saleDetailDao.save(saleDetail);
+        saleDetailServices.save(saleDetail);
         return "Successful";
     }
 
     @RequestMapping(value = "/delete-one")
     public void delete(){
         SaleDetail SaleDetail = new SaleDetail();
-        saleDetailDao.delete(1);
+        saleDetailServices.delete(1);
     }
 
     @RequestMapping(value = "/find-one")
     public Sale findSaleDetail(){
-        return saleDetailDao.findById(1).getSale();
+        return saleDetailServices.findById(1).getSale();
     }
 }
