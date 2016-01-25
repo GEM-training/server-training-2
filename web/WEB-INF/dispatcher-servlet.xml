@@ -12,7 +12,14 @@
     <mvc:annotation-driven/>
     <context:annotation-config/>
     <context:component-scan base-package="Controllers"/>
-
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix">
+            <value>/WEB-INF/views/</value>
+        </property>
+        <property name="suffix">
+            <value>.jsp</value>
+        </property>
+    </bean>
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
           destroy-method="close">
         <property name="driverClassName" value="org.postgresql.Driver"/>

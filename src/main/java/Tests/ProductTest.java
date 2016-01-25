@@ -63,4 +63,12 @@ public class ProductTest extends TestCase {
     public void deleteProductTrue() {
         assertEquals(true, productServices.delete(1));
     }
+
+    @Test
+    public void testPrimaryKey(){
+        Product product = new Product();
+        product.setProductId(2);
+        product.setName("Test-product-primary key");
+        assertEquals(new Integer(46),productServices.save(product));
+    }
 }

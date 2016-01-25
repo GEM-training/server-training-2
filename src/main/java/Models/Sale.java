@@ -8,7 +8,7 @@ import java.util.Set;
  * Created by hoapham on 20/01/2016.
  */
 @Entity
-@Table(name = "SaleDao")
+@Table(name = "Sale")
 public class Sale {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
