@@ -12,7 +12,7 @@ public interface SaleServices {
 
     Integer save(Sale sale);
 
-    void delete(Integer saleId);
+    boolean delete(Integer saleId);
 
     Sale findById(Integer saleId);
 }

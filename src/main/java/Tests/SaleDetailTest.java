@@ -1,7 +1,7 @@
 package Tests;
 
-import Models.Customer;
-import Services.CustomerServices;
+import Models.SaleDetail;
+import Services.SaleDetailServices;
 import junit.framework.TestCase;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,30 +18,29 @@ import org.springframework.transaction.annotation.Transactional;
 @ContextConfiguration(locations = { "/META-INF/dispatcher-servlet.xml" })
 @Transactional
 @Configuration
-public class CustomerTest extends TestCase {
+public class SaleDetailTest extends TestCase {
     @Autowired
-    CustomerServices customerServices;
+    SaleDetailServices saleDetailServices;
     /*@Autowired
     DealerServices dealerServices;
     @Autowired
     ProductDealerServices productDealerServices;*/
 
     @Test
-    public void testCreateCustomer(){
-        Customer customer = new Customer();
-        customer.setCustomerId(10);
-        customer.setName("Hello");
-        customer.setAddress("Vn");
-        assertEquals((Integer)4, customerServices.save(customer));
+    public void testCreateSaleDetail(){
+        SaleDetail saleDetail = new SaleDetail();
+        saleDetail.setSaleDetailId(2);
+        saleDetail.setQuantity(10);
+        assertEquals((Integer)2, saleDetailServices.save(saleDetail));
     }
 
     @Test
-    public void testDeleteCustomer(){
-        assertEquals(true, customerServices.delete(1));
+    public void testDeleteSaleDetail(){
+        assertEquals(true, saleDetailServices.delete(10));
     }
 
     @Test
-    public void testFindCustomer(){
-        assertEquals("JOJO", customerServices.findById(1).getName());
+    public void testFindSaleDetail(){
+        assertEquals(10, saleDetailServices.findById(1).getQuantity());
     }
 }

@@ -10,23 +10,29 @@ import java.util.List;
 /**
  * Created by jojo on 22/01/2016.
  */
-public class SaleDetailServicesImpl implements SaleDetailServices {
+public class SaleDetailServicesImpl implements SaleDetailServices{
     @Autowired
     SaleDetailDao saleDetailDao;
 
-    public List<SaleDetail> getAllSaleDetails() {
+    public List<SaleDetail> getAllSaleDetails(){
         return saleDetailDao.getAllSaleDetails();
     }
 
-    public Integer save(SaleDetail saleDetail) {
+    public Integer save(SaleDetail saleDetail){
         return saleDetailDao.save(saleDetail);
     }
 
-    public void delete(Integer saleDetailId) {
-        saleDetailDao.delete(saleDetailId);
+    public boolean delete(Integer saleDetailId){
+        try{
+            saleDetailDao.delete(saleDetailId);
+            return true;}
+        catch(Exception e)
+        {
+            return false;
+        }
     }
 
-    public SaleDetail findById(Integer saleDetailId) {
+    public SaleDetail findById(Integer saleDetailId){
         return saleDetailDao.findById(saleDetailId);
     }
 }

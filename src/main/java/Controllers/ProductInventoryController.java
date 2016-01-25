@@ -1,7 +1,13 @@
 package Controllers;
 
-import Dao.ProductInventoryDao;
+
+import Models.Inventory;
+import Models.Product;
 import Models.ProductInventory;
+import Services.Impls.InventoryServiceImpl;
+import Services.InventoryServices;
+import Services.ProductInventoryServices;
+import Services.ProductServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,16 +23,26 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductInventoryController {
 
     @Autowired
-    ProductInventoryDao productInventoryDao;
+    ProductInventoryServices productInventoryServices;
+    @Autowired
+    ProductServices productServices;
+    @Autowired
+    InventoryServices inventoryServices;
 
     @RequestMapping("/list")
     public String getListProductInventory() {
-        return productInventoryDao.getAllProductInventory().toString();
+        return productInventoryServices.getAllProductInventory().toString();
     }
 
     @RequestMapping("/add")
-    public void addOneProductInventory() {
-        productInventoryDao.save(new ProductInventory());
+    public String addOneProductInventory() {
+        ProductInventory productInventory = new ProductInventory();
+        Product product =   productServices.findById(0);
+        Inventory inventory = inventoryServices.findById(0);
+        productInventory.setInventoryId(inventory.getInventoryId()) ;
+        productInventory.setProductId(product.getProductId());
+        productInventory.setQuantity(1000);
+        return "Result" +productInventoryServices.save(productInventory);
     }
 
 }

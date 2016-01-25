@@ -24,12 +24,13 @@ public class CustomerServicesImpl implements CustomerServices {
     }
 
     public boolean delete(Integer customerId) {
-       try {
-           customerDao.delete(customerId);
-           return true;
-       }catch (Exception e){
-           return false;
-       }
+        try {
+            customerDao.delete(customerId);
+            return true;
+        }
+        catch (Exception e){
+            return false;
+        }
     }
 
     public Customer findById(Integer customerId) {

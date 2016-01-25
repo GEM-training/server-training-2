@@ -7,7 +7,7 @@ import java.util.Date;
  * Created by hoapham on 20/01/2016.
  */
 @Entity
-@Table(name = "ProductInventory")
+@Table(name = "Product_Inventory")
 public class ProductInventory {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
