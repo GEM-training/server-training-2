@@ -36,4 +36,20 @@ public class DealerTest extends TestCase {
         dealer.setAddress("Vn");
         assertEquals(new Integer(3), dealerServices.save(dealer));
     }
+    @Test
+    public void getStaffFromDealer(){
+        Dealer dealer = dealerServices.findById(1);
+        assertEquals(3,dealer.getListStaffs().size());
+
+    }
+    @Test
+    void  getProductFromDealer(){
+        Dealer dealer = dealerServices.findById(1);
+        assertEquals(5,dealer.getListProducts().size());
+    }
+    @Test
+    public  void getSalesFromDealer(){
+        Dealer dealer = dealerServices.findById(1);
+        assertEquals(1, dealer.getListSales());
+    }
 }
