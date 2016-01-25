@@ -13,7 +13,7 @@ public interface CustomerServices {
 
     Integer save(Customer customer);
 
-    void delete(Integer customerId);
+    boolean delete(Integer customerId);
 
     Customer findById(Integer customerId);
 

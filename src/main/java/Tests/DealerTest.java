@@ -1,8 +1,6 @@
 package Tests;
 
 import Models.Dealer;
-import Models.Product;
-import Models.ProductDealer;
 import Services.DealerServices;
 import Services.ProductDealerServices;
 import Services.ProductServices;
@@ -19,7 +17,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * Created by phong on 1/24/2016.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = { "classpath:/META-INF/spring/dispatcher-servlet.xml" })
+@ContextConfiguration(locations = {"/META-INF/dispatcher-servlet.xml"})
 @Transactional
 @Configuration
 public class DealerTest extends TestCase{

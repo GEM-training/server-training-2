@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by phong on 1/24/2016.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"classpath:/META-INF/spring/dispatcher-servlet.xml"})
+@ContextConfiguration(locations = {"classpath:/META-INF/dispatcher-servlet.xml"})
 @Transactional
 @Configuration
 public class StaffTest extends TestCase {
