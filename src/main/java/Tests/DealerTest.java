@@ -1,8 +1,6 @@
 package Tests;
 
 import Models.Dealer;
-import Models.Product;
-import Models.ProductDealer;
 import Services.DealerServices;
 import Services.ProductDealerServices;
 import Services.ProductServices;

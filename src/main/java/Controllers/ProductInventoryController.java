@@ -20,14 +20,13 @@ public class ProductInventoryController {
     ProductInventoryDao productInventoryDao;
 
     @RequestMapping("/list")
-    public String getListProductInventory()
-    {
+    public String getListProductInventory() {
         return productInventoryDao.getAllProductInventory().toString();
     }
 
     @RequestMapping("/add")
     public void addOneProductInventory() {
-         productInventoryDao.save(new ProductInventory());
+        productInventoryDao.save(new ProductInventory());
     }
 
 }

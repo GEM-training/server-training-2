@@ -18,7 +18,7 @@ import org.springframework.transaction.annotation.Transactional;
  * Created by phong on 1/24/2016.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"/META-INF/dispatcher-servlet.xml"})
+@ContextConfiguration(locations = {"classpath:/META-INF/spring/dispatcher-servlet.xml"})
 @Transactional
 @Configuration
 public class ProductDealerTest extends TestCase {

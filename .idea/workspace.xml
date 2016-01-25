@@ -2,90 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c0759eb-b00c-4062-a3b7-708a854b815a" name="Default" comment="Merge branch 'master' of https://github.com/GEM-training/server-training-2&#10;&#10;Conflicts:&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductController.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductDealerController.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/DealerDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/DealersDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/InventoryDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/InventoryDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/MakeDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDealerDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDealerDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductInventoryDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductInventoryDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDetailDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDetailDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/StaffDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/ProductDealer.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/ProductInventory.class&#10;&#9;src/main/java/Controllers/ProductInventoryController.java&#10;&#9;target/classes/Controllers/ProductController.class&#10;&#9;target/classes/Controllers/ProductDealerController.class&#10;&#9;target/classes/Dao/CustomerDao.class&#10;&#9;target/classes/Dao/CustomerDaoImpl.class&#10;&#9;target/classes/Dao/DealerDaoImpl.class&#10;&#9;target/classes/Dao/DealersDao.class&#10;&#9;target/classes/Dao/InventoryDao.class&#10;&#9;target/classes/Dao/InventoryDaoImpl.class&#10;&#9;target/classes/Dao/MakeDao.class&#10;&#9;target/classes/Dao/MakeDaoImpl.class&#10;&#9;target/classes/Dao/ProductDaoImpl.class&#10;&#9;target/classes/Dao/ProductDealerDao.class&#10;&#9;target/classes/Dao/ProductDealerDaoImpl.class&#10;&#9;target/classes/Dao/ProductInventoryDao.class&#10;&#9;target/classes/Dao/ProductInventoryDaoImpl.class&#10;&#9;target/classes/Dao/SaleDao.class&#10;&#9;target/classes/Dao/SaleDaoImpl.class&#10;&#9;target/classes/Dao/SaleDetailDao.class&#10;&#9;target/classes/Dao/SaleDetailDaoImpl.class&#10;&#9;target/classes/Dao/StaffDaoImpl.class&#10;&#9;target/classes/Models/ProductDealer.class&#10;&#9;target/classes/Models/ProductInventory.class&#10;&#9;target/classes/Models/Sale.class&#10;&#9;target/classes/Models/SaleDetail.class&#10;&#9;target/classes/Models/Staff.class&#10;">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/applicationContext.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/MakeController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/Product_DealController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/DealerImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/DealersDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/InventoryDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/InventoryDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/MakesDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductInventoryDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductInventoryDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/Product_dealerDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/Product_dealerImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/StaffImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/StaffsDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/Customer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/Dealer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/Inventory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/Make.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/Product.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/Product_dealer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/Product_inventory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/Sale.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/SaleDetail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/Staff.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/dispatcher-servlet.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/antlr-2.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/classmate-1.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/commons-dbcp-1.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/commons-pool-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/jandex-2.0.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/javassist-3.18.1-GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/jboss-logging-3.3.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/postgresql-9.4-1206-jdbc41.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/servlet-api-2.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/spring-aop-4.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/spring-beans-4.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/spring-context-4.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/spring-core-4.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/spring-expression-4.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/spring-jdbc-4.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/spring-orm-4.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/spring-tx-4.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/spring-web-4.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/spring-webmvc-4.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/validation-api-1.1.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/xml-apis-1.0.b2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Controllers/InventoryController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/MakesDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/StaffsDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Models/Product_dealer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Models/Product_inventory.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Controllers/ProductController.class" afterPath="$PROJECT_DIR$/target/classes/Controllers/ProductController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/InventoryServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/ProductInventoryServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Services/InventoryServices.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Services/ProductInventoryServices.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Tests/CustomerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/DealerController.class" afterPath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/DealerController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/InventoryController.class" afterPath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/InventoryController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductDealerController.class" afterPath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductDealerController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductInventoryController.class" afterPath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductInventoryController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/SaleController.class" afterPath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/SaleController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/SaleDetailController.class" afterPath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/SaleDetailController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/StaffController.class" afterPath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/StaffController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Controllers/ProductInventoryController.class" afterPath="$PROJECT_DIR$/target/classes/Controllers/ProductInventoryController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controllers/CustomerController.java" afterPath="$PROJECT_DIR$/src/main/java/Controllers/CustomerController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controllers/MakeController.java" afterPath="$PROJECT_DIR$/src/main/java/Controllers/MakeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controllers/ProductController.java" afterPath="$PROJECT_DIR$/src/main/java/Controllers/ProductController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controllers/SaleController.java" afterPath="$PROJECT_DIR$/src/main/java/Controllers/SaleController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controllers/SaleDetailController.java" afterPath="$PROJECT_DIR$/src/main/java/Controllers/SaleDetailController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Models/Make.java" afterPath="$PROJECT_DIR$/src/main/java/Models/Make.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Models/ProductInventory.java" afterPath="$PROJECT_DIR$/src/main/java/Models/ProductInventory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Models/Sale.java" afterPath="$PROJECT_DIR$/src/main/java/Models/Sale.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Models/SaleDetail.java" afterPath="$PROJECT_DIR$/src/main/java/Models/SaleDetail.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Models/Staff.java" afterPath="$PROJECT_DIR$/src/main/java/Models/Staff.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/Impls/CustomerServicesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/CustomerServicesImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/Impls/DealerServicesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/DealerServicesImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/Impls/ProductDealerServicesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/ProductDealerServicesImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/Impls/ProductServicesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/ProductServicesImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/Impls/SaleDetailServicesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/SaleDetailServicesImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/Impls/SaleServicesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/SaleServicesImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/Impls/StaffServicesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/StaffServicesImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/CustomerServices.java" afterPath="$PROJECT_DIR$/src/main/java/Services/CustomerServices.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Tests/DealerTest.java" afterPath="$PROJECT_DIR$/src/main/java/Tests/DealerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Tests/ProductTest.java" afterPath="$PROJECT_DIR$/src/main/java/Tests/ProductTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Tests/ProductDealerTest.java" afterPath="$PROJECT_DIR$/src/main/java/Tests/ProductDealerTest.java" />
     </list>
     <list id="d737f3f1-eec0-49b6-8f12-729e5eb658e5" name="Failed commit: Default" comment="test">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controllers/InventoryController.java" afterPath="$PROJECT_DIR$/src/main/java/Controllers/InventoryController.java" />
@@ -143,7 +76,7 @@
       <file leaf-file-name="InventoryController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Controllers/InventoryController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75238097">
+            <state vertical-scroll-proportion="1.119403">
               <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -238,6 +171,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,8 +183,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -787,12 +720,13 @@
       <option name="number" value="Default" />
       <updated>1453694585922</updated>
       <workItem from="1453694587069" duration="41000" />
+      <workItem from="1453694690576" duration="18000" />
     </task>
     <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5416000" />
+    <option name="totallyTimeSpent" value="5434000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1295" height="744" extended-state="6" />
@@ -809,10 +743,9 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3552239" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40308088" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -825,15 +758,16 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -855,8 +789,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -879,6 +813,49 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controllers/StaffController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controllers/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <folding>
+            <element signature="e#1167#1168#0" expanded="true" />
+            <element signature="e#1228#1229#0" expanded="true" />
+            <element signature="e#1324#1325#0" expanded="true" />
+            <element signature="e#1370#1371#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controllers/InventoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controllers/ProductInventoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#632#633#0" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Controllers/StaffController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1086,7 +1063,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Controllers/InventoryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75238097">
+        <state vertical-scroll-proportion="1.119403">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
