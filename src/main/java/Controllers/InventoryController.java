@@ -1,7 +1,7 @@
 package Controllers;
 
-import Dao.InventoryDao;
 import Models.Inventory;
+import Services.InventoryServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,23 +19,22 @@ import org.springframework.web.bind.annotation.RestController;
 @Transactional
 public class InventoryController {
     @Autowired
-    InventoryDao inventoryDao;
+    InventoryServices inventoryServices;
 
     @RequestMapping("/list")
     public String listInventory() {
-        return inventoryDao.getAllInventory().toString();
+        return inventoryServices.getAllInventory().toString();
     }
 
     @RequestMapping("/add")
     public void addInventory() {
-        inventoryDao.save(new Inventory());
+        inventoryServices.save(new Inventory());
     }
 
     @RequestMapping(value = "/delete/{inventoryId}", method = RequestMethod.GET)
     public String deleteInventory(@PathVariable("inventoryId") Integer inventoryId) {
-        inventoryDao.delete(inventoryId);
+        inventoryServices.delete(inventoryId);
         return "delete inventory success";
     }
-
 
 }

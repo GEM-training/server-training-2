@@ -32,7 +32,7 @@ public class Product {
     @OneToMany(mappedBy = "unit")
     private Set<Product> listParts;
 
-    @ManyToMany(mappedBy = "listProducts")
+    @ManyToMany(mappedBy = "listProducts",fetch = FetchType.LAZY)
     private Set<Dealer> listDealers;
 
     @ManyToMany(mappedBy = "listProducts")

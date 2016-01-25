@@ -3,6 +3,7 @@ package Controllers;
 import Dao.ProductDao;
 import Dao.ProductDealerDao;
 import Models.Product;
+import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -50,11 +51,12 @@ public class ProductController {
 
     @RequestMapping(value = "/getDealers/{productId}")
     public String getDealers(@PathVariable("productId") Integer productId) {
-        return productDao.findById(productId).getListDealers().toString();
+        Product product = productDao.findById(productId);
+        return product.getListDealers().toString();
     }
 
     @RequestMapping(value = "/getInventories/{productId}")
     public String getInventories(@PathVariable("productId") Integer productId) {
-        return productDao.findById(productId).getListDealers().toString();
+        return productDao.findById(productId).getListInventories().toString();
     }
 }

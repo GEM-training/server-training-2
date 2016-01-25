@@ -30,46 +30,27 @@ public class StaffTest extends TestCase {
     @Autowired
     DealerServices dealerServices;
 
-    public int createStaff() {
+    @Test
+    public void createStaff() {
         Staff staff = new Staff();
         staff.setStaffId(10);
         staff.setName("Nguyen A");
         staff.setAddress("Hanoi");
         staff.setPhone("090900909");
-        staff.setDealer(dealerServices.getAllDealers().get(0));
-        return staffServices.save(staff);
+
+        assertEquals(new Integer(20),staffServices.save(staff));
     }
 
     // join 2 table
-    public int getDealerFromStaff() {
+    @Test
+    public void getDealerFromStaff() {
         Dealer dealer = staffServices.findById(10).getDealer();
-        return dealer.getDealerId();
+        assertEquals(7,dealer.getDealerId());
     }
 
-    public int countStaff() {
-        return staffServices.getAllStaffs().size();
-    }
-
-    @Test
-    public void testStaffTable() {
-        assertEquals(10, createStaff());
 
 
-    }
 
-    @Test
-    public void test1StaffTable() {
-
-        assertEquals(0, getDealerFromStaff());
-
-    }
-
-    @Test
-    public void test2StaffTable() {
-
-        assertEquals(2, countStaff());
-
-    }
 
 
 }
