@@ -18,7 +18,7 @@ import org.springframework.transaction.annotation.Transactional;
  * Created by phong on 1/24/2016.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"classpath:/META-INF/spring/dispatcher-servlet.xml"})
+@ContextConfiguration(locations = {"classpath:/META-INF/dispatcher-servlet.xml"})
 @Transactional
 @Configuration
 public class ProductDealerTest extends TestCase {
@@ -28,58 +28,40 @@ public class ProductDealerTest extends TestCase {
     DealerServices dealerServices;
     @Autowired
     ProductDealerServices productDealerServices;
-
-    public int createProductDealer() {
+    @Test
+    public void  addProductDealer() {
         Dealer dealer = dealerServices.getAllDealers().get(0);
         Product product = productServices.getAllProducts().get(0);
         ProductDealer productDealer = new ProductDealer();
         productDealer.setProductDealerId(100);
         productDealer.setDealerId(dealer.getDealerId());
         productDealer.setProductId(product.getProductId());
-        return productDealerServices.save(productDealer);
+        assertEquals(new Integer(20),productDealerServices.save(productDealer));
     }
 
     //join 2 table
     //
-    public int getDealerFromProductDealer(int productDealerId) {
-        ProductDealer productDealer = productDealerServices.findById(productDealerId);
-        return productDealer.getDealerId();
+    @Test
+    public void getDealerFromProductDealer() {
+        ProductDealer productDealer = productDealerServices.findById(1);
+        assertEquals(1,productDealer.getDealerId());
 
     }
 
     // join 3 tables
     //get make from product dealer
-    public int getMakeFromProductDealer(int productDealerId) {
-        ProductDealer productDealer = productDealerServices.findById(productDealerId);
+    @Test
+    public void getMakeFromProductDealer() {
+        ProductDealer productDealer = productDealerServices.findById(1);
         int productId = productDealer.getProductId();
         Product product = productServices.findById(productId);
         Make make = product.getMake();
-        return make.getMakeId();
+        assertEquals(5,make.getMakeId());
 
 
     }
 
-    @Test
-    public void testProductDealerTable() {
-        assertEquals(100, createProductDealer());
 
-    }
-
-    @Test
-    public void test1ProductDealerTable() {
-
-        assertEquals(0, getDealerFromProductDealer(100));
-
-
-    }
-
-    @Test
-    public void test2ProductDealerTable() {
-
-
-        assertEquals(10, getMakeFromProductDealer(100));
-
-    }
 
 
 }
