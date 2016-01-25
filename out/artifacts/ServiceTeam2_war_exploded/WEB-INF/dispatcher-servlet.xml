@@ -16,7 +16,7 @@
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
           destroy-method="close">
         <property name="driverClassName" value="org.postgresql.Driver"/>
-        <property name="url" value="jdbc:postgresql://172.16.10.202/nhom2"/>
+        <property name="url" value="jdbc:postgresql://localhost/mydb"/>
         <property name="username" value="postgres"/>
         <property name="password" value="postgres"/>
     </bean>
@@ -32,11 +32,20 @@
         <property name="sessionFactory" ref="sessionFactory" />
     </bean>
 
-    <bean id="makeDao" class="Dao.MakeDaoImpl"/>
-    <bean id="dealerDao" class="Dao.DealerImpl"/>
-    <bean id="inventoryDao" class="Dao.InventoryDaoImpl"/>
-    <bean id="productDealerDao" class="Dao.Product_dealerImpl"/>
-    <bean id="productDao" class="Dao.ProductDaoImpl"/>
-    <bean id="productInventoryDao" class="Dao.ProductInventoryDaoImpl"/>
-    <bean id="staffDao" class="Dao.StaffImpl"/>
+    <bean id="makeDao" class="Dao.Impls.MakeDaoImpl"/>
+    <bean id="customerDao" class="Dao.Impls.CustomerDaoImpl"/>
+    <bean id="dealerDao" class="Dao.Impls.DealerDaoImpl"/>
+    <bean id="inventoryDao" class="Dao.Impls.InventoryDaoImpl"/>
+    <bean id="productDao" class="Dao.Impls.ProductDaoImpl"/>
+    <bean id="saleDao" class="Dao.Impls.SaleDaoImpl"/>
+    <bean id="saleDetailDao" class="Dao.Impls.SaleDetailDaoImpl"/>
+    <bean id="staffDao" class="Dao.Impls.StaffDaoImpl"/>
+    <bean id="productDealerDao" class="Dao.Impls.ProductDealerDaoImpl"/>
+    <bean id="productInventoryDao" class="Dao.Impls.ProductInventoryDaoImpl"/>
+
+    <bean id="makeServices" class="Services.Impls.MakeServicesImpl"/>
+    <bean id="productServices" class="Services.Impls.ProductServicesImpl"/>
+    <bean id="customerServices" class="Services.Impls.CustomerServicesImpl"/>
+    <bean id="saleServices" class="Services.Impls.SaleServicesImpl"/>
+    <bean id="saleDetailServices" class="Services.Impls.SaleDetailServicesImpl"/>
 </beans>

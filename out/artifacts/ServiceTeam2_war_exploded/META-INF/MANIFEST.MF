@@ -1,13 +1,5 @@
 Manifest-Version: 1.0
 Build-Jdk: 1.7.0_91
-<<<<<<< HEAD
-Built-By: hoapham
-=======
-<<<<<<< HEAD
-Built-By: jojo
-=======
-Built-By: phong
->>>>>>> 511a92bd0f2f07986501755e6ddf14a333bde63d
->>>>>>> 155ef54c5e1491f06ef5dd33e1d200964a211f3f
+Built-By: nguyenkhoi
 Created-By: IntelliJ IDEA
 
