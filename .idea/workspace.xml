@@ -1,131 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c0759eb-b00c-4062-a3b7-708a854b815a" name="Default" comment="Merge branch 'master' of https://github.com/GEM-training/server-training-2&#10;&#10;Conflicts:&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductController.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductDealerController.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/DealerDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/DealersDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/InventoryDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/InventoryDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/MakeDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDealerDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDealerDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductInventoryDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductInventoryDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDetailDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDetailDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/StaffDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/ProductDealer.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/ProductInventory.class&#10;&#9;src/main/java/Controllers/ProductInventoryController.java&#10;&#9;target/classes/Controllers/ProductController.class&#10;&#9;target/classes/Controllers/ProductDealerController.class&#10;&#9;target/classes/Dao/CustomerDao.class&#10;&#9;target/classes/Dao/CustomerDaoImpl.class&#10;&#9;target/classes/Dao/DealerDaoImpl.class&#10;&#9;target/classes/Dao/DealersDao.class&#10;&#9;target/classes/Dao/InventoryDao.class&#10;&#9;target/classes/Dao/InventoryDaoImpl.class&#10;&#9;target/classes/Dao/MakeDao.class&#10;&#9;target/classes/Dao/MakeDaoImpl.class&#10;&#9;target/classes/Dao/ProductDaoImpl.class&#10;&#9;target/classes/Dao/ProductDealerDao.class&#10;&#9;target/classes/Dao/ProductDealerDaoImpl.class&#10;&#9;target/classes/Dao/ProductInventoryDao.class&#10;&#9;target/classes/Dao/ProductInventoryDaoImpl.class&#10;&#9;target/classes/Dao/SaleDao.class&#10;&#9;target/classes/Dao/SaleDaoImpl.class&#10;&#9;target/classes/Dao/SaleDetailDao.class&#10;&#9;target/classes/Dao/SaleDetailDaoImpl.class&#10;&#9;target/classes/Dao/StaffDaoImpl.class&#10;&#9;target/classes/Models/ProductDealer.class&#10;&#9;target/classes/Models/ProductInventory.class&#10;&#9;target/classes/Models/Sale.class&#10;&#9;target/classes/Models/SaleDetail.class&#10;&#9;target/classes/Models/Staff.class&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/ServiceTeam2_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/hoapham.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Tests/ProductTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/applicationContext.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/CustomerController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/DealerController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/InventoryController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/MakeController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductDealerController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductInventoryController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/SaleController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/SaleDetailController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/StaffController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/AbstractDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/CustomerDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/DealersDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/InventoryDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/MakeDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/MakesDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDealerDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductInventoryDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDetailDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/StaffDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/StaffsDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/Customer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/Dealer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/Inventory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/Make.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/Product.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/ProductDealer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/ProductInventory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/Product_dealer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/Product_inventory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/Sale.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/SaleDetail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/Staff.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/dispatcher-servlet.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/hibernate.cfg.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/antlr-2.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/classmate-1.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/commons-dbcp-1.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/commons-pool-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/dom4j-1.6.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/hibernate-commons-annotations-5.0.1.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/hibernate-core-5.0.7.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/hibernate-validator-5.1.3.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/jandex-2.0.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/javassist-3.18.1-GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/jboss-logging-3.3.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/postgresql-9.4-1206-jdbc41.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/servlet-api-2.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/spring-aop-4.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/spring-beans-4.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/spring-context-4.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/spring-core-4.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/spring-expression-4.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/spring-jdbc-4.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/spring-orm-4.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/spring-tx-4.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/spring-web-4.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/spring-webmvc-4.2.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/validation-api-1.1.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/lib/xml-apis-1.0.b2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/ServiceTeam2_war_exploded/index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/MakesDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/StaffsDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Models/Product_dealer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Models/Product_inventory.class" afterPath="" />
+    <list default="true" id="7c0759eb-b00c-4062-a3b7-708a854b815a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Controllers/CustomerController.class" afterPath="$PROJECT_DIR$/target/classes/Controllers/CustomerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Controllers/ProductController.class" afterPath="$PROJECT_DIR$/target/classes/Controllers/ProductController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Controllers/ProductInventoryController.class" afterPath="$PROJECT_DIR$/target/classes/Controllers/ProductInventoryController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Controllers/SaleController.class" afterPath="$PROJECT_DIR$/target/classes/Controllers/SaleController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Controllers/SaleDetailController.class" afterPath="$PROJECT_DIR$/target/classes/Controllers/SaleDetailController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Models/Staff.class" afterPath="$PROJECT_DIR$/target/classes/Models/Staff.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/ServiceTeam2_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ServiceTeam2_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServiceTeam2.iml" afterPath="$PROJECT_DIR$/ServiceTeam2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controllers/CustomerController.java" afterPath="$PROJECT_DIR$/src/main/java/Controllers/CustomerController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controllers/MakeController.java" afterPath="$PROJECT_DIR$/src/main/java/Controllers/MakeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controllers/ProductController.java" afterPath="$PROJECT_DIR$/src/main/java/Controllers/ProductController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controllers/SaleController.java" afterPath="$PROJECT_DIR$/src/main/java/Controllers/SaleController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controllers/SaleDetailController.java" afterPath="$PROJECT_DIR$/src/main/java/Controllers/SaleDetailController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Models/Inventory.java" afterPath="$PROJECT_DIR$/src/main/java/Models/Inventory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Models/Make.java" afterPath="$PROJECT_DIR$/src/main/java/Models/Make.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Models/ProductInventory.java" afterPath="$PROJECT_DIR$/src/main/java/Models/ProductInventory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Models/Sale.java" afterPath="$PROJECT_DIR$/src/main/java/Models/Sale.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Models/SaleDetail.java" afterPath="$PROJECT_DIR$/src/main/java/Models/SaleDetail.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Models/Staff.java" afterPath="$PROJECT_DIR$/src/main/java/Models/Staff.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/Impls/CustomerServicesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/CustomerServicesImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/Impls/DealerServicesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/DealerServicesImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/Impls/ProductDealerServicesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/ProductDealerServicesImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/Impls/ProductServicesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/ProductServicesImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/Impls/SaleServicesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/SaleServicesImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/Impls/StaffServicesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/StaffServicesImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/ProductServices.java" afterPath="$PROJECT_DIR$/src/main/java/Services/ProductServices.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Tests/DealerTest.java" afterPath="$PROJECT_DIR$/src/main/java/Tests/DealerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Tests/ProductDealerTest.java" afterPath="$PROJECT_DIR$/src/main/java/Tests/ProductDealerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Tests/SaleDetailTest.java" afterPath="$PROJECT_DIR$/src/main/java/Tests/SaleDetailTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Tests/SaleTest.java" afterPath="$PROJECT_DIR$/src/main/java/Tests/SaleTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Tests/StaffTest.java" afterPath="$PROJECT_DIR$/src/main/java/Tests/StaffTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/dispatcher-servlet.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
     </list>
-    <list id="d737f3f1-eec0-49b6-8f12-729e5eb658e5" name="Failed commit: Default" comment="test">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controllers/InventoryController.java" afterPath="$PROJECT_DIR$/src/main/java/Controllers/InventoryController.java" />
-    </list>
-    <list id="dfce0dd9-0cce-4b05-82bd-03a756a96ed7" name="Failed commit: Default (2)" comment="Merge branch 'master' of https://github.com/GEM-training/server-training-2&#10;&#10;Conflicts:&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductController.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductDealerController.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/DealerDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/DealersDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/InventoryDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/InventoryDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/MakeDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDealerDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDealerDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductInventoryDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductInventoryDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDetailDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDetailDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/StaffDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/ProductDealer.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/ProductInventory.class&#10;&#9;src/main/java/Controllers/ProductInventoryController.java&#10;&#9;target/classes/Controllers/ProductController.class&#10;&#9;target/classes/Controllers/ProductDealerController.class&#10;&#9;target/classes/Dao/CustomerDao.class&#10;&#9;target/classes/Dao/CustomerDaoImpl.class&#10;&#9;target/classes/Dao/DealerDaoImpl.class&#10;&#9;target/classes/Dao/DealersDao.class&#10;&#9;target/classes/Dao/InventoryDao.class&#10;&#9;target/classes/Dao/InventoryDaoImpl.class&#10;&#9;target/classes/Dao/MakeDao.class&#10;&#9;target/classes/Dao/MakeDaoImpl.class&#10;&#9;target/classes/Dao/ProductDaoImpl.class&#10;&#9;target/classes/Dao/ProductDealerDao.class&#10;&#9;target/classes/Dao/ProductDealerDaoImpl.class&#10;&#9;target/classes/Dao/ProductInventoryDao.class&#10;&#9;target/classes/Dao/ProductInventoryDaoImpl.class&#10;&#9;target/classes/Dao/SaleDao.class&#10;&#9;target/classes/Dao/SaleDaoImpl.class&#10;&#9;target/classes/Dao/SaleDetailDao.class&#10;&#9;target/classes/Dao/SaleDetailDaoImpl.class&#10;&#9;target/classes/Dao/StaffDaoImpl.class&#10;&#9;target/classes/Models/ProductDealer.class&#10;&#9;target/classes/Models/ProductInventory.class&#10;&#9;target/classes/Models/Sale.class&#10;&#9;target/classes/Models/SaleDetail.class&#10;&#9;target/classes/Models/Staff.class&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Controllers/ProductInventoryController.java" afterPath="$PROJECT_DIR$/src/main/java/Controllers/ProductInventoryController.java" />
-    </list>
+    <list id="d737f3f1-eec0-49b6-8f12-729e5eb658e5" name="Failed commit: Default" comment="test" />
+    <list id="dfce0dd9-0cce-4b05-82bd-03a756a96ed7" name="Failed commit: Default (2)" comment="Merge branch 'master' of https://github.com/GEM-training/server-training-2&#10;&#10;Conflicts:&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductController.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductDealerController.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/DealerDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/DealersDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/InventoryDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/InventoryDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/MakeDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDealerDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDealerDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductInventoryDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductInventoryDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDetailDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDetailDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/StaffDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/ProductDealer.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/ProductInventory.class&#10;&#9;src/main/java/Controllers/ProductInventoryController.java&#10;&#9;target/classes/Controllers/ProductController.class&#10;&#9;target/classes/Controllers/ProductDealerController.class&#10;&#9;target/classes/Dao/CustomerDao.class&#10;&#9;target/classes/Dao/CustomerDaoImpl.class&#10;&#9;target/classes/Dao/DealerDaoImpl.class&#10;&#9;target/classes/Dao/DealersDao.class&#10;&#9;target/classes/Dao/InventoryDao.class&#10;&#9;target/classes/Dao/InventoryDaoImpl.class&#10;&#9;target/classes/Dao/MakeDao.class&#10;&#9;target/classes/Dao/MakeDaoImpl.class&#10;&#9;target/classes/Dao/ProductDaoImpl.class&#10;&#9;target/classes/Dao/ProductDealerDao.class&#10;&#9;target/classes/Dao/ProductDealerDaoImpl.class&#10;&#9;target/classes/Dao/ProductInventoryDao.class&#10;&#9;target/classes/Dao/ProductInventoryDaoImpl.class&#10;&#9;target/classes/Dao/SaleDao.class&#10;&#9;target/classes/Dao/SaleDaoImpl.class&#10;&#9;target/classes/Dao/SaleDetailDao.class&#10;&#9;target/classes/Dao/SaleDetailDaoImpl.class&#10;&#9;target/classes/Dao/StaffDaoImpl.class&#10;&#9;target/classes/Models/ProductDealer.class&#10;&#9;target/classes/Models/ProductInventory.class&#10;&#9;target/classes/Models/Sale.class&#10;&#9;target/classes/Models/SaleDetail.class&#10;&#9;target/classes/Models/Staff.class&#10;" />
     <ignored path="ServiceTeam2.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -1253,9 +1143,15 @@
       <updated>1453694585922</updated>
       <workItem from="1453694587069" duration="41000" />
       <workItem from="1453694690576" duration="18000" />
-      <workItem from="1453695148603" duration="6168000" />
+      <workItem from="1453695148603" duration="6553000" />
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Change something&#10;">
+      <created>1453706709322</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1453706709322</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1291,7 +1187,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11602000" />
+    <option name="totallyTimeSpent" value="11987000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1535" height="876" extended-state="6" />
@@ -1319,7 +1215,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24169381" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3254364" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3254364" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1336,7 +1232,9 @@
     <MESSAGE value="New changelist" />
     <MESSAGE value="Merge branch 'master' of https://github.com/GEM-training/server-training-2&#10;&#10;Conflicts:&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductController.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Controllers/ProductDealerController.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/DealerDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/DealersDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/InventoryDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/InventoryDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/MakeDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDealerDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductDealerDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductInventoryDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/ProductInventoryDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDetailDao.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/SaleDetailDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Dao/StaffDaoImpl.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/ProductDealer.class&#10;&#9;out/artifacts/ServiceTeam2_war_exploded/WEB-INF/classes/Models/ProductInventory.class&#10;&#9;src/main/java/Controllers/ProductInventoryController.java&#10;&#9;target/classes/Controllers/ProductController.class&#10;&#9;target/classes/Controllers/ProductDealerController.class&#10;&#9;target/classes/Dao/CustomerDao.class&#10;&#9;target/classes/Dao/CustomerDaoImpl.class&#10;&#9;target/classes/Dao/DealerDaoImpl.class&#10;&#9;target/classes/Dao/DealersDao.class&#10;&#9;target/classes/Dao/InventoryDao.class&#10;&#9;target/classes/Dao/InventoryDaoImpl.class&#10;&#9;target/classes/Dao/MakeDao.class&#10;&#9;target/classes/Dao/MakeDaoImpl.class&#10;&#9;target/classes/Dao/ProductDaoImpl.class&#10;&#9;target/classes/Dao/ProductDealerDao.class&#10;&#9;target/classes/Dao/ProductDealerDaoImpl.class&#10;&#9;target/classes/Dao/ProductInventoryDao.class&#10;&#9;target/classes/Dao/ProductInventoryDaoImpl.class&#10;&#9;target/classes/Dao/SaleDao.class&#10;&#9;target/classes/Dao/SaleDaoImpl.class&#10;&#9;target/classes/Dao/SaleDetailDao.class&#10;&#9;target/classes/Dao/SaleDetailDaoImpl.class&#10;&#9;target/classes/Dao/StaffDaoImpl.class&#10;&#9;target/classes/Models/ProductDealer.class&#10;&#9;target/classes/Models/ProductInventory.class&#10;&#9;target/classes/Models/Sale.class&#10;&#9;target/classes/Models/SaleDetail.class&#10;&#9;target/classes/Models/Staff.class&#10;" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="&#10;" />
+    <MESSAGE value="Change something&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change something&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

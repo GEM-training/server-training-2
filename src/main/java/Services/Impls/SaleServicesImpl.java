@@ -29,6 +29,7 @@ public class SaleServicesImpl implements SaleServices {
         }
         catch (Exception e)
         {
+            e.getStackTrace();
             return false;
         }
     }
