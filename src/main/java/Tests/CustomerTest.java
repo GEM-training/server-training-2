@@ -32,12 +32,12 @@ public class CustomerTest extends TestCase {
         customer.setCustomerId(10);
         customer.setName("Hello");
         customer.setAddress("Vn");
-        assertEquals((Integer)10, customerServices.save(customer));
+        assertEquals((Integer)4, customerServices.save(customer));
     }
 
     @Test
     public void testDeleteCustomer(){
-        assertEquals(false, customerServices.delete(1));
+        assertEquals(true, customerServices.delete(1));
     }
 
     @Test

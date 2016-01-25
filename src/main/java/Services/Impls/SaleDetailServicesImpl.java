@@ -22,8 +22,14 @@ public class SaleDetailServicesImpl implements SaleDetailServices{
         return saleDetailDao.save(saleDetail);
     }
 
-    public void delete(Integer saleDetailId){
-        saleDetailDao.delete(saleDetailId);
+    public boolean delete(Integer saleDetailId){
+        try{
+            saleDetailDao.delete(saleDetailId);
+            return true;}
+        catch(Exception e)
+        {
+            return false;
+        }
     }
 
     public SaleDetail findById(Integer saleDetailId){

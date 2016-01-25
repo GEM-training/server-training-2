@@ -1,6 +1,6 @@
 package Controllers;
 import Dao.InventoryDao;
-import Dao.InventoryDaoImpl;
+import Dao.Impls.InventoryDaoImpl;
 import Models.Inventory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;

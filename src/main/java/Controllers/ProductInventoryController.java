@@ -30,6 +30,6 @@ public class ProductInventoryController {
          productInventoryDao.save(new ProductInventory());
     }
 
-    @RequestMapping("delete")
+    //@RequestMapping("delete")
 
 }
