@@ -25,6 +25,8 @@ public class ProductInventory {
     private Date updatedDate;
 
     public ProductInventory() {
+        createdDate=new Date(System.currentTimeMillis());
+        updatedDate=new Date(System.currentTimeMillis());
     }
 
     public int getProductInventoryId() {

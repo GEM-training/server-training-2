@@ -24,6 +24,8 @@ public class ProductDealer {
     private Date updatedDate;
 
     public ProductDealer() {
+        createdDate=new Date(System.currentTimeMillis());
+        updatedDate=new Date(System.currentTimeMillis());
     }
 
     public int getProductDealerId() {

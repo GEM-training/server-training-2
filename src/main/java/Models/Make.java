@@ -1,5 +1,8 @@
 package Models;
 
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Date;
 import java.util.Set;
@@ -22,10 +25,13 @@ public class Make {
     @Column(name = "updated_date")
     private Date updatedDate;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "make")
     Set<Product> setProducts;
 
     public Make() {
+        createdDate=new Date(System.currentTimeMillis());
+        updatedDate=new Date(System.currentTimeMillis());
     }
 
     public int getMakeId() {
@@ -84,6 +90,12 @@ public class Make {
         this.setProducts = setProducts;
     }
 
+    public void setProducts(Set<Product> setProducts) {
+        this.setProducts = setProducts;
+    }
+    public Set<Product> getProducts() {
+        return setProducts;
+    }
 
     @Override
     public String toString() {
