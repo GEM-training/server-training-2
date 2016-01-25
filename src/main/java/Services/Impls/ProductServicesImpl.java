@@ -30,10 +30,10 @@ public class ProductServicesImpl implements ProductServices {
     }
 
     public boolean delete(Integer productId) {
-        try{
+        try {
             productDao.delete(productId);
             return true;
-        }catch (Exception e){
+        } catch (Exception e) {
             return false;
         }
     }

@@ -13,6 +13,7 @@ import java.util.List;
 public class StaffServicesImpl implements StaffServices {
     @Autowired
     StaffDao staffDao;
+
     public List<Staff> getAllStaffs() {
         return staffDao.getAllStaffs();
     }

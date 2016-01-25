@@ -14,19 +14,20 @@ import java.util.List;
 public class SaleServicesImpl implements SaleServices {
     @Autowired
     SaleDao saleDao;
-    public List<Sale> getAllSales(){
+
+    public List<Sale> getAllSales() {
         return saleDao.getAllSales();
     }
 
-    public Integer save(Sale sale){
+    public Integer save(Sale sale) {
         return saleDao.save(sale);
     }
 
-    public void delete(Integer saleId){
+    public void delete(Integer saleId) {
         saleDao.delete(saleId);
     }
 
-    public Sale findById(Integer saleId){
+    public Sale findById(Integer saleId) {
         return saleDao.findById(saleId);
     }
 }

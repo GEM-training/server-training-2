@@ -19,10 +19,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * Created by phong on 1/24/2016.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = { "/META-INF/dispatcher-servlet.xml" })
+@ContextConfiguration(locations = {"/META-INF/dispatcher-servlet.xml"})
 @Transactional
 @Configuration
-public class DealerTest extends TestCase{
+public class DealerTest extends TestCase {
     @Autowired
     ProductServices productServices;
     @Autowired
@@ -31,11 +31,11 @@ public class DealerTest extends TestCase{
     ProductDealerServices productDealerServices;
 
     @Test
-    public void testDealerTable(){
+    public void testDealerTable() {
         Dealer dealer = new Dealer();
         dealer.setDealerId(10);
         dealer.setName("Hello");
         dealer.setAddress("Vn");
-        assertEquals(new Integer(3),dealerServices.save(dealer));
+        assertEquals(new Integer(3), dealerServices.save(dealer));
     }
 }

@@ -23,27 +23,27 @@ public class CustomerController {
     @Autowired
     CustomerServices customerServices;
 
-    @RequestMapping(value = "/list",method= RequestMethod.GET)
-    public String getListCustomer(){
-        return ""+customerServices.getAllCustomers();
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    public String getListCustomer() {
+        return "" + customerServices.getAllCustomers();
     }
 
     @RequestMapping(value = "/add-one")
-    public String addOneCustomer(){
+    public String addOneCustomer() {
         Customer customer = new Customer();
-        customer.setName("Make demo no "+customerServices.getAllCustomers().size());
+        customer.setName("Make demo no " + customerServices.getAllCustomers().size());
         customerServices.save(customer);
         return "Successful";
     }
 
     @RequestMapping(value = "/delete-one")
-    public void delete(){
+    public void delete() {
         Customer customer = new Customer();
         customerServices.delete(1);
     }
 
     @RequestMapping(value = "/find-one")
-    public String findCustomer(){
+    public String findCustomer() {
         return customerServices.findById(1).getName();
     }
 }

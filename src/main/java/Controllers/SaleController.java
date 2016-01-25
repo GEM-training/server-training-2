@@ -20,26 +20,26 @@ public class SaleController {
     @Autowired
     SaleServices saleServices;
 
-    @RequestMapping(value = "/list",method= RequestMethod.GET)
-    public String getListSale(){
-        return ""+saleServices.getAllSales();
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    public String getListSale() {
+        return "" + saleServices.getAllSales();
     }
 
     @RequestMapping(value = "/add-one")
-    public String addOneSale(){
+    public String addOneSale() {
         Sale sale = new Sale();
         saleServices.save(sale);
         return "Successful";
     }
 
     @RequestMapping(value = "/delete-one")
-    public void delete(){
+    public void delete() {
         Sale customer = new Sale();
         saleServices.delete(1);
     }
 
     @RequestMapping(value = "/find-one")
-    public String findCustomer(){
+    public String findCustomer() {
         return saleServices.findById(1).getCustomer().getName();
     }
 }
