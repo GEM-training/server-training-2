@@ -13,10 +13,9 @@
         <!-- Disable the second-level cache -->
         <!-- Echo all executed SQL to stdout -->
         <property name="show_sql">true</property>
-           <!--<property name="hbm2ddl.auto">update</property>-->
+        <property name="hbm2ddl.auto">update</property>
 
         <!-- DB schema will be updated if needed -->
-        <property name="hbm2ddl.auto">update</property>
         <mapping class="Models.Make"/>
         <mapping class="Models.Product"/>
         <mapping class="Models.Inventory"/>

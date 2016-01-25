@@ -17,7 +17,7 @@ public interface ProductServices {
 
     Integer save(Product product);
 
-    void delete(Integer productId);
+    boolean delete(Integer productId);
 
     List<Dealer> getDealers(Integer productId);
 

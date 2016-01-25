@@ -29,8 +29,13 @@ public class ProductServicesImpl implements ProductServices {
         return productDao.save(product);
     }
 
-    public void delete(Integer productId) {
-        productDao.delete(productId);
+    public boolean delete(Integer productId) {
+        try {
+            productDao.delete(productId);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     public List<Dealer> getDealers(Integer productId) {

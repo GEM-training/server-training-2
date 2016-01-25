@@ -21,21 +21,21 @@ public class MakeController {
     @Autowired
     MakeServices makeServices;
 
-    @RequestMapping(value = "/list",method= RequestMethod.GET)
-    public String getListMakes(){
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    public String getListMakes() {
         return makeServices.getAllMakes().toString();
     }
 
     @RequestMapping(value = "/add-one")
-    public String addOneMake(){
+    public String addOneMake() {
         Make make = new Make();
-        make.setName("Make demo no "+makeServices.getAllMakes().size());
+        make.setName("Make demo no " + makeServices.getAllMakes().size());
         makeServices.save(make);
         return "Successful";
     }
 
     @RequestMapping(value = "/delete/{makeId}")
-    public String deleteMake(@PathVariable("makeId")Integer makeId){
+    public String deleteMake(@PathVariable("makeId") Integer makeId) {
         makeServices.delete(makeId);
         return "deleted";
     }

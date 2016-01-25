@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Created by jojo on 22/01/2016.
  */
-public class CustomerServicesImpl implements CustomerServices{
+public class CustomerServicesImpl implements CustomerServices {
     @Autowired
     CustomerDao customerDao;
 
@@ -19,27 +19,19 @@ public class CustomerServicesImpl implements CustomerServices{
         return customerDao.getAllCustomers();
     }
 
-    public Integer save(Customer customer){
+    public Integer save(Customer customer) {
         return customerDao.save(customer);
     }
 
-    public boolean delete(Integer customerId)
-    {
-        try{
-            customerDao.delete(customerId);
-            return true;
-        }
-        catch (Exception e)
-        {
-            return false;
-        }
+    public void delete(Integer customerId) {
+        customerDao.delete(customerId);
     }
 
-    public Customer findById(Integer customerId){
+    public Customer findById(Integer customerId) {
         return customerDao.findById(customerId);
     }
 
-    public List<Sale> getAllSale(Integer customerId){
+    public List<Sale> getAllSale(Integer customerId) {
         return customerDao.getAllSale(customerId);
     }
 }

@@ -1,6 +1,6 @@
 package Controllers;
+
 import Dao.InventoryDao;
-import Dao.Impls.InventoryDaoImpl;
 import Models.Inventory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
@@ -31,12 +31,11 @@ public class InventoryController {
         inventoryDao.save(new Inventory());
     }
 
-    @RequestMapping(value="/delete/{inventoryId}", method = RequestMethod.GET)
-    public String deleteInventory(@PathVariable("inventoryId")Integer inventoryId) {
+    @RequestMapping(value = "/delete/{inventoryId}", method = RequestMethod.GET)
+    public String deleteInventory(@PathVariable("inventoryId") Integer inventoryId) {
         inventoryDao.delete(inventoryId);
         return "delete inventory success";
     }
-
 
 
 }

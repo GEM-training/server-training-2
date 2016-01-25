@@ -39,9 +39,22 @@ public class ProductController {
     }
 
     @RequestMapping(value = "/list-parts/{productId}")
-    public String getListParts(@PathVariable("productId")Integer productId){
+    public String getListParts(@PathVariable("productId") Integer productId) {
         return productDao.findById(productId).getListParts().toString();
     }
 
+    @RequestMapping(value = "/find/{productId}")
+    public String getProduct(@PathVariable("productId") Integer productId) {
+        return productDao.findById(productId).toString();
+    }
 
+    @RequestMapping(value = "/getDealers/{productId}")
+    public String getDealers(@PathVariable("productId") Integer productId) {
+        return productDao.findById(productId).getListDealers().toString();
+    }
+
+    @RequestMapping(value = "/getInventories/{productId}")
+    public String getInventories(@PathVariable("productId") Integer productId) {
+        return productDao.findById(productId).getListDealers().toString();
+    }
 }

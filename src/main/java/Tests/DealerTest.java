@@ -20,7 +20,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration(locations = {"/META-INF/dispatcher-servlet.xml"})
 @Transactional
 @Configuration
-public class DealerTest extends TestCase{
+public class DealerTest extends TestCase {
     @Autowired
     ProductServices productServices;
     @Autowired
@@ -28,17 +28,12 @@ public class DealerTest extends TestCase{
     @Autowired
     ProductDealerServices productDealerServices;
 
-    public int  createDealer(){
+    @Test
+    public void testDealerTable() {
         Dealer dealer = new Dealer();
         dealer.setDealerId(10);
         dealer.setName("Hello");
         dealer.setAddress("Vn");
-        return  dealerServices.save(dealer);
-
-    }
-
-    @Test
-    public void testDealerTable(){
-        assertEquals(10,createDealer());
+        assertEquals(new Integer(3), dealerServices.save(dealer));
     }
 }

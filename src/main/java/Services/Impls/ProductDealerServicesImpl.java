@@ -10,9 +10,10 @@ import java.util.List;
 /**
  * Created by phong on 1/22/2016.
  */
-public class ProductDealerServicesImpl implements ProductDealerServices{
+public class ProductDealerServicesImpl implements ProductDealerServices {
     @Autowired
     ProductDealerDao productDealerDao;
+
     public List<ProductDealer> getAllProductDealers() {
         return productDealerDao.getAllProductDeals();
     }

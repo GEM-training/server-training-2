@@ -11,7 +11,7 @@ import java.util.Set;
 @Table(name = "Makes")
 public class Make {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "make_id")
     private int makeId;
     private String address;

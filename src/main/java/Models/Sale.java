@@ -11,12 +11,12 @@ import java.util.Set;
 @Table(name = "SaleDao")
 public class Sale {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "sale_id")
     private int saleId;
 
-    @ManyToOne( fetch = FetchType.LAZY)
-    @JoinColumn(name="customer_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "customer_id")
     private Customer customer;
 
     @ManyToOne(fetch = FetchType.LAZY)
@@ -24,7 +24,7 @@ public class Sale {
     private Dealer dealer;
 
     @ManyToMany
-    @JoinTable(name = "Sale_details",joinColumns = @JoinColumn(name = "sale_id"),inverseJoinColumns = @JoinColumn(name = "product_id"))
+    @JoinTable(name = "Sale_details", joinColumns = @JoinColumn(name = "sale_id"), inverseJoinColumns = @JoinColumn(name = "product_id"))
     private Set<Product> listProducts;
 
     @OneToMany(mappedBy = "sale")

@@ -14,6 +14,7 @@ import java.util.List;
 public class DealerServicesImpl implements DealerServices {
     @Autowired
     DealersDao dealersDao;
+
     public List<Dealer> getAllDealers() {
         return dealersDao.getAllDealers();
     }

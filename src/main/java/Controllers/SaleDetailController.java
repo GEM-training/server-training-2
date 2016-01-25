@@ -22,26 +22,26 @@ public class SaleDetailController {
     @Autowired
     SaleDetailServices saleDetailServices;
 
-    @RequestMapping(value = "/list",method= RequestMethod.GET)
-    public String getListSaleDetail(){
-            return ""+saleDetailServices.getAllSaleDetails();
-        }
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    public String getListSaleDetail() {
+        return "" + saleDetailServices.getAllSaleDetails();
+    }
 
     @RequestMapping(value = "/add-one")
-    public String addOneSaleDetail(){
+    public String addOneSaleDetail() {
         SaleDetail saleDetail = new SaleDetail();
         saleDetailServices.save(saleDetail);
         return "Successful";
     }
 
     @RequestMapping(value = "/delete-one")
-    public void delete(){
+    public void delete() {
         SaleDetail SaleDetail = new SaleDetail();
         saleDetailServices.delete(1);
     }
 
     @RequestMapping(value = "/find-one")
-    public Sale findSaleDetail(){
+    public Sale findSaleDetail() {
         return saleDetailServices.findById(1).getSale();
     }
 }
