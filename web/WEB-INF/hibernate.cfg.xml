@@ -17,10 +17,10 @@
         <mapping class="Models.Inventory"/>
         <mapping class="Models.Customer"/>
         <mapping class="Models.Dealer"/>
-        <mapping class="Models.Product_inventory"/>
+        <mapping class="Models.ProductInventory"/>
         <mapping class="Models.Sale"/>
         <mapping class="Models.SaleDetail"/>
         <mapping class="Models.Staff"/>
-        <mapping class="Models.Product_dealer"/>
+        <mapping class="Models.ProductDealer"/>
     </session-factory>
 </hibernate-configuration>

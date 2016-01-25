@@ -1,8 +1,6 @@
 package Controllers;
 
-import Dao.InventoryDao;
 import Dao.MakesDao;
-import Dao.ProductDao;
 import Models.Make;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,15 +15,18 @@ import org.springframework.web.bind.annotation.RestController;
 @Transactional
 public class MakeController {
     @Autowired
-    InventoryDao inventoryDao;
+    MakesDao makesDao;
 
     @RequestMapping(value = "/list")
     public String listMakes(){
-        return ""+inventoryDao.getAllInventory().get(0).getListProducts();
+        return ""+makesDao.getAllMakes().size();
     }
 
     @RequestMapping(value = "/add-one")
     public String addOneMake(){
-        return "";
+        Make make = new Make();
+        make.setName("Make demo no "+makesDao.getAllMakes().size());
+        makesDao.save(make);
+        return "Successful";
     }
 }

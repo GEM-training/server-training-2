@@ -7,8 +7,8 @@ import java.util.Date;
  * Created by hoapham on 20/01/2016.
  */
 @Entity
-@Table(name = "Product_dealer")
-public class Product_dealer {
+@Table(name = "ProductDealer")
+public class ProductDealer {
     @Id
     @GeneratedValue
     private int product_dealer_id;
@@ -18,7 +18,7 @@ public class Product_dealer {
     private Date created_date;
     private Date updated_date;
 
-    public Product_dealer() {
+    public ProductDealer() {
     }
 
     public int getProduct_dealer_id() {

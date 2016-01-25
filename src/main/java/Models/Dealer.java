@@ -23,7 +23,7 @@ public class Dealer {
     private Set<Inventory>setInventories;
 
     @ManyToMany
-    @JoinTable(name = "Product_dealer", joinColumns=@JoinColumn(name = "dealer_id"),inverseJoinColumns = @JoinColumn(name = "product_id"))
+    @JoinTable(name = "ProductDealer", joinColumns=@JoinColumn(name = "dealer_id"),inverseJoinColumns = @JoinColumn(name = "product_id"))
     private Set<Product> listProducts;
 
     @OneToMany(mappedBy = "dealer")
