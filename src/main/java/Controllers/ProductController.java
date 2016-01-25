@@ -57,6 +57,6 @@ public class ProductController {
 
     @RequestMapping(value = "/getInventories/{productId}")
     public String getInventories(@PathVariable("productId") Integer productId) {
-        return productDao.findById(productId).getListDealers().toString();
+        return productDao.findById(productId).getListInventories().toString();
     }
 }
