@@ -51,4 +51,6 @@
     <bean id="productDealerServices" class="Services.Impls.ProductDealerServicesImpl"/>
     <bean id="dealerServices" class="Services.Impls.DealerServicesImpl"/>
     <bean id="staffServices" class="Services.Impls.StaffServicesImpl"/>
+    <bean id="productInventoryServices" class="Services.Impls.ProductInventoryServiceImpl"/>
+    <bean id="inventoryService" class="Services.Impls.InventoryServiceImpl"/>
 </beans>
