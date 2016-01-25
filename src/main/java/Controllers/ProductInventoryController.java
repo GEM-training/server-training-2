@@ -20,7 +20,8 @@ public class ProductInventoryController {
     ProductInventoryDao productInventoryDao;
 
     @RequestMapping("/list")
-    public String getListProductInventory() {
+    public String getListProductInventory()
+    {
         return productInventoryDao.getAllProductInventory().toString();
     }
 
@@ -28,5 +29,7 @@ public class ProductInventoryController {
     public void addOneProductInventory() {
          productInventoryDao.save(new ProductInventory());
     }
+
+    @RequestMapping("delete")
 
 }
