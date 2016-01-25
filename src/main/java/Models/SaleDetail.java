@@ -29,6 +29,8 @@ public class SaleDetail {
     private Date updatedDate;
 
     public SaleDetail() {
+        createdDate=new Date(System.currentTimeMillis());
+        updatedDate=new Date(System.currentTimeMillis());
     }
 
     public int getSaleDetailId() {

@@ -37,6 +37,8 @@ public class Sale {
     private Date updatedDate;
 
     public Sale() {
+        createdDate=new Date(System.currentTimeMillis());
+        updatedDate=new Date(System.currentTimeMillis());
     }
 
     public int getSaleId() {

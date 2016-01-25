@@ -28,6 +28,8 @@ public class Customer {
     private Set<Sale> setSales;
 
     public Customer() {
+        createdDate=new Date(System.currentTimeMillis());
+        updatedDate=new Date(System.currentTimeMillis());
     }
 
     public int getCustomerId() {
