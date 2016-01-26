@@ -47,10 +47,4 @@ public class StaffTest extends TestCase {
         Dealer dealer = staffServices.findById(10).getDealer();
         assertEquals(7,dealer.getDealerId());
     }
-
-
-
-
-
-
 }
