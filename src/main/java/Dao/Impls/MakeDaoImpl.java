@@ -26,6 +26,10 @@ public class MakeDaoImpl extends AbstractDao implements MakeDao {
         return (Integer) getSession().save(make);
     }
 
+    public void saveOrUpdate(Make make) {
+        getSession().saveOrUpdate(make);
+    }
+
     public Set<Product> getProducts(Integer makeId) {
         Make make = findById(makeId);
         Hibernate.initialize(make.getSetProducts());

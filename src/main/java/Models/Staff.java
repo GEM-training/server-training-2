@@ -13,6 +13,9 @@ public class Staff {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "staff_id")
     private int staffId;
+    private String username;
+    private String password;
+    private String role;
     private String name;
     private String phone;
     private String address;
@@ -86,8 +89,27 @@ public class Staff {
         this.updatedDate = updatedDate;
     }
 
-    @Override
-    public String toString() {
-        return "ID: " + staffId + ", name: " + name;
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }

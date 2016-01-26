@@ -14,6 +14,8 @@ public interface MakeServices {
 
     Integer save(Make make);
 
+    void saveOrUpdate(Make make);
+
     void delete(Integer makeId);
 
     Make findById(Integer makeId);

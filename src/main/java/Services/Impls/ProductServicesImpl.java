@@ -31,6 +31,10 @@ public class ProductServicesImpl implements ProductServices {
         return productDao.save(product);
     }
 
+    public void saveOrUpdate(Product product) {
+        productDao.saveOrUpdate(product);
+    }
+
     public void delete(Integer productId) {
         productDao.delete(productId);
     }

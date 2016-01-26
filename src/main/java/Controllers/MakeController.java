@@ -47,7 +47,19 @@ public class MakeController {
             Integer makeId = makeServices.save(make);
             return new ResponseObject(true, Constants.HTTP.SUCCESS, makeId);
         } catch (Exception e) {
-            return new ResponseObject(true, e.getCause().toString(), null);
+            return new ResponseObject(false, e.getCause().toString(), null);
+        }
+    }
+
+    @RequestMapping(value = "/update")
+    public
+    @ResponseBody
+    ResponseObject updateMake(@RequestBody Make make) {
+        try {
+            makeServices.saveOrUpdate(make);
+            return new ResponseObject(true, Constants.HTTP.SUCCESS, null);
+        } catch (Exception e) {
+            return new ResponseObject(false, e.getMessage(), null);
         }
     }
 
@@ -65,12 +77,14 @@ public class MakeController {
     }
 
     @RequestMapping(value = "/get-products")
-    public @ResponseBody ResponseObject getProducts(@RequestParam("makeId") Integer makeId) {
-        try{
+    public
+    @ResponseBody
+    ResponseObject getProducts(@RequestParam("makeId") Integer makeId) {
+        try {
             List<Product> products = new ArrayList<Product>(makeServices.getProducts(makeId));
-            return new ResponseObject(true,Constants.HTTP.SUCCESS,products);
-        }catch (Exception e){
-            return new ResponseObject(false,e.getMessage(),null);
+            return new ResponseObject(true, Constants.HTTP.SUCCESS, products);
+        } catch (Exception e) {
+            return new ResponseObject(false, e.getMessage(), null);
         }
     }
 }

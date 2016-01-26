@@ -24,6 +24,10 @@ public class MakeServicesImpl implements MakeServices {
         return makeDao.save(make);
     }
 
+    public void saveOrUpdate(Make make) {
+        makeDao.save(make);
+    }
+
     public void delete(Integer makeId) {
         makeDao.delete(makeId);
     }

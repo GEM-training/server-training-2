@@ -18,6 +18,8 @@ public interface ProductServices {
 
     Integer save(Product product);
 
+    void saveOrUpdate(Product product);
+
     void delete(Integer productId);
 
     Set<Dealer> getDealers(Integer productId);
