@@ -25,8 +25,8 @@ public class Make {
     @Column(name = "updated_date")
     private Date updatedDate;
 
-    @JsonIgnore
     @OneToMany(mappedBy = "make")
+    @JsonIgnore
     Set<Product> setProducts;
 
     public Make() {
@@ -88,13 +88,6 @@ public class Make {
 
     public void setSetProducts(Set<Product> setProducts) {
         this.setProducts = setProducts;
-    }
-
-    public void setProducts(Set<Product> setProducts) {
-        this.setProducts = setProducts;
-    }
-    public Set<Product> getProducts() {
-        return setProducts;
     }
 
     @Override

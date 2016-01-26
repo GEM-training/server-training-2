@@ -7,12 +7,18 @@ import Models.Make;
 import Models.Product;
 import Models.Sale;
 import org.hibernate.Criteria;
+import org.hibernate.Hibernate;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by hoapham on 20/01/2016.
  */
+
+@Transactional
 public class ProductDaoImpl extends AbstractDao implements ProductDao {
 
     public List<Product> getAllProducts() {
@@ -21,7 +27,8 @@ public class ProductDaoImpl extends AbstractDao implements ProductDao {
     }
 
     public Product findById(Integer productId) {
-        return getSession().get(Product.class, productId);
+        Product product = getSession().get(Product.class, productId);
+        return  product;
     }
 
     public Integer save(Product product) {
@@ -33,16 +40,25 @@ public class ProductDaoImpl extends AbstractDao implements ProductDao {
         getSession().delete(product);
     }
 
-    public List<Dealer> getDealers(Integer productId) {
-        return (List<Dealer>) findById(productId).getListDealers();
+    public Set<Dealer> getDealers(Integer productId) {
+        Product product = findById(productId);
+        Hibernate.initialize(product.getListDealers());
+        return product.getListDealers();
     }
 
     public Make getMake(Integer productId) {
         return findById(productId).getMake();
     }
 
-    public List<Sale> getListSales(Integer productId) {
-        return (List<Sale>) findById(productId).getListSales();
+    public Set<Sale> getSales(Integer productId) {
+        Product product = findById(productId);
+        Hibernate.initialize(product.getListSales());
+        return product.getListSales();
     }
 
+    public Set<Product> getParts(Integer productId) {
+        Product product = findById(productId);
+        Hibernate.initialize(product.getListParts());
+        return product.getListParts();
+    }
 }

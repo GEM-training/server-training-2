@@ -6,9 +6,11 @@ import Models.Make;
 import Models.Product;
 import Models.Sale;
 import Services.ProductServices;
+import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by hoak57uet on 1/21/16.
@@ -29,16 +31,11 @@ public class ProductServicesImpl implements ProductServices {
         return productDao.save(product);
     }
 
-    public boolean delete(Integer productId) {
-        try {
-            productDao.delete(productId);
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
+    public void delete(Integer productId) {
+        productDao.delete(productId);
     }
 
-    public List<Dealer> getDealers(Integer productId) {
+    public Set<Dealer> getDealers(Integer productId) {
         return productDao.getDealers(productId);
     }
 
@@ -46,7 +43,11 @@ public class ProductServicesImpl implements ProductServices {
         return productDao.getMake(productId);
     }
 
-    public List<Sale> getListSales(Integer productId) {
-        return productDao.getListSales(productId);
+    public Set<Sale> getSales(Integer productId) {
+        return productDao.getSales(productId);
+    }
+
+    public Set<Product> getParts(Integer productId) {
+        return productDao.getParts(productId);
     }
 }

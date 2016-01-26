@@ -38,7 +38,6 @@ public class ProductTest extends TestCase {
     @Test
     public void constraintDealersTest() {
         Product product = productServices.findById(3);
-        Hibernate.initialize(product.getListDealers());
         assertEquals(1, product.getListDealers().size());
     }
 
@@ -52,16 +51,6 @@ public class ProductTest extends TestCase {
     public void constraintSaleTest() {
         Product product = productServices.findById(3);
         assertEquals(0, product.getListSales().size());
-    }
-
-    @Test
-    public void deleteProductFalse() {
-        assertEquals(false, productServices.delete(100));
-    }
-
-    @Test
-    public void deleteProductTrue() {
-        assertEquals(true, productServices.delete(1));
     }
 
     @Test

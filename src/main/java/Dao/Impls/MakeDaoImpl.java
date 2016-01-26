@@ -2,11 +2,14 @@ package Dao.Impls;
 
 import Dao.AbstractDao;
 import Dao.MakeDao;
+import Models.Inventory;
 import Models.Make;
 import Models.Product;
 import org.hibernate.Criteria;
+import org.hibernate.Hibernate;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by hoapham on 19/01/2016.
@@ -23,8 +26,10 @@ public class MakeDaoImpl extends AbstractDao implements MakeDao {
         return (Integer) getSession().save(make);
     }
 
-    public List<Product> getAllProducts(Integer makeId) {
-        return (List<Product>) findById(makeId).getSetProducts();
+    public Set<Product> getProducts(Integer makeId) {
+        Make make = findById(makeId);
+        Hibernate.initialize(make.getSetProducts());
+        return make.getSetProducts();
     }
 
     public void delete(Integer makeId) {

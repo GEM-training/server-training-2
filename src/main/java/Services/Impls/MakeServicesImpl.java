@@ -7,6 +7,7 @@ import Services.MakeServices;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by hoak57uet on 1/21/16.
@@ -31,7 +32,7 @@ public class MakeServicesImpl implements MakeServices {
         return makeDao.findById(makeId);
     }
 
-    public List<Product> getAllProducts(Integer makeId) {
-        return makeDao.getAllProducts(makeId);
+    public Set<Product> getProducts(Integer makeId) {
+        return makeDao.getProducts(makeId);
     }
 }
