@@ -19,7 +19,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/api/staff")
-@Transactional
+
 public class RESTStaffController {
     @Autowired
     StaffServices staffServices;

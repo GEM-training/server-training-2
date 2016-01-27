@@ -18,7 +18,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/inventory")
-@Transactional
 
 public class RESTInventoryController {
     @Autowired

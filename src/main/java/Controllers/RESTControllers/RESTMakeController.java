@@ -21,7 +21,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/api/make")
-@Transactional
+
 public class RESTMakeController {
     @Autowired
     MakeServices makeServices;

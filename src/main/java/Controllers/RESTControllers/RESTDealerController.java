@@ -19,7 +19,7 @@ import java.util.Set;
  */
 @RestController
 @RequestMapping("/api/dealer")
-@Transactional
+
 public class RESTDealerController {
     @Autowired
     DealerServices dealerServices;
