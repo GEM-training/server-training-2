@@ -4,12 +4,14 @@ import Dao.AbstractDao;
 import Dao.StaffDao;
 import Models.Staff;
 import org.hibernate.Criteria;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 /**
  * Created by phong on 20/01/2016.
  */
+@Transactional
 public class StaffDaoImpl extends AbstractDao implements StaffDao {
 
     public List<Staff> getAllStaffs() {

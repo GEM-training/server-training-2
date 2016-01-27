@@ -17,7 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/customer")
-@Transactional
+
 public class RESTCustomerController {
     @Autowired
     CustomerServices customerServices;

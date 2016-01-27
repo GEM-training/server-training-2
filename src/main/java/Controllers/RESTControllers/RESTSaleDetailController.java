@@ -15,7 +15,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/saleDetail")
-@Transactional
 
 public class RESTSaleDetailController {
     @Autowired

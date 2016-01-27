@@ -4,12 +4,14 @@ import Dao.AbstractDao;
 import Dao.DealersDao;
 import Models.Dealer;
 import org.hibernate.Criteria;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 /**
  * Created by phong on 20/01/2016.
  */
+@Transactional
 public class DealerDaoImpl extends AbstractDao implements DealersDao {
     public List<Dealer> getAllDealers() {
         Criteria criteria = getSession().createCriteria(Dealer.class);

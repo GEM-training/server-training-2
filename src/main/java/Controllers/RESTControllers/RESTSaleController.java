@@ -15,6 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/sale")
+
 public class RESTSaleController {
     @Autowired
     SaleServices saleServices;
