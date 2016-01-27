@@ -45,7 +45,11 @@ public class MakeDaoImpl extends AbstractDao implements MakeDao {
     }
 
     public Make findById(Integer makeId) {
+<<<<<<< HEAD:src/main/java/Dao/MakeDaoImpl.java
+        return (Make) getSession().get(Make.class,makeId);
+=======
         return getSession().get(Make.class, makeId);
+>>>>>>> 8c12c06edac80b0e58328d16e89e5908743ec4eb:src/main/java/Dao/Impls/MakeDaoImpl.java
     }
 
 }

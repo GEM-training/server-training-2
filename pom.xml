@@ -78,6 +78,9 @@
             <version>5.1.3.Final</version>
         </dependency>
 
+<<<<<<< HEAD
+
+=======
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -115,6 +118,7 @@
             <artifactId>spring-expression</artifactId>
             <version>4.2.4.RELEASE</version>
         </dependency>
+>>>>>>> 8c12c06edac80b0e58328d16e89e5908743ec4eb
     </dependencies>
 
 </project>
