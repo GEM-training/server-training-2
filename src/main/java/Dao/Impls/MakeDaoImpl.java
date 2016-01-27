@@ -7,6 +7,7 @@ import Models.Make;
 import Models.Product;
 import org.hibernate.Criteria;
 import org.hibernate.Hibernate;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Set;
@@ -14,6 +15,7 @@ import java.util.Set;
 /**
  * Created by hoapham on 19/01/2016.
  */
+@Transactional
 public class MakeDaoImpl extends AbstractDao implements MakeDao {
 
 

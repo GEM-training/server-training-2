@@ -5,12 +5,14 @@ import Dao.CustomerDao;
 import Models.Customer;
 import Models.Sale;
 import org.hibernate.Criteria;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 /**
  * Created by jojo on 20/01/2016.
  */
+@Transactional
 public class CustomerDaoImpl extends AbstractDao implements CustomerDao {
     public List<Customer> getAllCustomers() {
         Criteria criteria = getSession().createCriteria(Customer.class);

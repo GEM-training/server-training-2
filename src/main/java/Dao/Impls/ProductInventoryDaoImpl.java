@@ -4,12 +4,14 @@ import Dao.AbstractDao;
 import Dao.ProductInventoryDao;
 import Models.ProductInventory;
 import org.hibernate.Criteria;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 /**
  * Created by nguyenkhoi on 1/20/16.
  */
+@Transactional
 public class ProductInventoryDaoImpl extends AbstractDao implements ProductInventoryDao {
 
     public List<ProductInventory> getAllProductInventory() {

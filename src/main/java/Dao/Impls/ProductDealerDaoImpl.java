@@ -4,12 +4,14 @@ import Dao.AbstractDao;
 import Dao.ProductDealerDao;
 import Models.ProductDealer;
 import org.hibernate.Criteria;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 /**
  * Created by phong on 19/01/2016.
  */
+@Transactional
 public class ProductDealerDaoImpl extends AbstractDao implements ProductDealerDao {
 
 
