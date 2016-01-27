@@ -1,5 +1,6 @@
 package Tests;
 
+import Models.Dealer;
 import Models.Inventory;
 import Services.InventoryServices;
 import junit.framework.TestCase;
@@ -37,6 +38,12 @@ public class InventoryTest extends TestCase {
     @Test
     public void testFindInventory() {
         assertEquals("Kho Bắc Ninh", inventoryServices.findById(8).getName());
+    }
+    @Test
+    public void getDealerFromInventory() {
+        Dealer dealer = inventoryServices.findById(7).getDealer();
+        assertEquals(1, dealer.getDealerId());
+
     }
 
 }
