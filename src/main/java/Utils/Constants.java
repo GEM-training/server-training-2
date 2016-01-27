@@ -7,5 +7,5 @@ public class Constants {
     public interface HTTP{
          String SUCCESS = "SUCCESS";
     }
-    
+
 }
