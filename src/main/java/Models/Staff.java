@@ -1,5 +1,8 @@
 package Models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.Cascade;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -24,8 +27,9 @@ public class Staff {
     @Column(name = "updated_date")
     private Date updatedDate;
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "dealer_id")
+    @JsonIgnore
     private Dealer dealer;
 
     public Staff() {
