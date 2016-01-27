@@ -1,5 +1,8 @@
 package Models;
 
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Date;
 import java.util.Set;
@@ -22,20 +25,24 @@ public class Dealer {
     @Column(name = "updated_date")
     private Date updatedDate;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "dealer")
     private Set<Inventory> setInventories;
 
+    @JsonIgnore
     @ManyToMany
-    @JoinTable(name = "ProductDealer", joinColumns = @JoinColumn(name = "dealer_id"), inverseJoinColumns = @JoinColumn(name = "product_id"))
+    @JoinTable(name = "Product_Dealer", joinColumns = @JoinColumn(name = "dealer_id"), inverseJoinColumns = @JoinColumn(name = "product_id"))
     private Set<Product> listProducts;
-
+    @JsonIgnore
     @OneToMany(mappedBy = "dealer")
     private Set<Staff> listStaffs;
-
+    @JsonIgnore
     @OneToMany(mappedBy = "dealer")
     private Set<Sale> listSales;
 
     public Dealer() {
+        createdDate = new Date(System.currentTimeMillis());
+        updatedDate = new Date(System.currentTimeMillis());
     }
 
     public int getDealerId() {

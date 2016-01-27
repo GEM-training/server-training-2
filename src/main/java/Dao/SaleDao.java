@@ -15,5 +15,4 @@ public interface SaleDao {
     void delete(Integer saleId);
 
     Sale findById(Integer saleId);
-    //public List<SaleDetail> getAllSaleDetails(Integer saleId);
 }

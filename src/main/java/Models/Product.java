@@ -1,5 +1,8 @@
 package Models;
 
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Date;
 import java.util.Set;
@@ -12,7 +15,7 @@ import java.util.Set;
 @Table(name = "Products")
 public class Product {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "product_id")
     private int productId;
     private String name;
@@ -21,23 +24,29 @@ public class Product {
     @Column(name = "is_unit")
     private boolean isUnit;
 
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "make_id")
     private Make make;
 
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "of_unit_id")
     private Product unit;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "unit")
     private Set<Product> listParts;
 
-    @ManyToMany(mappedBy = "listProducts")
+    @ManyToMany(mappedBy = "listProducts", fetch = FetchType.LAZY)
+    @JsonIgnore
     private Set<Dealer> listDealers;
 
+    @JsonIgnore
     @ManyToMany(mappedBy = "listProducts")
     private Set<Inventory> listInventories;
 
+    @JsonIgnore
     @ManyToMany(mappedBy = "listProducts")
     private Set<Sale> listSales;
     @Column(name = "created_date")
@@ -46,6 +55,8 @@ public class Product {
     private Date updatedDate;
 
     public Product() {
+        createdDate = new Date(System.currentTimeMillis());
+        updatedDate = new Date(System.currentTimeMillis());
     }
 
     public int getProductId() {

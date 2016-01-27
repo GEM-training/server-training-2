@@ -25,19 +25,4 @@ public class AbstractDao {
         getSession().persist(entity);
     }
 
-    public Object saveObject(Object object) {
-        Object id = getSession().save(object);
-        return id;
-    }
-
-    protected Object getObjectById(Integer objectId) {
-        Object obj = getSession().get(getClass(), objectId);
-        return obj;
-    }
-
-    protected List<Object> getAllObjects() {
-        List results = getSession().createCriteria(getClass()).list();
-        return results;
-    }
-
 }

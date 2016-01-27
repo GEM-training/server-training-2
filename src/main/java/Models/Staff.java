@@ -1,6 +1,10 @@
 package Models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.Cascade;
+
 import javax.persistence.*;
+import java.util.Date;
 
 /**
  * Created by hoapham on 20/01/2016.
@@ -10,16 +14,27 @@ import javax.persistence.*;
 public class Staff {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "staff_id")
     private int staffId;
+    private String username;
+    private String password;
+    private String role;
     private String name;
     private String phone;
     private String address;
+    @Column(name = "created_date")
+    private Date createdDate;
+    @Column(name = "updated_date")
+    private Date updatedDate;
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "dealer_id")
+    @JsonIgnore
     private Dealer dealer;
 
     public Staff() {
+        createdDate = new Date(System.currentTimeMillis());
+        updatedDate = new Date(System.currentTimeMillis());
     }
 
     public int getStaffId() {
@@ -62,9 +77,43 @@ public class Staff {
         this.dealer = dealer;
     }
 
+    public Date getCreatedDate() {
+        return createdDate;
+    }
 
-    @Override
-    public String toString() {
-        return "ID: " + staffId + ", name: " + name;
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
+    }
+
+    public Date getUpdatedDate() {
+        return updatedDate;
+    }
+
+    public void setUpdatedDate(Date updatedDate) {
+        this.updatedDate = updatedDate;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }

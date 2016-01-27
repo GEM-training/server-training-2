@@ -1,5 +1,8 @@
 package Models;
 
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Date;
 import java.util.Set;
@@ -19,12 +22,15 @@ public class Inventory {
     private String address;
     private String phone;
 
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "dealer_id")
     private Dealer dealer;
 
+
+    @JsonIgnore
     @ManyToMany
-    @JoinTable(name = "ProductInventory", joinColumns = @JoinColumn(name = "inventory_id"), inverseJoinColumns = @JoinColumn(name = "product_id"))
+    @JoinTable(name = "Product_Inventory", joinColumns = @JoinColumn(name = "inventory_id"), inverseJoinColumns = @JoinColumn(name = "product_id"))
     private Set<Product> listProducts;
 
     @Column(name = "created_date")
@@ -33,6 +39,8 @@ public class Inventory {
     private Date updatedDate;
 
     public Inventory() {
+        createdDate=new Date(System.currentTimeMillis());
+        updatedDate=new Date(System.currentTimeMillis());
     }
 
     public int getInventoryId() {

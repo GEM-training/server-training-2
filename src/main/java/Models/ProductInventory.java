@@ -7,10 +7,10 @@ import java.util.Date;
  * Created by hoapham on 20/01/2016.
  */
 @Entity
-@Table(name = "ProductInventory")
+@Table(name = "Product_Inventory")
 public class ProductInventory {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "product_inventory_id")
     private int productInventoryId;
     @Column(name = "product_id")
@@ -25,6 +25,8 @@ public class ProductInventory {
     private Date updatedDate;
 
     public ProductInventory() {
+        createdDate=new Date(System.currentTimeMillis());
+        updatedDate=new Date(System.currentTimeMillis());
     }
 
     public int getProductInventoryId() {

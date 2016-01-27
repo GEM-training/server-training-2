@@ -1,5 +1,8 @@
 package Models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 import java.util.Date;
 import java.util.Set;
@@ -8,26 +11,30 @@ import java.util.Set;
  * Created by hoapham on 20/01/2016.
  */
 @Entity
-@Table(name = "SaleDao")
+@Table(name = "Sales")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Sale {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "sale_id")
     private int saleId;
 
-    @ManyToOne( fetch = FetchType.LAZY)
-    @JoinColumn(name="customer_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "customer_id")
     private Customer customer;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "dealer_id")
+    @JsonIgnore
     private Dealer dealer;
 
     @ManyToMany
-    @JoinTable(name = "Sale_details",joinColumns = @JoinColumn(name = "sale_id"),inverseJoinColumns = @JoinColumn(name = "product_id"))
+    @JoinTable(name = "sale_details", joinColumns = @JoinColumn(name = "sale_id"), inverseJoinColumns = @JoinColumn(name = "product_id"))
+    @JsonIgnore
     private Set<Product> listProducts;
 
     @OneToMany(mappedBy = "sale")
+    @JsonIgnore
     private Set<SaleDetail> listSaleDetails;
 
     private int status;
@@ -37,14 +44,16 @@ public class Sale {
     private Date updatedDate;
 
     public Sale() {
+        createdDate=new Date(System.currentTimeMillis());
+        updatedDate=new Date(System.currentTimeMillis());
     }
 
     public int getSaleId() {
         return saleId;
     }
 
-    public void setSaleId(int sale_id) {
-        this.saleId = sale_id;
+    public void setSaleId(int saleId) {
+        this.saleId = saleId;
     }
 
     public Customer getCustomer() {
@@ -71,6 +80,14 @@ public class Sale {
         this.listProducts = listProducts;
     }
 
+    public Set<SaleDetail> getListSaleDetails() {
+        return listSaleDetails;
+    }
+
+    public void setListSaleDetails(Set<SaleDetail> listSaleDetails) {
+        this.listSaleDetails = listSaleDetails;
+    }
+
     public int getStatus() {
         return status;
     }
@@ -93,13 +110,5 @@ public class Sale {
 
     public void setUpdatedDate(Date updatedDate) {
         this.updatedDate = updatedDate;
-    }
-
-    public Set<SaleDetail> getListSaleDetails() {
-        return listSaleDetails;
-    }
-
-    public void setListSaleDetails(Set<SaleDetail> listSaleDetails) {
-        this.listSaleDetails = listSaleDetails;
     }
 }

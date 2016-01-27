@@ -6,6 +6,7 @@ import Models.Product;
 import Models.Sale;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by hoapham on 20/01/2016.
@@ -17,12 +18,16 @@ public interface ProductDao {
 
     Integer save(Product product);
 
+    void saveOrUpdate(Product product);
+
     void delete(Integer productId);
 
-    List<Dealer> getDealers(Integer productId);
+    Set<Dealer> getDealers(Integer productId);
+
+    Set<Product> getParts(Integer productId);
 
     Make getMake(Integer productId);
 
-    List<Sale> getListSales(Integer productId);
+    Set<Sale> getSales(Integer productId);
 
 }

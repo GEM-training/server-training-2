@@ -10,17 +10,17 @@ import java.util.Date;
 @Table(name = "Sale_details")
 public class SaleDetail {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "sale_detail_id")
     private int saleDetailId;
 
-    @ManyToOne(cascade=CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
     private Product product;
 
     private int quantity;
 
-    @ManyToOne(cascade=CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "sale_id")
     private Sale sale;
     @Column(name = "created_date")
@@ -29,6 +29,8 @@ public class SaleDetail {
     private Date updatedDate;
 
     public SaleDetail() {
+        createdDate=new Date(System.currentTimeMillis());
+        updatedDate=new Date(System.currentTimeMillis());
     }
 
     public int getSaleDetailId() {

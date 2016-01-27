@@ -1,5 +1,8 @@
 package Models;
 
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Date;
 import java.util.Set;
@@ -11,7 +14,7 @@ import java.util.Set;
 @Table(name = "Makes")
 public class Make {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "make_id")
     private int makeId;
     private String address;
@@ -22,10 +25,17 @@ public class Make {
     @Column(name = "updated_date")
     private Date updatedDate;
 
+<<<<<<< HEAD
     @OneToMany(mappedBy = "make",fetch =FetchType.LAZY)
+=======
+    @OneToMany(mappedBy = "make")
+    @JsonIgnore
+>>>>>>> 8c12c06edac80b0e58328d16e89e5908743ec4eb
     Set<Product> setProducts;
 
     public Make() {
+        createdDate=new Date(System.currentTimeMillis());
+        updatedDate=new Date(System.currentTimeMillis());
     }
 
     public int getMakeId() {
@@ -83,7 +93,6 @@ public class Make {
     public void setSetProducts(Set<Product> setProducts) {
         this.setProducts = setProducts;
     }
-
 
     @Override
     public String toString() {

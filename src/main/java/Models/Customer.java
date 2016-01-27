@@ -1,5 +1,7 @@
 package Models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Date;
 import java.util.Set;
@@ -24,10 +26,13 @@ public class Customer {
     @Column(name = "updated_date")
     private Date updatedDate;
 
-    @OneToMany(mappedBy = "customer")
+    @OneToMany(mappedBy = "customer",fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    @JsonIgnore
     private Set<Sale> setSales;
 
     public Customer() {
+        createdDate=new Date(System.currentTimeMillis());
+        updatedDate=new Date(System.currentTimeMillis());
     }
 
     public int getCustomerId() {

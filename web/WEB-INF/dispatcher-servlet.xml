@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:mvc="http://www.springframework.org/schema/mvc"
-       xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:tx="http://www.springframework.org/schema/tx"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="
-       http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd
-       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
-       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.1.xsd
-       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <mvc:annotation-driven/>
-    <context:annotation-config/>
-    <context:component-scan base-package="Controllers"/>
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+<<<<<<< HEAD
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
           destroy-method="close">
         <property name="driverClassName" value="org.postgresql.Driver"/>
@@ -30,16 +21,15 @@
     <bean id="transactionManager"
           class="org.springframework.orm.hibernate5.HibernateTransactionManager">
         <property name="sessionFactory" ref="sessionFactory" />
+=======
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix">
+            <value>/WEB-INF/views/</value>
+        </property>
+        <property name="suffix">
+            <value>.jsp</value>
+        </property>
+>>>>>>> 8c12c06edac80b0e58328d16e89e5908743ec4eb
     </bean>
 
-    <bean id="makeDao" class="Dao.MakeDaoImpl"/>
-    <bean id="customerDao" class="Dao.CustomerDaoImpl"/>
-    <bean id="dealerDao" class="Dao.DealerDaoImpl"/>
-    <bean id="inventoryDao" class="Dao.InventoryDaoImpl"/>
-    <bean id="productDao" class="Dao.ProductDaoImpl"/>
-    <bean id="saleDao" class="Dao.SaleDaoImpl"/>
-    <bean id="saleDetailDao" class="Dao.SaleDetailDaoImpl"/>
-    <bean id="staffDao" class="Dao.StaffDaoImpl"/>
-    <bean id="productDealerDao" class="Dao.ProductDealerDaoImpl"/>
-    <bean id="productInventoryDao" class="Dao.ProductInventoryDaoImpl"/>
 </beans>
