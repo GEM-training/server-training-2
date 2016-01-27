@@ -13,7 +13,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
- * Created by nguyenkhoi on 1/27/16.
+ * Created by nguyenkhoi on 1/25/16.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"/META-INF/dispatcher-servlet.xml"})
@@ -26,17 +26,17 @@ public class InventoryTest extends TestCase {
     @Test
     public void testAddInventory() {
         Inventory inventory = new Inventory();
-        assertEquals(new Integer(5), inventoryServices.save(inventory));
+        assertEquals(new Integer(55), inventoryServices.save(inventory));
     }
 
     @Test
     public void testDeleteInventory() {
-        assertEquals(true, inventoryServices.delete(6));
+        assertEquals(true, inventoryServices.delete(7));
     }
 
     @Test
     public void testFindInventory() {
-        assertEquals(1, inventoryServices.findById(1));
+        assertEquals("Kho Bắc Ninh", inventoryServices.findById(8).getName());
     }
 
 }
