@@ -22,7 +22,7 @@ public class Make {
     @Column(name = "updated_date")
     private Date updatedDate;
 
-    @OneToMany(mappedBy = "make")
+    @OneToMany(mappedBy = "make",fetch =FetchType.LAZY)
     Set<Product> setProducts;
 
     public Make() {

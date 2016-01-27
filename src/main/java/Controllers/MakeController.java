@@ -19,25 +19,31 @@ import org.springframework.web.bind.annotation.RestController;
 public class MakeController {
     @Autowired
     MakeDao makeDao;
+
     @Autowired
     StaffDao staffDao;
 
-    @RequestMapping(value = "/list",method= RequestMethod.GET)
-    public String getListMakes(){
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    public String getListMakes() {
         return makeDao.getAllMakes().toString();
     }
 
     @RequestMapping(value = "/add-one")
-    public String addOneMake(){
+    public String addOneMake() {
         Make make = new Make();
-        make.setName("Make demo no "+makeDao.getAllMakes().size());
+        make.setName("Make demo no " + makeDao.getAllMakes().size());
         makeDao.save(make);
         return "Successful";
     }
 
     @RequestMapping(value = "/delete/{makeId}")
-    public String deleteMake(@PathVariable("makeId")Integer makeId){
-        makeDao.delete(makeId);
-        return "deleted";
+    public String deleteMake(@PathVariable("makeId") Integer makeId) {
+//        makeDao.delete(makeId);
+        return "Deleted!";
+    }
+
+    @RequestMapping(value = "/get-products/{makeId}")
+    public String getBill(@PathVariable("makeId")Integer makeId){
+        return makeDao.findById(makeId).getSetProducts().toString();
     }
 }
