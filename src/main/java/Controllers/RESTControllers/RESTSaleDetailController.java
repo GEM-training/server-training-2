@@ -20,10 +20,10 @@ public class RESTSaleDetailController {
     @Autowired
     SaleDetailServices saleDetailServices;
 
-    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    @RequestMapping(value = "/view-all", method = RequestMethod.GET)
     public
     @ResponseBody
-    ResponseObject getListSaleDetail() {
+    ResponseObject viewAll() {
         try{
             List<SaleDetail> saleDetails= saleDetailServices.getAllSaleDetails();
             return new ResponseObject(true, "", saleDetails);
@@ -34,10 +34,10 @@ public class RESTSaleDetailController {
         }
     }
 
-    @RequestMapping(value = "/add-one")
+    @RequestMapping(value = "/add")
     public
     @ResponseBody
-    ResponseObject addOneSaleDetail(@RequestBody SaleDetail saleDetail) {
+    ResponseObject add(@RequestBody SaleDetail saleDetail) {
         try{
             saleDetailServices.save(saleDetail);
             return new ResponseObject(true, "", saleDetail);
@@ -61,10 +61,10 @@ public class RESTSaleDetailController {
         }
     }
 
-    @RequestMapping(value = "/find-one")
+    @RequestMapping(value = "/find")
     public
     @ResponseBody
-    ResponseObject findSaleDetail(@RequestParam Integer saleDetailId) {
+    ResponseObject find(@RequestParam Integer saleDetailId) {
         try{
             SaleDetail saleDetail = saleDetailServices.findById(saleDetailId);
             return new ResponseObject(true, "", saleDetail);

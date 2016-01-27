@@ -20,10 +20,10 @@ public class RESTSaleController {
     @Autowired
     SaleServices saleServices;
 
-    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    @RequestMapping(value = "/view-all", method = RequestMethod.GET)
     public
     @ResponseBody
-    ResponseObject getListSale() {
+    ResponseObject viewAll() {
         try{
             List<Sale> saleList = saleServices.getAllSales();
             return new ResponseObject(true, Constants.HTTP.SUCCESS, saleList);
@@ -33,10 +33,10 @@ public class RESTSaleController {
         }
     }
 
-    @RequestMapping(value = "/add-one")
+    @RequestMapping(value = "/add")
     public
     @ResponseBody
-    ResponseObject addOneSale(@RequestBody Sale sale) {
+    ResponseObject add(@RequestBody Sale sale) {
         try {
             Integer saleId = saleServices.save(sale);
             return new ResponseObject(true, "", saleId);
@@ -47,7 +47,7 @@ public class RESTSaleController {
         }
     }
 
-    @RequestMapping(value = "/delete-one")
+    @RequestMapping(value = "/delete")
     public
     @ResponseBody
     ResponseObject delete(@RequestParam("saleId") Integer saleId) {
@@ -60,10 +60,10 @@ public class RESTSaleController {
         }
     }
 
-    @RequestMapping(value = "/find-one")
+    @RequestMapping(value = "/find")
     public
     @ResponseBody
-    ResponseObject findCustomer(@RequestParam("saleId") Integer saleId) {
+    ResponseObject find(@RequestParam("saleId") Integer saleId) {
         try{
             Sale sale = saleServices.findById(saleId);
             return new ResponseObject(true, "", sale);
