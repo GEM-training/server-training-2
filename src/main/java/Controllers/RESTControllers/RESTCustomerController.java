@@ -1,15 +1,10 @@
-package Controllers;
+package Controllers.RESTControllers;
 
-import Dao.CustomerDao;
-import Dao.MakeDao;
 import Models.Customer;
-import Models.Make;
 import Models.ResponseObject;
 import Services.CustomerServices;
 import Utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,7 +18,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/customer")
 @Transactional
-public class CustomerController {
+public class RESTCustomerController {
     @Autowired
     CustomerServices customerServices;
 

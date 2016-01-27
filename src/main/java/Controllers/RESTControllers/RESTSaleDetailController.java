@@ -1,8 +1,6 @@
-package Controllers;
+package Controllers.RESTControllers;
 
-import Dao.SaleDetailDao;
 import Models.ResponseObject;
-import Models.Sale;
 import Models.SaleDetail;
 import Services.SaleDetailServices;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +17,7 @@ import java.util.List;
 @RequestMapping("/api/saleDetail")
 @Transactional
 
-public class SaleDetailController {
+public class RESTSaleDetailController {
     @Autowired
     SaleDetailServices saleDetailServices;
 

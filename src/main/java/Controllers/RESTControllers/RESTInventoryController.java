@@ -1,4 +1,4 @@
-package Controllers;
+package Controllers.RESTControllers;
 
 import Models.Inventory;
 import Models.ResponseObject;
@@ -20,7 +20,7 @@ import java.util.List;
 @RequestMapping("/api/inventory")
 @Transactional
 
-public class InventoryController {
+public class RESTInventoryController {
     @Autowired
     InventoryServices inventoryServices;
 

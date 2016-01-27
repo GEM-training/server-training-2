@@ -1,4 +1,4 @@
-package Controllers;
+package Controllers.RESTControllers;
 
 import Dao.ProductDealerDao;
 import Models.Dealer;
@@ -24,7 +24,7 @@ import java.util.Set;
  */
 @RestController
 @RequestMapping("/api/product")
-public class ProductController {
+public class RESTProductController {
     @Autowired
     ProductServices productServices;
 

@@ -1,4 +1,4 @@
-package Controllers;
+package Controllers.RESTControllers;
 
 import Dao.MakeDao;
 import Dao.StaffDao;
@@ -22,7 +22,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/make")
 @Transactional
-public class MakeController {
+public class RESTMakeController {
     @Autowired
     MakeServices makeServices;
 

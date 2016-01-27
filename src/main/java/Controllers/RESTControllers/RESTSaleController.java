@@ -1,4 +1,4 @@
-package Controllers;
+package Controllers.RESTControllers;
 
 import Models.ResponseObject;
 import Models.Sale;
@@ -15,7 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/sale")
-public class SaleController {
+public class RESTSaleController {
     @Autowired
     SaleServices saleServices;
 

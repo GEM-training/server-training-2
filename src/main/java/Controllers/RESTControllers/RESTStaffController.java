@@ -1,4 +1,4 @@
-package Controllers;
+package Controllers.RESTControllers;
 
 import Dao.DealersDao;
 import Dao.StaffDao;
@@ -20,7 +20,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/staff")
 @Transactional
-public class StaffController {
+public class RESTStaffController {
     @Autowired
     StaffServices staffServices;
 
