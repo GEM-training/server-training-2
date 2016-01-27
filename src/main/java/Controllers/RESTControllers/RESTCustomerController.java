@@ -22,10 +22,10 @@ public class RESTCustomerController {
     @Autowired
     CustomerServices customerServices;
 
-    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    @RequestMapping(value = "/view-all", method = RequestMethod.GET)
     public
     @ResponseBody
-    ResponseObject getListCustomer() {
+    ResponseObject viewAll() {
         try {
             List<Customer> customerList = customerServices.getAllCustomers();
             return new ResponseObject(true, Constants.HTTP.SUCCESS, customerList);
@@ -35,10 +35,10 @@ public class RESTCustomerController {
         }
     }
 
-    @RequestMapping(value = "/add-one")
+    @RequestMapping(value = "/add")
     public
     @ResponseBody
-    ResponseObject addOneCustomer(@RequestBody Customer customer) {
+    ResponseObject add(@RequestBody Customer customer) {
         try {
             Integer customerId = customerServices.save(customer);
             return new ResponseObject(true,"", customerId);
@@ -48,7 +48,7 @@ public class RESTCustomerController {
         }
     }
 
-    @RequestMapping(value = "/delete-one")
+    @RequestMapping(value = "/delete")
     public
     @ResponseBody
     ResponseObject delete(@RequestParam("customerId") Integer customerId) {
@@ -61,10 +61,10 @@ public class RESTCustomerController {
         }
     }
 
-    @RequestMapping(value = "/find-one")
+    @RequestMapping(value = "/find")
     public
     @ResponseBody
-    ResponseObject findCustomer(@RequestParam("customerId") Integer customerId) {
+    ResponseObject find(@RequestParam("customerId") Integer customerId) {
         try {
             Customer customer = customerServices.findById(customerId);
             return new ResponseObject(true, "", customer);
@@ -74,14 +74,6 @@ public class RESTCustomerController {
         }
     }
 
-//    @RequestMapping(value = "/greeting")
-//    public ResponseEntity<Customer> greeting(@RequestParam(value="name", defaultValue="World") String name,
-//                                             @RequestParam(value="id", defaultValue="100") int id) {
-//        Customer customer = new Customer();
-//        customer.setCustomerId(id);
-//        customer.setName(name);
-//        return new ResponseEntity<Customer> (customer, HttpStatus.BAD_REQUEST);
-//    }
 }
 
 
