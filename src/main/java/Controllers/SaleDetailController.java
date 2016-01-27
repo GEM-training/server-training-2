@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
-@RequestMapping("/saleDetail")
+@RequestMapping("/api/saleDetail")
 @Transactional
 
 public class SaleDetailController {

@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by hoapham on 19/01/2016.
  */
 @RestController
-@RequestMapping("/product-deal")
+@RequestMapping("/api/product-deal")
 @Transactional
 public class ProductDealerController {
     @Autowired

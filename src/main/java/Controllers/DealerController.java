@@ -17,7 +17,7 @@ import java.util.List;
  * Created by phong on 21/01/2016.
  */
 @RestController
-@RequestMapping("/dealer")
+@RequestMapping("/api/dealer")
 @Transactional
 public class DealerController {
     @Autowired

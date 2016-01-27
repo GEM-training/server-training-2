@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.1.xsd
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <mvc:annotation-driven/>
+    <context:annotation-config/>
+    <context:component-scan base-package="Controllers"/>
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName" value="org.postgresql.Driver"/>
+        <property name="url" value="jdbc:postgresql://172.16.10.202/Nhom2New"/>
+        <property name="username" value="postgres"/>
+        <property name="password" value="postgres"/>
+    </bean>
+    <bean id="sessionFactory"
+          class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="WEB-INF/hibernate.cfg.xml"/>
+    </bean>
+    <tx:advice id="txAdvice" transaction-manager="transactionManager"/>
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+    <bean id="transactionManager"
+          class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="makeDao" class="Dao.Impls.MakeDaoImpl"/>
+    <bean id="customerDao" class="Dao.Impls.CustomerDaoImpl"/>
+    <bean id="dealerDao" class="Dao.Impls.DealerDaoImpl"/>
+    <bean id="inventoryDao" class="Dao.Impls.InventoryDaoImpl"/>
+    <bean id="productDao" class="Dao.Impls.ProductDaoImpl"/>
+    <bean id="saleDao" class="Dao.Impls.SaleDaoImpl"/>
+    <bean id="saleDetailDao" class="Dao.Impls.SaleDetailDaoImpl"/>
+    <bean id="staffDao" class="Dao.Impls.StaffDaoImpl"/>
+    <bean id="productDealerDao" class="Dao.Impls.ProductDealerDaoImpl"/>
+    <bean id="productInventoryDao" class="Dao.Impls.ProductInventoryDaoImpl"/>
+
+    <bean id="makeServices" class="Services.Impls.MakeServicesImpl"/>
+    <bean id="productServices" class="Services.Impls.ProductServicesImpl"/>
+    <bean id="customerServices" class="Services.Impls.CustomerServicesImpl"/>
+    <bean id="saleServices" class="Services.Impls.SaleServicesImpl"/>
+    <bean id="saleDetailServices" class="Services.Impls.SaleDetailServicesImpl"/>
+    <bean id="productDealerServices" class="Services.Impls.ProductDealerServicesImpl"/>
+    <bean id="dealerServices" class="Services.Impls.DealerServicesImpl"/>
+    <bean id="staffServices" class="Services.Impls.StaffServicesImpl"/>
+    <bean id="productInventoryServices" class="Services.Impls.ProductInventoryServiceImpl"/>
+    <bean id="inventoryService" class="Services.Impls.InventoryServiceImpl"/>
+</beans>

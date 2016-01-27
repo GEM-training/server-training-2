@@ -20,7 +20,7 @@ import java.util.List;
  * Created by hoapham on 19/01/2016.
  */
 @RestController
-@RequestMapping("/make")
+@RequestMapping("/api/make")
 @Transactional
 public class MakeController {
     @Autowired

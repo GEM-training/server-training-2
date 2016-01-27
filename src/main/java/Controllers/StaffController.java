@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by phong on 21/01/2016.
  */
 @RestController
-@RequestMapping("/staff")
+@RequestMapping("/api/staff")
 @Transactional
 public class StaffController {
     @Autowired

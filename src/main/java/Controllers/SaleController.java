@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
-@RequestMapping("/sale")
+@RequestMapping("/api/sale")
 @Transactional
 public class SaleController {
     @Autowired
