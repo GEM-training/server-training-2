@@ -13,7 +13,7 @@ public interface DealerServices {
 
     Integer save(Dealer dealer);
 
-    void delete(Integer dealerId);
+    boolean delete(Integer dealerId);
 
     Dealer findById(Integer dealerId);
 }

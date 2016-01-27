@@ -23,8 +23,13 @@ public class DealerServicesImpl implements DealerServices {
         return dealersDao.save(dealer);
     }
 
-    public void delete(Integer dealerId) {
-        dealersDao.delete(dealerId);
+    public boolean delete(Integer dealerId) {
+        try {
+            dealersDao.delete(dealerId);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
 
     }
 

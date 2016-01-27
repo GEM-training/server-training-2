@@ -22,8 +22,13 @@ public class StaffServicesImpl implements StaffServices {
         return staffDao.save(staff);
     }
 
-    public void delete(Integer staffId) {
-        staffDao.delete(staffId);
+    public boolean delete(Integer staffId) {
+        try {
+            staffDao.delete(staffId);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
 
     }
 

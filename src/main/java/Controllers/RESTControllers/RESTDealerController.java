@@ -24,28 +24,29 @@ public class RESTDealerController {
     @Autowired
     DealerServices dealerServices;
 
-    @RequestMapping(value = "/list")
+    @RequestMapping(value = "/view-all")
     public
     @ResponseBody
-    ResponseObject getAllDeals(){
-        try{
+    ResponseObject viewAll() {
+        try {
             List<Dealer> dealers = dealerServices.getAllDealers();
-            return  new ResponseObject(true, Constants.HTTP.SUCCESS,dealers);
+            return new ResponseObject(true, Constants.HTTP.SUCCESS, dealers);
 
-        }catch (Exception e){
-            return new ResponseObject(false,e.getMessage(),null);
+        } catch (Exception e) {
+            return new ResponseObject(false, e.getMessage(), null);
 
         }
     }
-    @RequestMapping(value = "/add-one")
+
+    @RequestMapping(value = "/add")
     public
     @ResponseBody
-    ResponseObject addOneDealer(@RequestBody Dealer dealer) {
-        try{
+    ResponseObject add(@RequestBody Dealer dealer) {
+        try {
             Integer dealerId = dealerServices.save(dealer);
-            return new ResponseObject(true, Constants.HTTP.SUCCESS,dealerId);
-        }catch (Exception e){
-            return new ResponseObject(false,e.getMessage(),null);
+            return new ResponseObject(true, Constants.HTTP.SUCCESS, dealerId);
+        } catch (Exception e) {
+            return new ResponseObject(false, e.getMessage(), null);
 
 
         }
@@ -54,99 +55,97 @@ public class RESTDealerController {
     @RequestMapping(value = "/delete")
     public
     @ResponseBody
-    ResponseObject deleteDealer(@RequestParam("dealerId") int dealerId ) {
+    ResponseObject delete(@RequestParam("dealerId") int dealerId) {
         try {
             dealerServices.delete(dealerId);
             return new ResponseObject(true, Constants.HTTP.SUCCESS, dealerId);
 
-        }catch (Exception e){
-            return new ResponseObject(false,e.getMessage(),null);
+        } catch (Exception e) {
+            return new ResponseObject(false, e.getMessage(), null);
         }
 
     }
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/find", method = RequestMethod.GET)
     public
     @ResponseBody
-    ResponseObject getDealById(@PathVariable("id") int id) {
+    ResponseObject find(@RequestParam("dealerId") int dealerId) {
         try {
-            Dealer dealer = dealerServices.findById(id);
-            return new ResponseObject(true,"",dealer);
+            Dealer dealer = dealerServices.findById(dealerId);
+            return new ResponseObject(true, "", dealer);
 
-        }catch (Exception e){
-            return new ResponseObject(false,e.getMessage(),null);
+        } catch (Exception e) {
+            return new ResponseObject(false, e.getMessage(), null);
         }
-
 
 
     }
 
 
-    @RequestMapping(value = "/{id}/get-staff", method = RequestMethod.GET)
+    @RequestMapping(value = "/get-staff", method = RequestMethod.GET)
     public
     @ResponseBody
-    ResponseObject getStaffByDealerId(@PathVariable("id") int id) {
+    ResponseObject getStaff(@PathVariable("dealerId") int dealerId) {
         try {
             List<Staff> staffs = new ArrayList<Staff>();
-            Dealer dealer = dealerServices.findById(id);
+            Dealer dealer = dealerServices.findById(dealerId);
             staffs.addAll(dealer.getListStaffs());
-            return new ResponseObject(true,"",staffs);
+            return new ResponseObject(true, "", staffs);
 
-        }catch (Exception e){
-            return new ResponseObject(false,e.getMessage(),null);
+        } catch (Exception e) {
+            return new ResponseObject(false, e.getMessage(), null);
         }
 
 
-
     }
-    @RequestMapping(value = "/{id}/get-inventory", method = RequestMethod.GET)
+
+    @RequestMapping(value = "/get-inventory", method = RequestMethod.GET)
     public
     @ResponseBody
-    ResponseObject getInventoryByDealerId(@PathVariable("id") int id) {
+    ResponseObject getInventory(@RequestParam("dealerId") int dealerId) {
         try {
             List<Inventory> inventories = new ArrayList<Inventory>();
-            Dealer dealer = dealerServices.findById(id);
+            Dealer dealer = dealerServices.findById(dealerId);
             inventories.addAll(dealer.getSetInventories());
-            return new ResponseObject(true,"",inventories);
+            return new ResponseObject(true, "", inventories);
 
-        }catch (Exception e){
-            return new ResponseObject(false,e.getMessage(),null);
+        } catch (Exception e) {
+            return new ResponseObject(false, e.getMessage(), null);
         }
 
     }
 
-    @RequestMapping(value = "/{id}/get-product", method = RequestMethod.GET)
+    @RequestMapping(value = "/get-product", method = RequestMethod.GET)
     public
     @ResponseBody
-    ResponseObject getProductByDealerId(@PathVariable("id") int id) {
+    ResponseObject getProduct(@RequestParam("dealerId") int dealerId) {
         try {
             List<Product> products = new ArrayList<Product>();
-            Dealer dealer = dealerServices.findById(id);
+            Dealer dealer = dealerServices.findById(dealerId);
             products.addAll(dealer.getListProducts());
-            return new ResponseObject(true,"",products);
+            return new ResponseObject(true, "", products);
 
-        }catch (Exception e){
-            return new ResponseObject(false,e.getMessage(),null);
+        } catch (Exception e) {
+            return new ResponseObject(false, e.getMessage(), null);
         }
 
     }
 
-    @RequestMapping(value = "/{id}/get-sale", method = RequestMethod.GET)
+    @RequestMapping(value = "/get-sale", method = RequestMethod.GET)
     public
     @ResponseBody
-    ResponseObject getSaleByDealerId(@PathVariable("id") int id) {
+    ResponseObject getSale(@RequestParam("dealerId") int dealerId) {
         try {
             List<Sale> sales = new ArrayList<Sale>();
-            Dealer dealer = dealerServices.findById(id);
+            Dealer dealer = dealerServices.findById(dealerId);
             sales.addAll(dealer.getListSales());
-            return new ResponseObject(true,"",sales);
+            return new ResponseObject(true, "", sales);
 
-        }catch (Exception e){
-            return new ResponseObject(false,e.getMessage(),null);
+        } catch (Exception e) {
+            return new ResponseObject(false, e.getMessage(), null);
         }
 
     }
-
 
 
 }

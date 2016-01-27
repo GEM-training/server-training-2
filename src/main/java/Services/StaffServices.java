@@ -12,7 +12,7 @@ public interface StaffServices {
 
     Integer save(Staff staff);
 
-    void delete(Integer staffId);
+    boolean delete(Integer staffId);
 
     Staff findById(Integer staffId);
 

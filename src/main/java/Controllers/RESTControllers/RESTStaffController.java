@@ -25,28 +25,28 @@ public class RESTStaffController {
     StaffServices staffServices;
 
 
-    @RequestMapping(value = "/list")
+    @RequestMapping(value = "/view-all")
     public
     @ResponseBody
-    ResponseObject getAllStaffs() {
+    ResponseObject viewAll() {
         try {
             List<Staff> staffs = staffServices.getAllStaffs();
             return new ResponseObject(true, Constants.HTTP.SUCCESS, staffs);
-        } catch (Exception e){
-            return  new ResponseObject(false,e.getMessage(),null );
+        } catch (Exception e) {
+            return new ResponseObject(false, e.getMessage(), null);
         }
 
     }
 
-    @RequestMapping(value = "/add-one")
+    @RequestMapping(value = "/add")
     public
     @ResponseBody
-    ResponseObject addOneStaff(@RequestBody Staff staff) {
-        try{
+    ResponseObject add(@RequestBody Staff staff) {
+        try {
             Integer staffId = staffServices.save(staff);
-            return new ResponseObject(true, Constants.HTTP.SUCCESS,staff);
-        }catch (Exception e){
-            return new ResponseObject(false,e.getMessage(),null);
+            return new ResponseObject(true, Constants.HTTP.SUCCESS, staff);
+        } catch (Exception e) {
+            return new ResponseObject(false, e.getMessage(), null);
 
 
         }
@@ -55,28 +55,28 @@ public class RESTStaffController {
     @RequestMapping(value = "/delete")
     public
     @ResponseBody
-    ResponseObject deleteStaff(@RequestParam("staffId") int staffId ) {
+    ResponseObject delete(@RequestParam("staffId") int staffId) {
         try {
             staffServices.delete(staffId);
             return new ResponseObject(true, Constants.HTTP.SUCCESS, staffId);
 
-        }catch (Exception e){
-            return new ResponseObject(false,e.getMessage(),null);
+        } catch (Exception e) {
+            return new ResponseObject(false, e.getMessage(), null);
         }
 
     }
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+
+    @RequestMapping(value = "/find", method = RequestMethod.GET)
     public
     @ResponseBody
-    ResponseObject getStaffById(@PathVariable("id") int id) {
+    ResponseObject find(@RequestParam("staffId") int staffId) {
         try {
-            Staff staff = staffServices.findById(id);
-            return new ResponseObject(true,"",staff);
+            Staff staff = staffServices.findById(staffId);
+            return new ResponseObject(true, "", staff);
 
-        }catch (Exception e){
-            return new ResponseObject(false,e.getMessage(),null);
+        } catch (Exception e) {
+            return new ResponseObject(false, e.getMessage(), null);
         }
-
 
 
     }
