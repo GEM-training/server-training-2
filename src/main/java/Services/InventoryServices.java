@@ -10,7 +10,7 @@ import java.util.List;
 public interface InventoryServices {
     List<Inventory> getAllInventory();
 
-    void delete(Integer inventoryId);
+    boolean delete(Integer inventoryId);
 
     Inventory findById(Integer inventoryId);
 

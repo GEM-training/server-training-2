@@ -13,7 +13,7 @@ import java.util.List;
 public class SaleDaoImpl extends AbstractDao implements SaleDao {
     public List<Sale> getAllSales() {
         Criteria crt = getSession().createCriteria(Sale.class);
-        return (List<Sale>) crt;
+        return (List<Sale>) crt.list();
     }
 
     public Integer save(Sale sale) {

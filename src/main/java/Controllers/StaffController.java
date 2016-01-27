@@ -3,14 +3,16 @@ package Controllers;
 import Dao.DealersDao;
 import Dao.StaffDao;
 import Models.Dealer;
+import Models.ResponseObject;
 import Models.Staff;
 import Services.DealerServices;
 import Services.StaffServices;
+import Utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * Created by phong on 21/01/2016.
@@ -21,35 +23,61 @@ import org.springframework.web.bind.annotation.RestController;
 public class StaffController {
     @Autowired
     StaffServices staffServices;
-    @Autowired
-    DealerServices dealerServices;
+
 
     @RequestMapping(value = "/list")
-    public String getAllStaffs() {
-        return staffServices.getAllStaffs().toString();
+    public
+    @ResponseBody
+    ResponseObject getAllStaffs() {
+        try {
+            List<Staff> staffs = staffServices.getAllStaffs();
+            return new ResponseObject(true, Constants.HTTP.SUCCESS, staffs);
+        } catch (Exception e){
+            return  new ResponseObject(false,e.getMessage(),null );
+        }
+
     }
 
     @RequestMapping(value = "/add-one")
-    public String addOneStaff() {
-        Staff staff = new Staff();
-        staff.setAddress("Ameriaca");
-        Dealer dealer = dealerServices.getAllDealers().get(0);
-        staff.setDealer(dealer);
-        int result = staffServices.save(staff);
-        return "Result:" + result;
+    public
+    @ResponseBody
+    ResponseObject addOneStaff(@RequestBody Staff staff) {
+        try{
+            Integer staffId = staffServices.save(staff);
+            return new ResponseObject(true, Constants.HTTP.SUCCESS,staff);
+        }catch (Exception e){
+            return new ResponseObject(false,e.getMessage(),null);
+
+
+        }
     }
 
-    @RequestMapping(value = "/delete/{id}")
-    public String deleteStaff(@PathVariable("id") int id) {
-        staffServices.delete(id);
-        return "Delete";
+    @RequestMapping(value = "/delete")
+    public
+    @ResponseBody
+    ResponseObject deleteStaff(@RequestParam("staffId") int staffId ) {
+        try {
+            staffServices.delete(staffId);
+            return new ResponseObject(true, Constants.HTTP.SUCCESS, staffId);
+
+        }catch (Exception e){
+            return new ResponseObject(false,e.getMessage(),null);
+        }
 
     }
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public
+    @ResponseBody
+    ResponseObject getStaffById(@PathVariable("id") int id) {
+        try {
+            Staff staff = staffServices.findById(id);
+            return new ResponseObject(true,"",staff);
 
-    @RequestMapping(value = "/{id}")
-    public String showStaff(@PathVariable("id") int id) {
-        Staff staff = staffServices.findById(id);
-        return staff.getName() + staff.getStaffId();
+        }catch (Exception e){
+            return new ResponseObject(false,e.getMessage(),null);
+        }
+
+
 
     }
 }
