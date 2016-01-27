@@ -4,15 +4,16 @@ import Dao.CustomerDao;
 import Dao.MakeDao;
 import Models.Customer;
 import Models.Make;
+import Models.ResponseObject;
 import Services.CustomerServices;
+import Utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 
 /**
@@ -27,37 +28,65 @@ public class CustomerController {
     CustomerServices customerServices;
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
-    public String getListCustomer() {
-        return "" + customerServices.getAllCustomers();
+    public
+    @ResponseBody
+    ResponseObject getListCustomer() {
+        try {
+            List<Customer> customerList = customerServices.getAllCustomers();
+            return new ResponseObject(true, Constants.HTTP.SUCCESS, customerList);
+        }
+        catch (Exception e){
+            return new ResponseObject(false, e.getMessage(), null);
+        }
     }
 
     @RequestMapping(value = "/add-one")
-    public String addOneCustomer() {
-        Customer customer = new Customer();
-        customer.setName("Make demo no " + customerServices.getAllCustomers().size());
-        customerServices.save(customer);
-        return "Successful";
+    public
+    @ResponseBody
+    ResponseObject addOneCustomer(@RequestBody Customer customer) {
+        try {
+            Integer customerId = customerServices.save(customer);
+            return new ResponseObject(true,"", customerId);
+        }
+        catch(Exception e){
+            return new ResponseObject(false, e.getMessage(), null);
+        }
     }
 
     @RequestMapping(value = "/delete-one")
-    public void delete() {
-        Customer customer = new Customer();
-        customerServices.delete(1);
+    public
+    @ResponseBody
+    ResponseObject delete(@RequestParam("customerId") Integer customerId) {
+        try {
+            customerServices.delete(customerId);
+            return new ResponseObject(true, "", null);
+        }
+        catch (Exception e){
+            return new ResponseObject(false,e.getMessage(), null);
+        }
     }
 
     @RequestMapping(value = "/find-one")
-    public String findCustomer() {
-        return customerServices.findById(1).getName();
+    public
+    @ResponseBody
+    ResponseObject findCustomer(@RequestParam("customerId") Integer customerId) {
+        try {
+            Customer customer = customerServices.findById(customerId);
+            return new ResponseObject(true, "", customer);
+        }
+        catch(Exception e) {
+            return new ResponseObject(false, e.getMessage(), null);
+        }
     }
 
-    @RequestMapping(value = "/greeting")
-    public ResponseEntity<Customer> greeting(@RequestParam(value="name", defaultValue="World") String name,
-                                             @RequestParam(value="id", defaultValue="100") int id) {
-        Customer customer = new Customer();
-        customer.setCustomerId(id);
-        customer.setName(name);
-        return new ResponseEntity<Customer> (customer, HttpStatus.BAD_REQUEST);
-    }
+//    @RequestMapping(value = "/greeting")
+//    public ResponseEntity<Customer> greeting(@RequestParam(value="name", defaultValue="World") String name,
+//                                             @RequestParam(value="id", defaultValue="100") int id) {
+//        Customer customer = new Customer();
+//        customer.setCustomerId(id);
+//        customer.setName(name);
+//        return new ResponseEntity<Customer> (customer, HttpStatus.BAD_REQUEST);
+//    }
 }
 
 

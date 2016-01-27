@@ -1,14 +1,15 @@
 package Controllers;
 
 import Dao.SaleDetailDao;
+import Models.ResponseObject;
 import Models.Sale;
 import Models.SaleDetail;
 import Services.SaleDetailServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * Created by jojo on 21/01/2016.
@@ -23,25 +24,56 @@ public class SaleDetailController {
     SaleDetailServices saleDetailServices;
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
-    public String getListSaleDetail() {
-        return "" + saleDetailServices.getAllSaleDetails();
+    public
+    @ResponseBody
+    ResponseObject getListSaleDetail() {
+        try{
+            List<SaleDetail> saleDetails= saleDetailServices.getAllSaleDetails();
+            return new ResponseObject(true, "", saleDetails);
+        }
+        catch (Exception e)
+        {
+            return new ResponseObject(false, e.getMessage(), null);
+        }
     }
 
     @RequestMapping(value = "/add-one")
-    public String addOneSaleDetail() {
-        SaleDetail saleDetail = new SaleDetail();
-        saleDetailServices.save(saleDetail);
-        return "Successful";
+    public
+    @ResponseBody
+    ResponseObject addOneSaleDetail(@RequestBody SaleDetail saleDetail) {
+        try{
+            saleDetailServices.save(saleDetail);
+            return new ResponseObject(true, "", saleDetail);
+        }
+        catch (Exception e)
+        {
+            return new ResponseObject(false, e.getMessage(), null);
+        }
     }
 
-    @RequestMapping(value = "/delete-one")
-    public void delete() {
-        SaleDetail SaleDetail = new SaleDetail();
-        saleDetailServices.delete(1);
+    @RequestMapping(value = "/delete")
+    public
+    @ResponseBody
+    ResponseObject delete(@RequestParam("saleDetailId") Integer saleDetailId) {
+        try{
+            saleDetailServices.delete(saleDetailId);
+            return new ResponseObject(true, "", null);
+        }
+        catch (Exception e){
+            return new ResponseObject(false, e.getMessage(), null);
+        }
     }
 
     @RequestMapping(value = "/find-one")
-    public Sale findSaleDetail() {
-        return saleDetailServices.findById(1).getSale();
+    public
+    @ResponseBody
+    ResponseObject findSaleDetail(@RequestParam Integer saleDetailId) {
+        try{
+            SaleDetail saleDetail = saleDetailServices.findById(saleDetailId);
+            return new ResponseObject(true, "", saleDetail);
+        }
+        catch (Exception e){
+            return new ResponseObject(false, e.getMessage(), null);
+        }
     }
 }
