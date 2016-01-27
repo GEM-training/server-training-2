@@ -11,7 +11,7 @@ import java.util.List;
 public class InventoryServiceImpl implements InventoryServices{
     @Autowired
     InventoryDao inventoryDao;
-    public List<Inventory> getAllInventories() {
+    public List<Inventory> getAllInventory() {
         return inventoryDao.getAllInventory();
     }
     public Integer save(Inventory inventory)  {
@@ -22,12 +22,9 @@ public class InventoryServiceImpl implements InventoryServices{
         return inventoryDao.findById(inventoryId);
     }
 
-    public List<Inventory> getAllInventory() {
-        return null;
-    }
-
-    public void delete(Integer inventoryId) {
+    public boolean delete(Integer inventoryId) {
         inventoryDao.delete(inventoryId);
+        return true;
     }
 
 }
