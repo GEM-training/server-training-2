@@ -1,5 +1,7 @@
 package Utils;
 
+import java.security.PublicKey;
+
 /**
  * Created by hoapham on 26/01/2016.
  */
@@ -17,6 +19,7 @@ public class Constants {
         String ORDER_ATTRIBUTE="MAKE.ORDER_ATTRIBUTE";
         String PAGE_SIZE="MAKE.PAGE_SIZE";
     }
+<<<<<<< HEAD
     public interface STAFF{
         String ORDER_ATTRIBUTE = "STAFF.ORDER_ATTRIBUTE";
         String PAGE_SIZE = "STAFF.PAGE_SIZE";
@@ -26,6 +29,30 @@ public class Constants {
         String ORDER_ATTRIBUTE = "DEALER.ORDER_ATTRIBUTE";
         String PAGE_SIZE = "DEALER.PAGE_SIZE";
 
+=======
+    public interface INVENTORY{
+        String ORDER_ATTRIBUTE="INVENTORY.ORDER_ATTRIBUTE";
+        String PAGE_SIZE="INVENTORY.PAGE_SIZE";
+    }
+    public interface STAFF{
+        String ORDER_ATTRIBUTE="STAFF.ORDER_ATTRIBUTE";
+        String PAGE_SIZE="STAFF.PAGE_SIZE";
+    }
+
+    public interface CUSTOMER{
+        String ORDER_ATTRIBUTE ="CUSTOMER.ORDER_ATTRIBUTE";
+        String PAGE_SIZE="CUSTOMER.PAGE_SIZE";
+    }
+
+    public interface SALE{
+        String ORDER_ATTRIBUTE="SALE.ORDER_ATTRIBUTE";
+        String PAGE_SIZE="SALE.PAGE_SIZE";
+    }
+
+    public interface SALE_DETAIL{
+        String ORDER_ATTRIBUTE="SALE_DETAIL.ORDER_ATTRIBUTE";
+        String PAGE_SIZE="SALE_DETAIL.PAGE_SIZE";
+>>>>>>> 036f41d99b7adb69fc113ea9f679a2c0ad2fb96e
     }
 
 }

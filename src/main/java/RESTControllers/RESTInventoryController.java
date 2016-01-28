@@ -1,11 +1,15 @@
 package RESTControllers;
 
+import Models.Dealer;
 import Models.Inventory;
+import Models.Product;
 import Models.ResponseObject;
 import Services.InventoryServices;
+import Utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -20,14 +24,21 @@ public class RESTInventoryController {
     @Autowired
     InventoryServices inventoryServices;
 
-    @RequestMapping("/list")
+    @RequestMapping("/get")
 
     public
     @ResponseBody
-    ResponseObject getInventories() {
+    ResponseObject getInventories(@RequestParam(value = "start", required = false) Integer start)  {
+        List<Inventory> inventories;
         try {
-            List<Inventory> inventories = inventoryServices.getAllInventory();
-            return new ResponseObject(true, Utils.Constants.HTTP.SUCCESS, inventories);
+            if(start != null) {
+                inventories = inventoryServices.getInventory(start);
+            }
+            else {
+                inventories = inventoryServices.getAllInventory();
+            }
+            return new ResponseObject(true, Constants.HTTP.SUCCESS, inventories);
+
         } catch (Exception e) {
             return new ResponseObject(false, e.getMessage(), null);
         }
@@ -52,20 +63,35 @@ public class RESTInventoryController {
         try {
             inventoryServices.delete(inventoryId);
             return new ResponseObject(true, "", null);
-        }catch (Exception e) {
-            return new ResponseObject(false,e.getMessage(), null);
+        } catch (Exception e) {
+            return new ResponseObject(false, e.getMessage(), null);
         }
     }
+
     @RequestMapping(value = "/find")
     public
     @ResponseBody
     ResponseObject findInventory(@RequestParam("inventoryId") Integer inventodyId) {
         try {
             Inventory inventory = inventoryServices.findById(inventodyId);
-            return new ResponseObject(true,"", inventory);
-        }catch (Exception e) {
-            return new ResponseObject(false,e.getMessage(), null);
+            return new ResponseObject(true, "", inventory);
+        } catch (Exception e) {
+            return new ResponseObject(false, e.getMessage(), null);
         }
     }
+
+//    @RequestMapping(value = "/get-product")
+//    public
+//    @ResponseBody
+//    ResponseObject getDealer(@RequestParam("inventoryId") Integer inentoryId) {
+//        try {
+//            List<Product> products = new ArrayList<Product>();
+//
+//            products.addAll(inventoryServices.getProducts(inentoryId));
+//            return new ResponseObject(true,"",products);
+//        } catch (Exception e) {
+//            return new ResponseObject(false, e.getMessage(), null);
+//        }
+//    }
 
 }

@@ -18,6 +18,10 @@ public class SaleServicesImpl implements SaleServices {
         return saleDao.getAllSales();
     }
 
+    public List<Sale> getSales(int startIndex){
+        return saleDao.getSales(startIndex);
+    }
+
     public Integer save(Sale sale){
         return saleDao.save(sale);
     }

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6323ecd4-2353-405d-a49a-45f6366086ab" name="Default" comment="">
+<<<<<<< HEAD
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml" afterPath="" />
@@ -69,6 +70,74 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/hibernate.cfg.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/hibernate.cfg.xml" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Config.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Config.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/Config.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/InventoryDaoImpl.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/InventoryDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/MakeDaoImpl.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/MakeDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/ProductDaoImpl.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/ProductDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/InventoryDao.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/InventoryDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/MakeDao.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/MakeDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/ProductDao.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/ProductDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Models/Dealer.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Models/Dealer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/RESTControllers/RESTDealerController.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/RESTControllers/RESTDealerController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/RESTControllers/RESTInventoryController.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/RESTControllers/RESTInventoryController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/RESTControllers/RESTMakeController.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/RESTControllers/RESTMakeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/RESTControllers/RESTProductController.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/RESTControllers/RESTProductController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/InventoryServiceImpl.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/InventoryServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/MakeServicesImpl.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/MakeServicesImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/ProductServicesImpl.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/ProductServicesImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/InventoryServices.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/InventoryServices.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/MakeServices.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/MakeServices.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/ProductServices.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/ProductServices.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Utils/Constants$PRODUCT.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Utils/Constants$PRODUCT.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Utils/Constants.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Utils/Constants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dao/Impls/InventoryDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/Dao/Impls/InventoryDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dao/Impls/MakeDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/Dao/Impls/MakeDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dao/Impls/ProductDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/Dao/Impls/ProductDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dao/InventoryDao.class" afterPath="$PROJECT_DIR$/target/classes/Dao/InventoryDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dao/MakeDao.class" afterPath="$PROJECT_DIR$/target/classes/Dao/MakeDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dao/ProductDao.class" afterPath="$PROJECT_DIR$/target/classes/Dao/ProductDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Models/Dealer.class" afterPath="$PROJECT_DIR$/target/classes/Models/Dealer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/RESTControllers/RESTDealerController.class" afterPath="$PROJECT_DIR$/target/classes/RESTControllers/RESTDealerController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/RESTControllers/RESTInventoryController.class" afterPath="$PROJECT_DIR$/target/classes/RESTControllers/RESTInventoryController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/RESTControllers/RESTMakeController.class" afterPath="$PROJECT_DIR$/target/classes/RESTControllers/RESTMakeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/RESTControllers/RESTProductController.class" afterPath="$PROJECT_DIR$/target/classes/RESTControllers/RESTProductController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Services/Impls/InventoryServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/Services/Impls/InventoryServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Services/Impls/MakeServicesImpl.class" afterPath="$PROJECT_DIR$/target/classes/Services/Impls/MakeServicesImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Services/Impls/ProductServicesImpl.class" afterPath="$PROJECT_DIR$/target/classes/Services/Impls/ProductServicesImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Services/InventoryServices.class" afterPath="$PROJECT_DIR$/target/classes/Services/InventoryServices.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Services/MakeServices.class" afterPath="$PROJECT_DIR$/target/classes/Services/MakeServices.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Services/ProductServices.class" afterPath="$PROJECT_DIR$/target/classes/Services/ProductServices.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Utils/Constants$PRODUCT.class" afterPath="$PROJECT_DIR$/target/classes/Utils/Constants$PRODUCT.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Utils/Constants.class" afterPath="$PROJECT_DIR$/target/classes/Utils/Constants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServiceTeam2.iml" afterPath="$PROJECT_DIR$/ServiceTeam2.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Dao/Impls/InventoryDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Dao/Impls/InventoryDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Dao/Impls/MakeDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Dao/Impls/MakeDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Dao/Impls/ProductDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Dao/Impls/ProductDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Dao/InventoryDao.java" afterPath="$PROJECT_DIR$/src/main/java/Dao/InventoryDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Dao/MakeDao.java" afterPath="$PROJECT_DIR$/src/main/java/Dao/MakeDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Dao/ProductDao.java" afterPath="$PROJECT_DIR$/src/main/java/Dao/ProductDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Models/Dealer.java" afterPath="$PROJECT_DIR$/src/main/java/Models/Dealer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RESTControllers/RESTDealerController.java" afterPath="$PROJECT_DIR$/src/main/java/RESTControllers/RESTDealerController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RESTControllers/RESTInventoryController.java" afterPath="$PROJECT_DIR$/src/main/java/RESTControllers/RESTInventoryController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RESTControllers/RESTMakeController.java" afterPath="$PROJECT_DIR$/src/main/java/RESTControllers/RESTMakeController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RESTControllers/RESTProductController.java" afterPath="$PROJECT_DIR$/src/main/java/RESTControllers/RESTProductController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/Impls/InventoryServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/InventoryServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/Impls/MakeServicesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/MakeServicesImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/Impls/ProductServicesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/ProductServicesImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/InventoryServices.java" afterPath="$PROJECT_DIR$/src/main/java/Services/InventoryServices.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/MakeServices.java" afterPath="$PROJECT_DIR$/src/main/java/Services/MakeServices.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/ProductServices.java" afterPath="$PROJECT_DIR$/src/main/java/Services/ProductServices.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Utils/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/Utils/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
+>>>>>>> 036f41d99b7adb69fc113ea9f679a2c0ad2fb96e
     </list>
     <ignored path="ServiceTeam2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,22 +159,39 @@
     <favorites_list name="ServiceTeam2" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf>
       <file leaf-file-name="RESTDealerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/RESTControllers/RESTDealerController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="145" column="27" selection-start-line="145" selection-start-column="27" selection-end-line="145" selection-end-column="27" />
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="RESTProductController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/RESTControllers/RESTProductController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+>>>>>>> 036f41d99b7adb69fc113ea9f679a2c0ad2fb96e
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.7976012">
               <caret line="118" column="8" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
+=======
+      <file leaf-file-name="RESTInventoryController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/RESTControllers/RESTInventoryController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5023256">
+              <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+>>>>>>> 036f41d99b7adb69fc113ea9f679a2c0ad2fb96e
               <folding />
             </state>
           </provider>
@@ -124,23 +210,28 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/Dao/Impls/MakeDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/Models/Make.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Utils/Config.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/Dao/ProductDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Services/ProductServices.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Services/Impls/ProductServicesImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RESTControllers/RESTProductController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Dao/MakeDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Models/Inventory.java" />
         <option value="$PROJECT_DIR$/src/main/java/Utils/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/Config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/Dao/Impls/ProductDaoImpl.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/Dao/Impls/MakeDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/Services/MakeServices.java" />
         <option value="$PROJECT_DIR$/src/main/java/Services/Impls/MakeServicesImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/RESTControllers/RESTMakeController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+=======
+        <option value="$PROJECT_DIR$/src/main/java/Dao/InventoryDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Services/InventoryServices.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Services/Impls/ProductServicesImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Services/Impls/InventoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RESTControllers/RESTInventoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Config.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/Dao/Impls/InventoryDaoImpl.java" />
+>>>>>>> 036f41d99b7adb69fc113ea9f679a2c0ad2fb96e
       </list>
     </option>
   </component>
@@ -164,10 +255,17 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="65" />
     <option name="y" value="52" />
     <option name="width" value="1525" />
     <option name="height" value="818" />
+=======
+    <option name="x" value="51" />
+    <option name="y" value="24" />
+    <option name="width" value="1549" />
+    <option name="height" value="876" />
+>>>>>>> 036f41d99b7adb69fc113ea9f679a2c0ad2fb96e
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -194,6 +292,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+=======
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+>>>>>>> 036f41d99b7adb69fc113ea9f679a2c0ad2fb96e
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -254,6 +357,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server-training-2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -263,6 +384,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server-training-2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -418,6 +565,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server-training-2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -452,26 +625,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server-training-2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
+=======
+      <pane id="Scope" />
+>>>>>>> 036f41d99b7adb69fc113ea9f679a2c0ad2fb96e
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.37727273" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Tomcat Server.Unnamed">
+  <component name="RunManager" selected="Tomcat Server.test">
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings />
@@ -803,6 +990,9 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -887,6 +1077,18 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
       <method />
     </configuration>
@@ -894,7 +1096,6 @@
       <method />
     </configuration>
     <configuration default="false" name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.67" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/team2/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="ServiceTeam2:war">
@@ -966,8 +1167,83 @@
         </option>
       </method>
     </configuration>
-    <list size="1">
+    <configuration default="false" name="test" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.671" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8000/test/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="ServiceTeam2:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/test" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_(1)_ServiceTeam2_7" />
+        <option name="HTTP_PORT" value="8000" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51124" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="ServiceTeam2:war" />
+        </option>
+      </method>
+    </configuration>
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.test" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -977,12 +1253,19 @@
       <created>1453949715722</created>
       <option name="number" value="Default" />
       <updated>1453949715722</updated>
+<<<<<<< HEAD
       <workItem from="1453949717529" duration="5808000" />
       <workItem from="1453972167914" duration="69000" />
+=======
+      <workItem from="1453949717529" duration="1336000" />
+      <workItem from="1453951285854" duration="5409000" />
+      <workItem from="1453956755642" duration="7931000" />
+>>>>>>> 036f41d99b7adb69fc113ea9f679a2c0ad2fb96e
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="5877000" />
   </component>
   <component name="ToolWindowManager">
@@ -1011,6 +1294,38 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24881677" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38955224" sideWeight="0.4972973" order="2" side_tool="false" content_ui="tabs" />
+=======
+    <option name="totallyTimeSpent" value="14676000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="51" y="24" width="1549" height="876" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917705" sideWeight="0.3285991" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32793018" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985073" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24919303" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42643392" sideWeight="0.6714009" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+>>>>>>> 036f41d99b7adb69fc113ea9f679a2c0ad2fb96e
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1023,8 +1338,15 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Constant" />
+    <MESSAGE value="cnfig staff" />
+    <option name="LAST_COMMIT_MESSAGE" value="cnfig staff" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1032,10 +1354,38 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ServiceTeam2.iml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/RESTControllers/RESTProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="106" column="5" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RESTControllers/RESTInventoryController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/Impls/ProductDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/Impls/MakeDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
+          <folding>
+            <element signature="e#1181#1182#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1043,6 +1393,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -1055,6 +1421,129 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/spring-security.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.41284403">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+=======
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+>>>>>>> 036f41d99b7adb69fc113ea9f679a2c0ad2fb96e
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Models/Make.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.45412844">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+=======
+        <state vertical-scroll-proportion="0.035433073">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding />
+>>>>>>> 036f41d99b7adb69fc113ea9f679a2c0ad2fb96e
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.37155962">
+          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+=======
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+>>>>>>> 036f41d99b7adb69fc113ea9f679a2c0ad2fb96e
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/spring-security.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20177384">
+          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RESTControllers/RESTCustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Services/Impls/DealerServicesImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2480315">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/Impls/DealerDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07874016">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Services/DealerServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33142856">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Models/Dealer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Models/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.3031088">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30209792">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServiceTeam2.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/MakeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19207317">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Utils/CommonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1063,127 +1552,181 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/spring-security.xml">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33245382">
-          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.47832167">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Services/Impls/MakeServicesImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16321243">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Dao/ProductDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41284403">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.16321243">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Services/MakeServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16321243">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Services/Impls/ProductServicesImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45412844">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.34974092">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+          <folding>
+            <element signature="e#998#999#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Services/ProductServices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37155962">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.3031088">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/Impls/MakeDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76775956">
+          <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+          <folding>
+            <element signature="e#1563#1564#0" expanded="true" />
+            <element signature="e#1619#1620#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/InventoryDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.47493404">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+=======
+        <state vertical-scroll-proportion="0.55737704">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+>>>>>>> 036f41d99b7adb69fc113ea9f679a2c0ad2fb96e
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RESTControllers/RESTDealerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="117" column="62" selection-start-line="117" selection-start-column="62" selection-end-line="117" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/RESTControllers/RESTProductController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Services/InventoryServices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.7894738">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.41860464">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Services/Impls/InventoryServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2105262">
-          <caret line="13" column="63" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.5023256">
+          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Models/Product.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Models/Inventory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.469657">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18997361">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.61741424">
+          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+=======
+        <state vertical-scroll-proportion="1.2976744">
+          <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Utils/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.762533">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.4372093">
+          <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37674418">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Dao/Impls/ProductDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="42" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/Impls/MakeDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8073879">
-          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+        <state vertical-scroll-proportion="1.716279">
+          <caret line="41" column="53" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="53" />
           <folding>
-            <element signature="e#2115#2116#0" expanded="true" />
-            <element signature="e#2174#2175#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+>>>>>>> 036f41d99b7adb69fc113ea9f679a2c0ad2fb96e
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/MakeDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/Impls/InventoryDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47493404">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Services/Impls/MakeServicesImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61741424">
-          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Services/MakeServices.java">
-      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.47493404">
           <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+=======
+        <state vertical-scroll-proportion="0.66744184">
+          <caret line="43" column="58" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> 036f41d99b7adb69fc113ea9f679a2c0ad2fb96e
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/RESTControllers/RESTMakeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0395777">
-          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.16744186">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RESTControllers/RESTInventoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5023256">
+          <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -1204,5 +1747,82 @@
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>ServiceTeam2:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (ServiceTeam2)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37727273" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ServiceTeam2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37727273" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37727273" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

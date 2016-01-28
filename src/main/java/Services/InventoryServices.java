@@ -9,6 +9,7 @@ import java.util.List;
  */
 public interface InventoryServices {
     List<Inventory> getAllInventory();
+    List<Inventory> getInventory(int startIndex);
 
     boolean delete(Integer inventoryId);
 

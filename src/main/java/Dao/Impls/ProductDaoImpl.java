@@ -41,6 +41,7 @@ public class ProductDaoImpl extends AbstractDao implements ProductDao {
         Criteria criteria = getSession().createCriteria(Product.class);
         String propertyOrder = env.getProperty(Constants.PRODUCT.ORDER_ATTRIBUTE);
         int pageSize = Integer.parseInt(env.getProperty(Constants.PRODUCT.PAGE_SIZE));
+
         criteria.addOrder(Order.asc(propertyOrder));
         criteria.setMaxResults(pageSize);
         criteria.add(Restrictions.gt(propertyOrder, startIndex));

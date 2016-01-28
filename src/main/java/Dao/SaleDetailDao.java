@@ -10,6 +10,8 @@ import java.util.List;
 public interface SaleDetailDao {
     List<SaleDetail> getAllSaleDetails();
 
+    List<SaleDetail> getSaleDetails(int startIndex);
+
     Integer save(SaleDetail saleDetail);
 
     void delete(Integer saleDetailId);

@@ -5,12 +5,17 @@ import Models.Product;
 import Models.ResponseObject;
 import Services.MakeServices;
 import Services.ProductServices;
+import Utils.CommonUtils;
 import Utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.ConstraintViolation;
+import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by hoapham on 20/01/2016.
@@ -35,10 +40,10 @@ public class RESTProductController {
 
     }
 
-    @RequestMapping(value = "/get-products")
+    @RequestMapping(value = "/get")
     public
     @ResponseBody
-    ResponseObject getProducts(@RequestParam(value = "start", required = false) Integer start) {
+    ResponseObject get(@RequestParam(value = "start", required = false) Integer start) {
         List<Product> products;
         try {
             if (start != null) {
@@ -58,7 +63,9 @@ public class RESTProductController {
     @RequestMapping(value = "/save")
     public
     @ResponseBody
-    ResponseObject addProduct(@RequestBody Product product) {
+    ResponseObject save(@RequestBody @Valid Product product, BindingResult errors) {
+        if (errors.hasErrors())
+            return new ResponseObject(false, errors.getAllErrors().get(0).getDefaultMessage(),null);
         try {
             Integer productId = productServices.save(product);
             return new ResponseObject(true, Constants.HTTP.SUCCESS, productId);
@@ -70,7 +77,9 @@ public class RESTProductController {
     @RequestMapping(value = "/update")
     public
     @ResponseBody
-    ResponseObject saveProduct(@RequestBody Product product) {
+    ResponseObject update(@RequestBody @Valid Product product, BindingResult errors) {
+        if (errors.hasErrors())
+            return new ResponseObject(false, errors.getAllErrors().get(0).getDefaultMessage(),null);
         try {
             productServices.saveOrUpdate(product);
             return new ResponseObject(true, Constants.HTTP.SUCCESS, null);
@@ -82,7 +91,7 @@ public class RESTProductController {
     @RequestMapping(value = "/get-parts")
     public
     @ResponseBody
-    ResponseObject getListParts(@RequestParam("productId") Integer productId) {
+    ResponseObject getParts(@RequestParam("productId") Integer productId) {
         try {
             List<Product> listParts = new ArrayList<Product>();
             listParts.addAll(productServices.getParts(productId));

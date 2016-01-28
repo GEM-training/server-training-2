@@ -24,6 +24,7 @@ public class ProductServicesImpl implements ProductServices {
     }
 
     public List<Product> getProducts(int startIndex) {
+
         return productDao.getProduct(startIndex);
     }
 

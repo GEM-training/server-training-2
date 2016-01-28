@@ -1,0 +1,8 @@
+*.class
+.idea/uiDesigner.xml
+.idea/workspace.xml
+target/*
+# Package Files #
+*.jar
+*.war
+*.ear
