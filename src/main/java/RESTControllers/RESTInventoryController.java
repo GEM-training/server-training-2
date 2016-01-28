@@ -24,7 +24,7 @@ public class RESTInventoryController {
     @Autowired
     InventoryServices inventoryServices;
 
-    @RequestMapping("/list")
+    @RequestMapping("/get")
 
     public
     @ResponseBody
