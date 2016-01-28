@@ -5,6 +5,7 @@ import Models.Inventory;
 import Models.Product;
 import Models.ResponseObject;
 import Services.InventoryServices;
+import Utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -36,7 +37,7 @@ public class RESTInventoryController {
             else {
                 inventories = inventoryServices.getAllInventory();
             }
-            return new ResponseObject(true,"", inventories);
+            return new ResponseObject(true, Constants.HTTP.SUCCESS, inventories);
 
         } catch (Exception e) {
             return new ResponseObject(false, e.getMessage(), null);
