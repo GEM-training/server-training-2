@@ -86,10 +86,10 @@ public class RESTMakeController {
 
     }
 
-    @RequestMapping(value = "/get-products")
+    @RequestMapping(value = "/get")
     public
     @ResponseBody
-    ResponseObject getProducts(@RequestParam("makeId") Integer makeId) {
+    ResponseObject get(@RequestParam("makeId") Integer makeId) {
         try {
             List<Product> products = new ArrayList<Product>(makeServices.getProducts(makeId));
             return new ResponseObject(true, Constants.HTTP.SUCCESS, products);
