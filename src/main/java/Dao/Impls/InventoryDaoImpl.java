@@ -41,7 +41,6 @@ public class InventoryDaoImpl extends AbstractDao implements InventoryDao {
         criteria.addOrder(Order.asc(propertyOrder));
         criteria.add(Restrictions.gt(propertyOrder, startIndex));
         criteria.setMaxResults(pageSize);
-    System.out.println(""+propertyOrder+"==="+startIndex);
         return (List<Inventory>) criteria.list();
     }
 
