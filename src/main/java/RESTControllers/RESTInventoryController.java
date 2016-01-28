@@ -1,11 +1,14 @@
 package RESTControllers;
 
+import Models.Dealer;
 import Models.Inventory;
+import Models.Product;
 import Models.ResponseObject;
 import Services.InventoryServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -52,20 +55,35 @@ public class RESTInventoryController {
         try {
             inventoryServices.delete(inventoryId);
             return new ResponseObject(true, "", null);
-        }catch (Exception e) {
-            return new ResponseObject(false,e.getMessage(), null);
+        } catch (Exception e) {
+            return new ResponseObject(false, e.getMessage(), null);
         }
     }
+
     @RequestMapping(value = "/find")
     public
     @ResponseBody
     ResponseObject findInventory(@RequestParam("inventoryId") Integer inventodyId) {
         try {
             Inventory inventory = inventoryServices.findById(inventodyId);
-            return new ResponseObject(true,"", inventory);
-        }catch (Exception e) {
-            return new ResponseObject(false,e.getMessage(), null);
+            return new ResponseObject(true, "", inventory);
+        } catch (Exception e) {
+            return new ResponseObject(false, e.getMessage(), null);
         }
     }
+
+//    @RequestMapping(value = "/get-product")
+//    public
+//    @ResponseBody
+//    ResponseObject getDealer(@RequestParam("inventoryId") Integer inentoryId) {
+//        try {
+//            List<Product> products = new ArrayList<Product>();
+//
+//            products.addAll(inventoryServices.getProducts(inentoryId));
+//            return new ResponseObject(true,"",products);
+//        } catch (Exception e) {
+//            return new ResponseObject(false, e.getMessage(), null);
+//        }
+//    }
 
 }

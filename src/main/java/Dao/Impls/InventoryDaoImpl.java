@@ -3,10 +3,12 @@ package Dao.Impls;
 import Dao.AbstractDao;
 import Dao.InventoryDao;
 import Models.Inventory;
+import Models.Product;
 import org.hibernate.Criteria;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by nguyenkhoi on 1/20/16.
@@ -34,5 +36,6 @@ public class InventoryDaoImpl extends AbstractDao implements InventoryDao {
     public Inventory findById(Integer inventoryId) {
         return getSession().get(Inventory.class, inventoryId);
     }
+
 
 }

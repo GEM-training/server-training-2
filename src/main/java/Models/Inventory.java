@@ -23,7 +23,7 @@ public class Inventory {
     private String phone;
 
     @JsonIgnore
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "dealer_id")
     private Dealer dealer;
 

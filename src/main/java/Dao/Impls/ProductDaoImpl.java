@@ -27,7 +27,7 @@ public class ProductDaoImpl extends AbstractDao implements ProductDao {
 
     public Product findById(Integer productId) {
         Product product = getSession().get(Product.class, productId);
-        return  product;
+        return product;
     }
 
     public Integer save(Product product) {

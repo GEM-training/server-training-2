@@ -1,8 +1,10 @@
 package Dao;
 
 import Models.Inventory;
+import Models.Product;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by nguyenkhoi on 1/20/16.
@@ -15,4 +17,6 @@ public interface InventoryDao {
     Inventory findById(Integer inventoryId);
 
     Integer save(Inventory inventory);
+
+    //Set<Product> getProducts(Integer inventoryId);
 }
