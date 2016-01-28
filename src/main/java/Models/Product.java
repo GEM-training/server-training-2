@@ -4,6 +4,7 @@ package Models;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 import java.util.Set;
 
@@ -18,10 +19,13 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "product_id")
     private int productId;
+
+    @NotNull(message = "name could not empty !")
     private String name;
     private String description;
 
     @Column(name = "is_unit")
+    @NotNull(message = "is unit ?")
     private boolean isUnit;
 
     @JsonIgnore
