@@ -21,12 +21,17 @@ public class RESTMakeController {
     @Autowired
     MakeServices makeServices;
 
-    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    @RequestMapping(value = "/get-makes", method = RequestMethod.GET)
     public
     @ResponseBody
-    ResponseObject getListMakes() {
+    ResponseObject getMakes(@RequestParam(value = "start", required = false) Integer start) {
+        List<Make> makes;
         try {
-            List<Make> makes = makeServices.getAllMakes();
+            if (start == null) {
+                makes = makeServices.getAllMakes();
+            } else {
+                makes = makeServices.getMakes(start);
+            }
             return new ResponseObject(true, Constants.HTTP.SUCCESS, makes);
         } catch (Exception e) {
             return new ResponseObject(true, e.getMessage(), null);

@@ -14,6 +14,8 @@ import java.util.Set;
 public interface ProductServices {
     List<Product> getAllProducts();
 
+    List<Product> getProducts(int startIndex);
+
     Product findById(Integer productId);
 
     Integer save(Product product);
