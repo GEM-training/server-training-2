@@ -80,7 +80,7 @@ public class RESTDealerController {
     @RequestMapping(value = "/get-staff", method = RequestMethod.GET)
     public
     @ResponseBody
-    ResponseObject getStaff(@PathVariable("dealerId") int dealerId) {
+    ResponseObject getStaff(@RequestParam("dealerId") int dealerId) {
         try {
             List<Staff> staffs = new ArrayList<Staff>();
             Dealer dealer = dealerServices.findById(dealerId);

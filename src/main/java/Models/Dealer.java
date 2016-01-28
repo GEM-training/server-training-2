@@ -26,18 +26,18 @@ public class Dealer {
     private Date updatedDate;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "dealer")
+    @OneToMany(mappedBy = "dealer",fetch = FetchType.EAGER)
     private Set<Inventory> setInventories;
 
     @JsonIgnore
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "Product_Dealer", joinColumns = @JoinColumn(name = "dealer_id"), inverseJoinColumns = @JoinColumn(name = "product_id"))
     private Set<Product> listProducts;
     @JsonIgnore
-    @OneToMany(mappedBy = "dealer")
+    @OneToMany(mappedBy = "dealer", fetch = FetchType.EAGER)
     private Set<Staff> listStaffs;
     @JsonIgnore
-    @OneToMany(mappedBy = "dealer")
+    @OneToMany(mappedBy = "dealer",fetch = FetchType.EAGER)
     private Set<Sale> listSales;
 
     public Dealer() {
