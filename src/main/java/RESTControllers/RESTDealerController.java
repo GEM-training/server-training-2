@@ -36,7 +36,7 @@ public class RESTDealerController {
     @RequestMapping(value = "/add")
     public
     @ResponseBody
-    ResponseObject add(@RequestBody Dealer dealer) {
+    ResponseObject addDealer(@RequestBody Dealer dealer) {
         try {
             Integer dealerId = dealerServices.save(dealer);
             return new ResponseObject(true, Constants.HTTP.SUCCESS, dealerId);
@@ -50,7 +50,7 @@ public class RESTDealerController {
     @RequestMapping(value = "/delete")
     public
     @ResponseBody
-    ResponseObject delete(@RequestParam("dealerId") int dealerId) {
+    ResponseObject deleteDealer(@RequestParam("dealerId") int dealerId) {
         try {
             dealerServices.delete(dealerId);
             return new ResponseObject(true, Constants.HTTP.SUCCESS, dealerId);
@@ -64,7 +64,7 @@ public class RESTDealerController {
     @RequestMapping(value = "/find", method = RequestMethod.GET)
     public
     @ResponseBody
-    ResponseObject find(@RequestParam("dealerId") int dealerId) {
+    ResponseObject findDealer(@RequestParam("dealerId") int dealerId) {
         try {
             Dealer dealer = dealerServices.findById(dealerId);
             return new ResponseObject(true, "", dealer);
@@ -140,6 +140,27 @@ public class RESTDealerController {
             return new ResponseObject(false, e.getMessage(), null);
         }
 
+    }
+
+
+    @RequestMapping(value = "/get-dealers")
+    public
+    @ResponseBody
+    ResponseObject getDealers(@RequestParam(value = "start", required = false) Integer start) {
+        List<Dealer> dealers;
+        try {
+            if (start != null) {
+                dealers = dealerServices.getDealers(start);
+
+            } else {
+                dealers = dealerServices.getAllDealers();
+            }
+            return new ResponseObject(true, Constants.HTTP.SUCCESS, dealers);
+
+        } catch (Exception e) {
+            e.getStackTrace();
+            return new ResponseObject(false, e.getMessage(), null);
+        }
     }
 
 

@@ -17,4 +17,6 @@ public interface StaffDao {
     void delete(Integer id);
 
     Staff findById(Integer id);
+
+    List<Staff> getStaffs(int startIndex);
 }

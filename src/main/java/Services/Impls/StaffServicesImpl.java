@@ -35,4 +35,8 @@ public class StaffServicesImpl implements StaffServices {
     public Staff findById(Integer staffId) {
         return staffDao.findById(staffId);
     }
+
+    public List<Staff> getStaff(int startIndex) {
+        return staffDao.getStaffs(startIndex);
+    }
 }

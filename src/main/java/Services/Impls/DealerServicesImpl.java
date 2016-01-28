@@ -36,4 +36,8 @@ public class DealerServicesImpl implements DealerServices {
     public Dealer findById(Integer dealerId) {
         return dealersDao.findById(dealerId);
     }
+
+    public List<Dealer> getDealers(int startIndex) {
+        return dealersDao.getDealer(startIndex);
+    }
 }

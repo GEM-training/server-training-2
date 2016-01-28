@@ -17,5 +17,15 @@ public class Constants {
         String ORDER_ATTRIBUTE="MAKE.ORDER_ATTRIBUTE";
         String PAGE_SIZE="MAKE.PAGE_SIZE";
     }
+    public interface STAFF{
+        String ORDER_ATTRIBUTE = "STAFF.ORDER_ATTRIBUTE";
+        String PAGE_SIZE = "STAFF.PAGE_SIZE";
+    }
+
+    public interface DEALER{
+        String ORDER_ATTRIBUTE = "DEALER.ORDER_ATTRIBUTE";
+        String PAGE_SIZE = "DEALER.PAGE_SIZE";
+
+    }
 
 }

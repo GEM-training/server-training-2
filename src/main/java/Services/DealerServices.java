@@ -16,4 +16,5 @@ public interface DealerServices {
     boolean delete(Integer dealerId);
 
     Dealer findById(Integer dealerId);
+    List<Dealer> getDealers(int startIndex);
 }

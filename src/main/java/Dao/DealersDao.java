@@ -15,4 +15,6 @@ public interface DealersDao {
     void delete(Integer id);
 
     Dealer findById(Integer id);
+
+    List<Dealer> getDealer(int startIndex);
 }

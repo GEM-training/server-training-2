@@ -16,4 +16,6 @@ public interface StaffServices {
 
     Staff findById(Integer staffId);
 
+    List<Staff> getStaff(int startIndex);
+
 }

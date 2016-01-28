@@ -1,5 +1,6 @@
 package RESTControllers;
 
+import Models.Product;
 import Models.ResponseObject;
 import Models.Staff;
 import Services.DealerServices;
@@ -37,7 +38,7 @@ public class RESTStaffController {
     @RequestMapping(value = "/add")
     public
     @ResponseBody
-    ResponseObject add(@RequestBody Staff staff) {
+    ResponseObject addStaff(@RequestBody Staff staff) {
         try {
             Integer staffId = staffServices.save(staff);
             return new ResponseObject(true, Constants.HTTP.SUCCESS, staff);
@@ -51,7 +52,7 @@ public class RESTStaffController {
     @RequestMapping(value = "/delete")
     public
     @ResponseBody
-    ResponseObject delete(@RequestParam("staffId") int staffId) {
+    ResponseObject deleteStaff(@RequestParam("staffId") int staffId) {
         try {
             staffServices.delete(staffId);
             return new ResponseObject(true, Constants.HTTP.SUCCESS, staffId);
@@ -65,7 +66,7 @@ public class RESTStaffController {
     @RequestMapping(value = "/find", method = RequestMethod.GET)
     public
     @ResponseBody
-    ResponseObject find(@RequestParam("staffId") int staffId) {
+    ResponseObject findStaff(@RequestParam("staffId") int staffId) {
         try {
             Staff staff = staffServices.findById(staffId);
             return new ResponseObject(true, "", staff);
@@ -75,5 +76,25 @@ public class RESTStaffController {
         }
 
 
+    }
+
+    @RequestMapping(value = "/get-staffs")
+    public
+    @ResponseBody
+    ResponseObject getStaffs(@RequestParam(value = "start", required = false) Integer start) {
+        List<Staff> staffs;
+        try {
+            if (start != null) {
+                staffs = staffServices.getStaff(start);
+
+            } else {
+                staffs = staffServices.getAllStaffs();
+            }
+            return new ResponseObject(true, Constants.HTTP.SUCCESS, staffs);
+
+        } catch (Exception e) {
+            e.getStackTrace();
+            return new ResponseObject(false, e.getMessage(), null);
+        }
     }
 }
