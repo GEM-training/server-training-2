@@ -14,6 +14,8 @@ import java.util.Set;
 public interface ProductDao {
     List<Product> getAllProducts();
 
+    List<Product> getProduct(int startIndex);
+
     Product findById(Integer productId);
 
     Integer save(Product product);

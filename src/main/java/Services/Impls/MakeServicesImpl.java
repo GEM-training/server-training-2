@@ -20,6 +20,10 @@ public class MakeServicesImpl implements MakeServices {
         return makeDao.getAllMakes();
     }
 
+    public List<Make> getMakes(int startIndex) {
+        return makeDao.getMakes(startIndex);
+    }
+
     public Integer save(Make make) {
         return makeDao.save(make);
     }

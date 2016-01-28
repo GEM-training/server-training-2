@@ -12,11 +12,14 @@ import java.util.Set;
 public interface InventoryDao {
     List<Inventory> getAllInventory();
 
+
     void delete(Integer inventoryId);
 
     Inventory findById(Integer inventoryId);
 
     Integer save(Inventory inventory);
+
+    List<Inventory> getInventory(int startIndex);
 
     //Set<Product> getProducts(Integer inventoryId);
 }

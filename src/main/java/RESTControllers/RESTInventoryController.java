@@ -27,10 +27,17 @@ public class RESTInventoryController {
 
     public
     @ResponseBody
-    ResponseObject getInventories() {
+    ResponseObject getInventories(@RequestParam(value = "start", required = false) Integer start)  {
+        List<Inventory> inventories;
         try {
-            List<Inventory> inventories = inventoryServices.getAllInventory();
-            return new ResponseObject(true, Utils.Constants.HTTP.SUCCESS, inventories);
+            if(start != null) {
+                inventories = inventoryServices.getInventory(start);
+            }
+            else {
+                inventories = inventoryServices.getAllInventory();
+            }
+            return new ResponseObject(true,"", inventories);
+
         } catch (Exception e) {
             return new ResponseObject(false, e.getMessage(), null);
         }

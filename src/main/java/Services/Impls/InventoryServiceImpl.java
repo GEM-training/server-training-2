@@ -14,6 +14,10 @@ public class InventoryServiceImpl implements InventoryServices{
     public List<Inventory> getAllInventory() {
         return inventoryDao.getAllInventory();
     }
+    public List<Inventory> getInventory(int startIndex) {
+
+        return inventoryDao.getInventory(startIndex);
+    }
     public Integer save(Inventory inventory)  {
         return inventoryDao.save(inventory);
     }

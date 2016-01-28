@@ -23,6 +23,11 @@ public class ProductServicesImpl implements ProductServices {
         return productDao.getAllProducts();
     }
 
+    public List<Product> getProducts(int startIndex) {
+
+        return productDao.getProduct(startIndex);
+    }
+
     public Product findById(Integer productId) {
         return productDao.findById(productId);
     }

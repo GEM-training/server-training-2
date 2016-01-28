@@ -12,6 +12,8 @@ import java.util.Set;
 public interface MakeServices {
     List<Make> getAllMakes();
 
+    List<Make> getMakes(int startIndex);
+
     Integer save(Make make);
 
     void saveOrUpdate(Make make);

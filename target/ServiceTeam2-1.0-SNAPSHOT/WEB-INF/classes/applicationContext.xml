@@ -11,7 +11,7 @@
        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <mvc:annotation-driven/>
     <context:annotation-config/>
-    <context:component-scan base-package="RESTControllers"/>
+    <context:component-scan base-package="RESTControllers,Utils"/>
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
           destroy-method="close">
         <property name="driverClassName" value="org.postgresql.Driver"/>

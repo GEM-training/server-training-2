@@ -35,14 +35,22 @@ public class RESTProductController {
 
     }
 
-    @RequestMapping(value = "/list")
+    @RequestMapping(value = "/get-products")
     public
     @ResponseBody
-    ResponseObject getProducts() {
+    ResponseObject getProducts(@RequestParam(value = "start", required = false) Integer start) {
+        List<Product> products;
         try {
-            List<Product> products = productServices.getAllProducts();
+            if (start != null) {
+                products = productServices.getProducts(start);
+
+            } else {
+                products = productServices.getAllProducts();
+            }
             return new ResponseObject(true, Constants.HTTP.SUCCESS, products);
+
         } catch (Exception e) {
+            e.getStackTrace();
             return new ResponseObject(false, e.getMessage(), null);
         }
     }

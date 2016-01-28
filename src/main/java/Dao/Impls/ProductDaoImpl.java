@@ -6,8 +6,16 @@ import Models.Dealer;
 import Models.Make;
 import Models.Product;
 import Models.Sale;
+import Utils.Constants;
 import org.hibernate.Criteria;
 import org.hibernate.Hibernate;
+import org.hibernate.criterion.Order;
+import org.hibernate.criterion.Restrictions;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -18,10 +26,25 @@ import java.util.Set;
  * Created by hoapham on 20/01/2016.
  */
 @Transactional
+@Configuration
+@PropertySource("classpath:Config.properties")
 public class ProductDaoImpl extends AbstractDao implements ProductDao {
+    @Autowired
+    Environment env;
 
     public List<Product> getAllProducts() {
         Criteria criteria = getSession().createCriteria(Product.class);
+        return (List<Product>) criteria.list();
+    }
+
+    public List<Product> getProduct(int startIndex) {
+        Criteria criteria = getSession().createCriteria(Product.class);
+        String propertyOrder = env.getProperty(Constants.PRODUCT.ORDER_ATTRIBUTE);
+        int pageSize = Integer.parseInt(env.getProperty(Constants.PRODUCT.PAGE_SIZE));
+
+        criteria.addOrder(Order.asc(propertyOrder));
+        criteria.setMaxResults(pageSize);
+        criteria.add(Restrictions.gt(propertyOrder, startIndex));
         return (List<Product>) criteria.list();
     }
 
