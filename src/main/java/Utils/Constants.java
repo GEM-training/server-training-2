@@ -18,4 +18,19 @@ public class Constants {
         String PAGE_SIZE="MAKE.PAGE_SIZE";
     }
 
+    public interface CUSTOMER{
+        String ORDER_ATTRIBUTE ="CUSTOMER.ORDER_ATTRIBUTE";
+        String PAGE_SIZE="CUSTOMER.PAGE_SIZE";
+    }
+
+    public interface SALE{
+        String ORDER_ATTRIBUTE="SALE.ORDER_ATTRIBUTE";
+        String PAGE_SIZE="SALE.PAGE_SIZE";
+    }
+
+    public interface SALE_DETAIL{
+        String ORDER_ATTRIBUTE="SALE_DETAIL.ORDER_ATTRIBUTE";
+        String PAGE_SIZE="SALE_DETAIL.PAGE_SIZE";
+    }
+
 }

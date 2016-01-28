@@ -20,16 +20,23 @@ public class RESTSaleController {
     @Autowired
     SaleServices saleServices;
 
-    @RequestMapping(value = "/view-all", method = RequestMethod.GET)
+    @RequestMapping(value = "/get-sales", method = RequestMethod.GET)
     public
     @ResponseBody
-    ResponseObject viewAll() {
-        try{
-            List<Sale> saleList = saleServices.getAllSales();
-            return new ResponseObject(true, Constants.HTTP.SUCCESS, saleList);
+    ResponseObject getSales(@RequestParam(value = "start", required = false) Integer start) {
+        List<Sale> sales;
+        try {
+            if(start == null) {
+                sales = saleServices.getAllSales();
+            }
+            else{
+                sales = saleServices.getSales(start);
+            }
+            return new ResponseObject(true, Constants.HTTP.SUCCESS, sales);
         }
         catch (Exception e){
-            return new ResponseObject(false,e.getMessage(), null);
+            e.getStackTrace();
+            return new ResponseObject(false, e.getMessage(), null);
         }
     }
 
