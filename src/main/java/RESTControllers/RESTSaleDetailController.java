@@ -3,6 +3,7 @@ package RESTControllers;
 import Models.ResponseObject;
 import Models.SaleDetail;
 import Services.SaleDetailServices;
+import Utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,16 +20,22 @@ public class RESTSaleDetailController {
     @Autowired
     SaleDetailServices saleDetailServices;
 
-    @RequestMapping(value = "/view-all", method = RequestMethod.GET)
+    @RequestMapping(value = "/get-sale-details", method = RequestMethod.GET)
     public
     @ResponseBody
-    ResponseObject viewAll() {
-        try{
-            List<SaleDetail> saleDetails= saleDetailServices.getAllSaleDetails();
-            return new ResponseObject(true, "", saleDetails);
+    ResponseObject getSaleDetails(@RequestParam(value = "start", required = false) Integer start) {
+        List<SaleDetail> saleDetais;
+        try {
+            if(start == null) {
+                saleDetais = saleDetailServices.getAllSaleDetails();
+            }
+            else{
+                saleDetais = saleDetailServices.getSaleDetails(start);
+            }
+            return new ResponseObject(true, Constants.HTTP.SUCCESS, saleDetais);
         }
-        catch (Exception e)
-        {
+        catch (Exception e){
+            e.getStackTrace();
             return new ResponseObject(false, e.getMessage(), null);
         }
     }

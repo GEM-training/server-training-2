@@ -21,15 +21,22 @@ public class RESTCustomerController {
     @Autowired
     CustomerServices customerServices;
 
-    @RequestMapping(value = "/view-all", method = RequestMethod.GET)
+    @RequestMapping(value = "/get-customers", method = RequestMethod.GET)
     public
     @ResponseBody
-    ResponseObject viewAll() {
+    ResponseObject getCustomers(@RequestParam(value = "start", required = false) Integer start) {
+        List<Customer> customers;
         try {
-            List<Customer> customerList = customerServices.getAllCustomers();
-            return new ResponseObject(true, Constants.HTTP.SUCCESS, customerList);
+            if(start == null) {
+                customers = customerServices.getAllCustomers();
+            }
+            else{
+                customers = customerServices.getCustomers(start);
+            }
+            return new ResponseObject(true, Constants.HTTP.SUCCESS, customers);
         }
         catch (Exception e){
+            e.getStackTrace();
             return new ResponseObject(false, e.getMessage(), null);
         }
     }
