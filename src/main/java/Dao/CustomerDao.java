@@ -11,6 +11,8 @@ import java.util.List;
 public interface CustomerDao {
     List<Customer> getAllCustomers();
 
+    List<Customer> getCustomers(int startIndex);
+
     Integer save(Customer customer);
 
     void delete(Integer customerId);

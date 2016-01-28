@@ -4,6 +4,7 @@ package Models;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 import java.util.Set;
 
@@ -17,8 +18,12 @@ public class Make {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "make_id")
     private int makeId;
+
+    @NotNull(message = "address could not empty !")
     private String address;
     private String description;
+
+    @NotNull(message = "name could not empty !")
     private String name;
     @Column(name = "created_date")
     private Date createdDate;
@@ -90,8 +95,4 @@ public class Make {
         this.setProducts = setProducts;
     }
 
-    @Override
-    public String toString() {
-        return "ID: " + makeId + ", name: " + name;
-    }
 }

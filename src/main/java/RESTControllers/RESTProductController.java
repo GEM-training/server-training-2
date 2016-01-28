@@ -5,12 +5,15 @@ import Models.Product;
 import Models.ResponseObject;
 import Services.MakeServices;
 import Services.ProductServices;
+import Utils.CommonUtils;
 import Utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.ConstraintViolation;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by hoapham on 20/01/2016.
@@ -59,6 +62,10 @@ public class RESTProductController {
     public
     @ResponseBody
     ResponseObject addProduct(@RequestBody Product product) {
+        Set<ConstraintViolation<Product>> constraintViolations = CommonUtils.getValidator().validate(product);
+        if (constraintViolations.size() > 0) {
+            return new ResponseObject(false, constraintViolations.iterator().next().getMessage(), null);
+        }
         try {
             Integer productId = productServices.save(product);
             return new ResponseObject(true, Constants.HTTP.SUCCESS, productId);

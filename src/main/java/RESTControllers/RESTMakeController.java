@@ -4,12 +4,17 @@ import Models.Make;
 import Models.Product;
 import Models.ResponseObject;
 import Services.MakeServices;
+import Utils.CommonUtils;
 import Utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.ConstraintViolation;
+import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by hoapham on 19/01/2016.
@@ -42,7 +47,9 @@ public class RESTMakeController {
     @RequestMapping(value = "/save")
     public
     @ResponseBody
-    ResponseObject addOneMake(@RequestBody Make make) {
+    ResponseObject save(@RequestBody @Valid Make make, BindingResult error) {
+        if (error.hasErrors())
+            return new ResponseObject(false, error.getAllErrors().get(0).getDefaultMessage(),null);
         try {
             Integer makeId = makeServices.save(make);
             return new ResponseObject(true, Constants.HTTP.SUCCESS, makeId);
@@ -54,7 +61,10 @@ public class RESTMakeController {
     @RequestMapping(value = "/update")
     public
     @ResponseBody
-    ResponseObject updateMake(@RequestBody Make make) {
+    ResponseObject update(@RequestBody @Valid Make make, BindingResult error) {
+
+        if (error.hasErrors())
+            return new ResponseObject(false, error.getAllErrors().get(0).getDefaultMessage(),null);
         try {
             makeServices.saveOrUpdate(make);
             return new ResponseObject(true, Constants.HTTP.SUCCESS, null);
@@ -66,7 +76,7 @@ public class RESTMakeController {
     @RequestMapping(value = "/delete")
     public
     @ResponseBody
-    ResponseObject deleteMake(@RequestParam("makeId") Integer makeId) {
+    ResponseObject delete(@RequestParam("makeId") Integer makeId) {
         try {
             makeServices.delete(makeId);
             return new ResponseObject(true, Constants.HTTP.SUCCESS, null);
