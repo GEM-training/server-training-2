@@ -3,25 +3,6 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<<<<<<< HEAD
-    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
-          destroy-method="close">
-        <property name="driverClassName" value="org.postgresql.Driver"/>
-        <property name="url" value="jdbc:postgresql://172.16.10.202/nhom2"/>
-        <property name="username" value="postgres"/>
-        <property name="password" value="postgres"/>
-    </bean>
-    <bean id="sessionFactory"
-          class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
-        <property name="dataSource" ref="dataSource"/>
-        <property name="configLocation" value="WEB-INF/hibernate.cfg.xml" />
-    </bean>
-    <tx:advice id="txAdvice" transaction-manager="transactionManager"/>
-    <tx:annotation-driven transaction-manager="transactionManager" />
-    <bean id="transactionManager"
-          class="org.springframework.orm.hibernate5.HibernateTransactionManager">
-        <property name="sessionFactory" ref="sessionFactory" />
-=======
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix">
             <value>/WEB-INF/views/</value>
@@ -29,7 +10,6 @@
         <property name="suffix">
             <value>.jsp</value>
         </property>
->>>>>>> 8c12c06edac80b0e58328d16e89e5908743ec4eb
     </bean>
 
 </beans>

@@ -25,12 +25,8 @@ public class Make {
     @Column(name = "updated_date")
     private Date updatedDate;
 
-<<<<<<< HEAD
     @OneToMany(mappedBy = "make",fetch =FetchType.LAZY)
-=======
-    @OneToMany(mappedBy = "make")
     @JsonIgnore
->>>>>>> 8c12c06edac80b0e58328d16e89e5908743ec4eb
     Set<Product> setProducts;
 
     public Make() {

@@ -11,15 +11,11 @@
        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <mvc:annotation-driven/>
     <context:annotation-config/>
-    <context:component-scan base-package="Controllers"/>
+    <context:component-scan base-package="RESTControllers"/>
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
           destroy-method="close">
         <property name="driverClassName" value="org.postgresql.Driver"/>
-<<<<<<< HEAD:out/artifacts/ServiceTeam2_war_exploded/WEB-INF/dispatcher-servlet.xml
-        <property name="url" value="jdbc:postgresql://172.16.10.202/nhom2"/>
-=======
         <property name="url" value="jdbc:postgresql://172.16.10.202/Nhom2New"/>
->>>>>>> 8c12c06edac80b0e58328d16e89e5908743ec4eb:target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/applicationContext.xml
         <property name="username" value="postgres"/>
         <property name="password" value="postgres"/>
     </bean>
