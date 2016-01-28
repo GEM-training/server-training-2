@@ -45,6 +45,21 @@
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:4.0.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:4.0.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.hibernate:hibernate-search-orm:5.5.2.Final" />
+          <element id="library" level="project" name="Maven: org.hibernate:hibernate-search-engine:5.5.2.Final" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-core:5.3.1" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-backward-codecs:5.3.1" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-misc:5.3.1" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-analyzers-common:5.3.1" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-facet:5.3.1" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-queries:5.3.1" />
+          <element id="library" level="project" name="Maven: org.hibernate:hibernate-search-infinispan:5.1.2.Final" />
+          <element id="library" level="project" name="Maven: org.infinispan:infinispan-lucene-directory:7.1.1.Final" />
+          <element id="library" level="project" name="Maven: org.infinispan:infinispan-core:7.1.1.Final" />
+          <element id="library" level="project" name="Maven: org.infinispan:infinispan-commons:7.1.1.Final" />
+          <element id="library" level="project" name="Maven: org.jgroups:jgroups:3.6.1.Final" />
+          <element id="library" level="project" name="Maven: org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final" />
+          <element id="library" level="project" name="Maven: org.jboss.marshalling:jboss-marshalling-osgi:1.4.4.Final" />
         </element>
       </element>
       <element id="directory" name="META-INF">

@@ -2,37 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6323ecd4-2353-405d-a49a-45f6366086ab" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Config.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/Utils/Config.properties" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/ProductDaoImpl.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/ProductDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/ProductDao.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/ProductDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/RESTControllers/RESTProductController.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/RESTControllers/RESTProductController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/ProductServicesImpl.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/ProductServicesImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/ProductServices.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/ProductServices.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Utils/Constants$PRODUCT.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Utils/Constants$PRODUCT.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dao/Impls/ProductDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/Dao/Impls/ProductDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dao/ProductDao.class" afterPath="$PROJECT_DIR$/target/classes/Dao/ProductDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/RESTControllers/RESTProductController.class" afterPath="$PROJECT_DIR$/target/classes/RESTControllers/RESTProductController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Services/Impls/ProductServicesImpl.class" afterPath="$PROJECT_DIR$/target/classes/Services/Impls/ProductServicesImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Services/ProductServices.class" afterPath="$PROJECT_DIR$/target/classes/Services/ProductServices.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Utils/Constants$PRODUCT.class" afterPath="$PROJECT_DIR$/target/classes/Utils/Constants$PRODUCT.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ServiceTeam2.iml" afterPath="$PROJECT_DIR$/ServiceTeam2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Dao/Impls/MakeDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Dao/Impls/MakeDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Dao/Impls/ProductDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Dao/Impls/ProductDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Dao/MakeDao.java" afterPath="$PROJECT_DIR$/src/main/java/Dao/MakeDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Dao/ProductDao.java" afterPath="$PROJECT_DIR$/src/main/java/Dao/ProductDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RESTControllers/RESTMakeController.java" afterPath="$PROJECT_DIR$/src/main/java/RESTControllers/RESTMakeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RESTControllers/RESTProductController.java" afterPath="$PROJECT_DIR$/src/main/java/RESTControllers/RESTProductController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/Impls/MakeServicesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/MakeServicesImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/Impls/ProductServicesImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Services/Impls/ProductServicesImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/MakeServices.java" afterPath="$PROJECT_DIR$/src/main/java/Services/MakeServices.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Services/ProductServices.java" afterPath="$PROJECT_DIR$/src/main/java/Services/ProductServices.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Utils/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/Utils/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jta_1_1_spec_1_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_0_7_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_1_3_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_9_4_1206_jdbc41.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_0_1_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_0_1_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_0_1_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_4_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_4_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_4_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_2_4_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_4_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_4_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_2_4_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_1_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_2_4_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_4_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_4_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/views/products.jsp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/DealersDao.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/DealersDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/DealerDaoImpl.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/DealerDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/StaffDaoImpl.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/StaffDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/StaffDao.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/StaffDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Models/Sale.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Models/Sale.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Models/Staff.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Models/Staff.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/RESTControllers/RESTStaffController.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/RESTControllers/RESTStaffController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/DealerServices.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/DealerServices.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/DealerServicesImpl.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/DealerServicesImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/StaffServicesImpl.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/StaffServicesImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/StaffServices.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/StaffServices.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dao/DealersDao.class" afterPath="$PROJECT_DIR$/target/classes/Dao/DealersDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dao/Impls/DealerDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/Dao/Impls/DealerDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dao/Impls/StaffDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/Dao/Impls/StaffDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dao/StaffDao.class" afterPath="$PROJECT_DIR$/target/classes/Dao/StaffDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Models/Sale.class" afterPath="$PROJECT_DIR$/target/classes/Models/Sale.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Models/Staff.class" afterPath="$PROJECT_DIR$/target/classes/Models/Staff.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/RESTControllers/RESTStaffController.class" afterPath="$PROJECT_DIR$/target/classes/RESTControllers/RESTStaffController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Services/DealerServices.class" afterPath="$PROJECT_DIR$/target/classes/Services/DealerServices.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Services/Impls/DealerServicesImpl.class" afterPath="$PROJECT_DIR$/target/classes/Services/Impls/DealerServicesImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Services/Impls/StaffServicesImpl.class" afterPath="$PROJECT_DIR$/target/classes/Services/Impls/StaffServicesImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Services/StaffServices.class" afterPath="$PROJECT_DIR$/target/classes/Services/StaffServices.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/ServiceTeam2_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ServiceTeam2_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/hibernate.cfg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/hibernate.cfg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/hibernate.cfg.xml" />
     </list>
     <ignored path="ServiceTeam2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,7 +90,28 @@
     <favorites_list name="ServiceTeam2" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="RESTDealerController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/RESTControllers/RESTDealerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="145" column="27" selection-start-line="145" selection-start-column="27" selection-end-line="145" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7976012">
+              <caret line="118" column="8" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -83,6 +140,7 @@
         <option value="$PROJECT_DIR$/src/main/java/Services/MakeServices.java" />
         <option value="$PROJECT_DIR$/src/main/java/Services/Impls/MakeServicesImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/RESTControllers/RESTMakeController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -107,9 +165,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1295" />
-    <option name="height" value="744" />
+    <option name="y" value="52" />
+    <option name="width" value="1525" />
+    <option name="height" value="818" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -136,9 +194,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -399,6 +454,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -816,6 +874,11 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -915,43 +978,46 @@
       <option name="number" value="Default" />
       <updated>1453949715722</updated>
       <workItem from="1453949717529" duration="5808000" />
+      <workItem from="1453972167914" duration="69000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5808000" />
+    <option name="totallyTimeSpent" value="5877000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1295" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="65" y="52" width="1525" height="818" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5970149" sideWeight="0.5027027" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5970149" sideWeight="0.5027027" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985073" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24942085" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985073" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24881677" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38955224" sideWeight="0.4972973" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -970,7 +1036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1010,7 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41284403">
           <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1018,12 +1082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45412844">
           <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-          <folding>
-            <element signature="e#499#500#0" expanded="false" />
-            <element signature="e#549#550#0" expanded="false" />
-            <element signature="e#605#606#0" expanded="false" />
-            <element signature="e#661#662#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1031,7 +1089,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37155962">
           <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1106,7 +1163,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47493404">
           <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1114,10 +1170,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.61741424">
           <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-          <folding>
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1125,7 +1177,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47493404">
           <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1133,6 +1184,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.0395777">
           <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RESTControllers/RESTDealerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="145" column="27" selection-start-line="145" selection-start-column="27" selection-end-line="145" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7976012">
+          <caret line="118" column="8" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
           <folding />
         </state>
       </provider>
