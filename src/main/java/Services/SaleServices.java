@@ -10,6 +10,8 @@ import java.util.List;
 public interface SaleServices {
     List<Sale> getAllSales();
 
+    List<Sale> getSales(int startIndex);
+
     Integer save(Sale sale);
 
     boolean delete(Integer saleId);

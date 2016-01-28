@@ -19,6 +19,10 @@ public class CustomerServicesImpl implements CustomerServices {
         return customerDao.getAllCustomers();
     }
 
+    public List<Customer> getCustomers(int startIndex){
+        return customerDao.getCustomers(startIndex);
+    }
+
     public Integer save(Customer customer) {
         return customerDao.save(customer);
     }

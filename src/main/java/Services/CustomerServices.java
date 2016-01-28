@@ -11,6 +11,8 @@ import java.util.List;
 public interface CustomerServices {
     List<Customer> getAllCustomers();
 
+    List<Customer> getCustomers(int startIndex);
+
     Integer save(Customer customer);
 
     boolean delete(Integer customerId);
