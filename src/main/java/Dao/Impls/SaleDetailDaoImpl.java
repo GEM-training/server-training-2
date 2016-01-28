@@ -31,7 +31,7 @@ public class SaleDetailDaoImpl extends AbstractDao implements SaleDetailDao {
         return (List<SaleDetail>) criteria.list();
     }
 
-    public List<SaleDetail> getSaleDetailss(int startIndex){
+    public List<SaleDetail> getSaleDetails(int startIndex){
         Criteria criteria = getSession().createCriteria(Sale.class);
         String propertyOrder = env.getProperty(Constants.SALE_DETAIL.ORDER_ATTRIBUTE);
         int pageSize = Integer.parseInt(Constants.SALE_DETAIL.PAGE_SIZE);
