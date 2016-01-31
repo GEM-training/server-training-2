@@ -21,7 +21,7 @@ import java.util.Set;
  * Created by hoapham on 19/01/2016.
  */
 @Configuration
-@PropertySource("classpath:Config.properties")
+@PropertySource("classpath:config.properties")
 public class MakeDaoImpl extends GenericDaoImpl<Make> implements MakeDao {
     @Autowired
     Environment env;
@@ -34,8 +34,8 @@ public class MakeDaoImpl extends GenericDaoImpl<Make> implements MakeDao {
 
     public List<Make> getMakes(int startIndex) {
         Criteria criteria = getSession().createCriteria(Make.class);
-        String propertyOrder = env.getProperty(Constants.MAKE.ORDER_ATTRIBUTE);
-        int pageSize = Integer.parseInt(env.getProperty(Constants.MAKE.PAGE_SIZE));
+        String propertyOrder = env.getProperty(Constants.MAKE.order);
+        int pageSize = Integer.parseInt(env.getProperty(Constants.MAKE.page_size));
         criteria.addOrder(Order.asc(propertyOrder));
         criteria.setMaxResults(pageSize);
         criteria.add(Restrictions.gt(propertyOrder, startIndex));

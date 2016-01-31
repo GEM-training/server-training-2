@@ -20,7 +20,7 @@ import java.util.List;
  */
 @Transactional
 @Configuration
-@PropertySource("classpath:Config.properties")
+@PropertySource("classpath:config.properties")
 public class CustomerDaoImpl extends GenericDaoImpl<Customer> implements CustomerDao {
     @Autowired
     Environment env;
@@ -31,8 +31,8 @@ public class CustomerDaoImpl extends GenericDaoImpl<Customer> implements Custome
 
     public List<Customer> getCustomers(int startIndex) {
         Criteria criteria = getSession().createCriteria(Customer.class);
-        String propertyOrder = env.getProperty(Constants.CUSTOMER.ORDER_ATTRIBUTE);
-        int pageSize = Integer.parseInt(Constants.CUSTOMER.PAGE_SIZE);
+        String propertyOrder = env.getProperty(Constants.CUSTOMER.order);
+        int pageSize = Integer.parseInt(Constants.CUSTOMER.page_size);
         criteria.addOrder(Order.asc(propertyOrder));
         criteria.setMaxResults(pageSize);
         criteria.add(Restrictions.gt(propertyOrder, startIndex));

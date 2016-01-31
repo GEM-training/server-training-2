@@ -9,42 +9,42 @@ public class Constants {
     }
 
     public interface PRODUCT {
-        String ORDER_ATTRIBUTE = "PRODUCT.ORDER_ATTRIBUTE";
-        String PAGE_SIZE = "PRODUCT.PAGE_SIZE";
+        String order = "product_order_attribute";
+        String page_size = "product_page_size";
     }
 
     public interface MAKE {
-        String ORDER_ATTRIBUTE = "MAKE.ORDER_ATTRIBUTE";
-        String PAGE_SIZE = "MAKE.PAGE_SIZE";
+        String order = "make_order_attribute";
+        String page_size = "make_page_size";
     }
 
     public interface STAFF {
-        String ORDER_ATTRIBUTE = "STAFF.ORDER_ATTRIBUTE";
-        String PAGE_SIZE = "STAFF.PAGE_SIZE";
+        String order = "STAFF.ORDER_ATTRIBUTE";
+        String page_size = "STAFF.PAGE_SIZE";
     }
 
     public interface DEALER {
-        String ORDER_ATTRIBUTE = "DEALER.ORDER_ATTRIBUTE";
-        String PAGE_SIZE = "DEALER.PAGE_SIZE";
+        String order = "dealer_order_attribute";
+        String page_size = "dealer_page_size";
     }
 
     public interface INVENTORY {
-        String ORDER_ATTRIBUTE = "INVENTORY.ORDER_ATTRIBUTE";
-        String PAGE_SIZE = "INVENTORY.PAGE_SIZE";
+        String order = "INVENTORY.ORDER_ATTRIBUTE";
+        String page_size = "INVENTORY.PAGE_SIZE";
     }
 
     public interface CUSTOMER {
-        String ORDER_ATTRIBUTE = "CUSTOMER.ORDER_ATTRIBUTE";
-        String PAGE_SIZE = "CUSTOMER.PAGE_SIZE";
+        String order = "customer_order_attribute";
+        String page_size = "customer_page_size";
     }
 
     public interface SALE {
-        String ORDER_ATTRIBUTE = "SALE.ORDER_ATTRIBUTE";
-        String PAGE_SIZE = "SALE.PAGE_SIZE";
+        String order = "sale_order_attribute";
+        String page_size = "sale_page_size";
     }
 
     public interface SALE_DETAIL {
-        String ORDER_ATTRIBUTE = "SALE_DETAIL.ORDER_ATTRIBUTE";
-        String PAGE_SIZE = "SALE_DETAIL.PAGE_SIZE";
+        String order = "sale_detail_order_attribute";
+        String page_size = "sale_detail_page_size";
     }
 }

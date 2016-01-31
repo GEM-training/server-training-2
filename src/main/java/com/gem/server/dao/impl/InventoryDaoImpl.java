@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Set;
@@ -21,7 +20,7 @@ import java.util.Set;
  * Created by nguyenkhoi on 1/20/16.
  */
 @Configuration
-@PropertySource("classpath:Config.properties")
+@PropertySource("classpath:config.properties")
 public class InventoryDaoImpl extends GenericDaoImpl<Inventory> implements InventoryDao {
     @Autowired
     Environment env;
@@ -33,8 +32,8 @@ public class InventoryDaoImpl extends GenericDaoImpl<Inventory> implements Inven
     }
 
     public List<Inventory> getInventory(int startIndex) {
-        propertyOrder = env.getProperty(Constants.INVENTORY.ORDER_ATTRIBUTE);
-        pageSize = Integer.parseInt(env.getProperty(Constants.INVENTORY.PAGE_SIZE));
+        propertyOrder = env.getProperty(Constants.INVENTORY.order);
+        pageSize = Integer.parseInt(env.getProperty(Constants.INVENTORY.page_size));
         Criteria criteria = getSession().createCriteria(Inventory.class);
         criteria.addOrder(Order.asc(propertyOrder));
         criteria.add(Restrictions.gt(propertyOrder, startIndex));

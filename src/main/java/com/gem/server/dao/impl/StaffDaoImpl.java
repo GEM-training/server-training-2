@@ -19,7 +19,7 @@ import java.util.List;
  */
 @Transactional
 @Configuration
-@PropertySource("classpath:Config.properties")
+@PropertySource("classpath:config.properties")
 public class StaffDaoImpl extends GenericDaoImpl<Staff> implements StaffDao {
     @Autowired
     Environment env;
@@ -32,8 +32,8 @@ public class StaffDaoImpl extends GenericDaoImpl<Staff> implements StaffDao {
     }
 
     public List<Staff> getStaffs(int startIndex) {
-        propertyOrderStaff = env.getProperty(Constants.STAFF.ORDER_ATTRIBUTE);
-        staffPageSize = Integer.parseInt(env.getProperty(Constants.STAFF.PAGE_SIZE));
+        propertyOrderStaff = env.getProperty(Constants.STAFF.order);
+        staffPageSize = Integer.parseInt(env.getProperty(Constants.STAFF.page_size));
         Criteria criteria = getSession().createCriteria(Staff.class);
         criteria.addOrder(Order.asc(propertyOrderStaff));
         criteria.setMaxResults(staffPageSize);

@@ -19,7 +19,7 @@ import java.util.List;
  */
 @Transactional
 @Configuration
-@PropertySource("classpath:Config.properties")
+@PropertySource("classpath:config.properties")
 
 public class SaleDaoImpl extends GenericDaoImpl<Sale> implements SaleDao {
     @Autowired
@@ -34,8 +34,8 @@ public class SaleDaoImpl extends GenericDaoImpl<Sale> implements SaleDao {
 
     public List<Sale> getSales(int startIndex) {
         Criteria criteria = getSession().createCriteria(Sale.class);
-        propertyOrderSale = env.getProperty(Constants.SALE.ORDER_ATTRIBUTE);
-        salePageSize = Integer.parseInt(Constants.SALE.PAGE_SIZE);
+        propertyOrderSale = env.getProperty(Constants.SALE.order);
+        salePageSize = Integer.parseInt(Constants.SALE.page_size);
         criteria.addOrder(Order.asc(propertyOrderSale));
         criteria.setMaxResults(salePageSize);
         criteria.add(Restrictions.gt(propertyOrderSale, startIndex));

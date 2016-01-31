@@ -8,8 +8,6 @@ import com.gem.server.model.Product;
 import com.gem.server.model.Sale;
 import org.hibernate.Criteria;
 import org.hibernate.Hibernate;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +22,7 @@ import java.util.List;
  * Created by phong on 20/01/2016.
  */
 @Configuration
-@PropertySource("classpath:Config.properties")
+@PropertySource("classpath:config.properties")
 public class DealerDaoImpl extends GenericDaoImpl<Dealer> implements DealerDao {
     @Autowired
     Environment env;
@@ -43,8 +41,8 @@ public class DealerDaoImpl extends GenericDaoImpl<Dealer> implements DealerDao {
     }
 
     public List<Dealer> getDealer(int startIndex) {
-        dealerPageSize = Integer.parseInt(env.getProperty(Constants.DEALER.PAGE_SIZE));
-        dealerOrderAttribute = env.getProperty(Constants.DEALER.ORDER_ATTRIBUTE);
+        dealerPageSize = Integer.parseInt(env.getProperty(Constants.DEALER.page_size));
+        dealerOrderAttribute = env.getProperty(Constants.DEALER.order);
         Criteria criteria = getSession().createCriteria(Dealer.class);
         criteria.addOrder(Order.asc(dealerOrderAttribute));
         criteria.setMaxResults(dealerPageSize);

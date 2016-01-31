@@ -22,7 +22,7 @@ import java.util.Set;
  * Created by hoapham on 20/01/2016.
  */
 @Configuration
-@PropertySource("classpath:Config.properties")
+@PropertySource("classpath:config.properties")
 public class ProductDaoImpl extends GenericDaoImpl<Product> implements ProductDao {
     @Autowired
     Environment env;
@@ -35,8 +35,8 @@ public class ProductDaoImpl extends GenericDaoImpl<Product> implements ProductDa
     }
 
     public List<Product> getProduct(int startIndex) {
-        productPageSize = Integer.parseInt(env.getProperty(Constants.PRODUCT.PAGE_SIZE));
-        propertyOrderProduct = env.getProperty(Constants.PRODUCT.ORDER_ATTRIBUTE);
+        productPageSize = Integer.parseInt(env.getProperty(Constants.PRODUCT.page_size));
+        propertyOrderProduct = env.getProperty(Constants.PRODUCT.order);
         Criteria criteria = getSession().createCriteria(Product.class);
         criteria.addOrder(Order.asc(propertyOrderProduct));
         criteria.setMaxResults(productPageSize);

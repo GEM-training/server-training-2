@@ -66,14 +66,10 @@ public class ProductServiceImpl implements ProductService {
     }
 
     public ResponseObject getProducts(int startIndex) {
-        ResponseObject result = null;
         try {
-            List<Product> products = productDao.getProduct(startIndex);
-            result = new ResponseObject(true, "", products);
+            return new ResponseObject(true, "", productDao.getProduct(startIndex));
         } catch (Exception e) {
-            result = new ResponseObject(false, "", null);
-        } finally {
-            return result;
+            return new ResponseObject(false, "", null);
         }
     }
 
