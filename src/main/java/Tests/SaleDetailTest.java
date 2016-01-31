@@ -1,7 +1,7 @@
 package Tests;
 
-import Models.SaleDetail;
-import Services.SaleDetailServices;
+import com.gem.server.model.SaleDetail;
+import com.gem.server.service.SaleDetailService;
 import junit.framework.TestCase;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,27 +20,27 @@ import org.springframework.transaction.annotation.Transactional;
 @Configuration
 public class SaleDetailTest extends TestCase {
     @Autowired
-    SaleDetailServices saleDetailServices;
+    SaleDetailService saleDetailService;
     /*@Autowired
-    DealerServices dealerServices;
+    DealerService dealerService;
     @Autowired
-    ProductDealerServices productDealerServices;*/
+    ProductDealerService productDealerServices;*/
 
     @Test
     public void testCreateSaleDetail(){
         SaleDetail saleDetail = new SaleDetail();
         saleDetail.setSaleDetailId(2);
         saleDetail.setQuantity(10);
-        assertEquals((Integer)2, saleDetailServices.save(saleDetail));
+        assertEquals((Integer)2, saleDetailService.save(saleDetail));
     }
 
     @Test
     public void testDeleteSaleDetail(){
-        assertEquals(true, saleDetailServices.delete(10));
+        assertEquals(true, saleDetailService.delete(10));
     }
 
     @Test
     public void testFindSaleDetail(){
-        assertEquals(10, saleDetailServices.findById(1).getQuantity());
+        assertEquals(10, saleDetailService.findById(1).getQuantity());
     }
 }

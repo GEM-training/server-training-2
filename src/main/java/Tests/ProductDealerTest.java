@@ -1,10 +1,12 @@
 package Tests;
 
-import Models.*;
-import Services.DealerServices;
-import Services.ProductDealerServices;
-import Services.ProductServices;
-import Services.StaffServices;
+import com.gem.server.dao.DealerDao;
+import com.gem.server.dao.ProductDao;
+import com.gem.server.dao.ProductDealerDao;
+import com.gem.server.model.Dealer;
+import com.gem.server.model.Make;
+import com.gem.server.model.Product;
+import com.gem.server.model.ProductDealer;
 import junit.framework.TestCase;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,28 +25,29 @@ import org.springframework.transaction.annotation.Transactional;
 @Configuration
 public class ProductDealerTest extends TestCase {
     @Autowired
-    ProductServices productServices;
+    ProductDao productDao;
     @Autowired
-    DealerServices dealerServices;
+    DealerDao dealerDao;
     @Autowired
-    ProductDealerServices productDealerServices;
+    ProductDealerDao productDealerDao;
+
     @Test
-    public void  addProductDealer() {
-        Dealer dealer = dealerServices.getAllDealers().get(0);
-        Product product = productServices.getAllProducts().get(0);
+    public void addProductDealer() {
+        Dealer dealer = dealerDao.findAll().get(0);
+        Product product = productDao.findAll().get(0);
         ProductDealer productDealer = new ProductDealer();
         productDealer.setProductDealerId(100);
         productDealer.setDealerId(dealer.getDealerId());
         productDealer.setProductId(product.getProductId());
-        assertEquals(new Integer(20),productDealerServices.save(productDealer));
+        assertEquals(new Integer(20), productDealerDao.save(productDealer));
     }
 
     //join 2 table
     //
     @Test
     public void getDealerFromProductDealer() {
-        ProductDealer productDealer = productDealerServices.findById(1);
-        assertEquals(1,productDealer.getDealerId());
+        ProductDealer productDealer = productDealerDao.findById(1);
+        assertEquals(1, productDealer.getDealerId());
 
     }
 
@@ -52,16 +55,14 @@ public class ProductDealerTest extends TestCase {
     //get make from product dealer
     @Test
     public void getMakeFromProductDealer() {
-        ProductDealer productDealer = productDealerServices.findById(1);
+        ProductDealer productDealer = productDealerDao.findById(1);
         int productId = productDealer.getProductId();
-        Product product = productServices.findById(productId);
+        Product product = productDao.findById(productId);
         Make make = product.getMake();
-        assertEquals(5,make.getMakeId());
+        assertEquals(5, make.getMakeId());
 
 
     }
-
-
 
 
 }

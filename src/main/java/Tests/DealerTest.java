@@ -1,9 +1,9 @@
 package Tests;
 
-import Models.Dealer;
-import Services.DealerServices;
-import Services.ProductDealerServices;
-import Services.ProductServices;
+import com.gem.server.dao.DealerDao;
+import com.gem.server.dao.ProductDao;
+import com.gem.server.dao.ProductDealerDao;
+import com.gem.server.model.Dealer;
 import junit.framework.TestCase;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,11 +22,11 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @Configuration
 public class DealerTest extends TestCase {
     @Autowired
-    ProductServices productServices;
+    ProductDao productServices;
     @Autowired
-    DealerServices dealerServices;
+    DealerDao dealerServices;
     @Autowired
-    ProductDealerServices productDealerServices;
+    ProductDealerDao productDealerServices;
 
     @Test
     public void testDealerTable() {
@@ -39,17 +39,17 @@ public class DealerTest extends TestCase {
     @Test
     public void getStaffFromDealer(){
         Dealer dealer = dealerServices.findById(1);
-        assertEquals(3,dealer.getListStaffs().size());
+        assertEquals(3,dealer.getStaffs().size());
 
     }
     @Test
     void  getProductFromDealer(){
         Dealer dealer = dealerServices.findById(1);
-        assertEquals(5,dealer.getListProducts().size());
+        assertEquals(5,dealer.getProducts().size());
     }
     @Test
     public  void getSalesFromDealer(){
         Dealer dealer = dealerServices.findById(1);
-        assertEquals(1, dealer.getListSales());
+        assertEquals(1, dealer.getSales());
     }
 }

@@ -1,7 +1,7 @@
 package Tests;
 
-import Models.Customer;
-import Services.CustomerServices;
+import com.gem.server.model.Customer;
+import com.gem.server.service.CustomerService;
 import junit.framework.TestCase;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,11 +20,11 @@ import org.springframework.transaction.annotation.Transactional;
 @Configuration
 public class CustomerTest extends TestCase {
     @Autowired
-    CustomerServices customerServices;
+    CustomerService customerServices;
     /*@Autowired
-    DealerServices dealerServices;
+    DealerService dealerService;
     @Autowired
-    ProductDealerServices productDealerServices;*/
+    ProductDealerService productDealerServices;*/
 
     @Test
     public void testCreateCustomer(){

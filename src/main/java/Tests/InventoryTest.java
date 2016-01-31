@@ -1,10 +1,9 @@
 package Tests;
 
-import Models.Dealer;
-import Models.Inventory;
-import Services.InventoryServices;
+import com.gem.server.model.Dealer;
+import com.gem.server.model.Inventory;
+import com.gem.server.service.InventoryService;
 import junit.framework.TestCase;
-import org.hibernate.Hibernate;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,26 +21,26 @@ import org.springframework.transaction.annotation.Transactional;
 @Configuration
 public class InventoryTest extends TestCase {
     @Autowired
-    InventoryServices inventoryServices;
+    InventoryService inventoryService;
 
     @Test
     public void testAddInventory() {
         Inventory inventory = new Inventory();
-        assertEquals(new Integer(55), inventoryServices.save(inventory));
+        assertEquals(new Integer(55), inventoryService.save(inventory));
     }
 
     @Test
     public void testDeleteInventory() {
-        assertEquals(true, inventoryServices.delete(7));
+        assertEquals(true, inventoryService.delete(7));
     }
 
     @Test
     public void testFindInventory() {
-        assertEquals("Kho Bắc Ninh", inventoryServices.findById(8).getName());
+        assertEquals("Kho Bắc Ninh", inventoryService.findById(8).getName());
     }
     @Test
     public void getDealerFromInventory() {
-        Dealer dealer = inventoryServices.findById(7).getDealer();
+        Dealer dealer = inventoryService.findById(7).getDealer();
         assertEquals(1, dealer.getDealerId());
 
     }

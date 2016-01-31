@@ -1,9 +1,7 @@
 package Tests;
 
-import Models.Customer;
-import Models.Sale;
-import Services.CustomerServices;
-import Services.SaleServices;
+import com.gem.server.model.Sale;
+import com.gem.server.service.SaleService;
 import junit.framework.TestCase;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,37 +21,37 @@ import org.springframework.transaction.annotation.Transactional;
 @Configuration
 public class SaleTest extends TestCase {
     @Autowired
-    SaleServices saleServices;
+    SaleService saleService;
     /*@Autowired
-    DealerServices dealerServices;
+    DealerService dealerService;
     @Autowired
-    ProductDealerServices productDealerServices;*/
+    ProductDealerService productDealerServices;*/
 
     @Test
     public void testCreateSale(){
         Sale sale = new Sale();
         sale.setSaleId(2);
         sale.setStatus(0);
-        assertEquals((Integer)2, saleServices.save(sale));
+        assertEquals((Integer)2, saleService.save(sale));
     }
 
     @Test
     public void testDeleteSale(){
-        assertEquals(true, saleServices.delete(1));
+        assertEquals(true, saleService.delete(1));
     }
 
     @Test
     public void testFindSale(){
-        assertEquals(1, saleServices.findById(1).getStatus());
+        assertEquals(1, saleService.findById(1).getStatus());
     }
 
     @Test
     public void testGetCustomerInfo(){
-        assertEquals("0948682045", saleServices.findById(1).getCustomer().getPhone());
+        assertEquals("0948682045", saleService.findById(1).getCustomer().getPhone());
     }
 
     @Test
     public void testGetSaleDetail(){
-        assertEquals(2, saleServices.findById(1).getListSaleDetails().size());
+        assertEquals(2, saleService.findById(1).getListSaleDetails().size());
     }
 }

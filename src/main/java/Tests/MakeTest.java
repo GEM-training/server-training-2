@@ -1,7 +1,8 @@
 package Tests;
 
-import Models.Make;
-import Services.MakeServices;
+import com.gem.server.dao.MakeDao;
+import com.gem.server.model.Make;
+import com.gem.server.service.MakeService;
 import junit.framework.TestCase;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,17 +20,17 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 @Configuration
 public class MakeTest extends TestCase{
-    @Autowired
-    MakeServices makeServices;
-    @Test
-    public void dataTest(){
-        Make make = makeServices.findById(2);
-        assertEquals("LG",make.getName());
-    }
-
-    @Test
-    public void testContrainstProducts(){
-        Make make = makeServices.findById(2);
-        assertEquals(7,make.getSetProducts().size());
-    }
+//    @Autowired
+//    MakeDao makeDao;
+//    @Test
+//    public void dataTest(){
+//        Make make = makeService.findById(2);
+//        assertEquals("LG",make.getName());
+//    }
+//
+//    @Test
+//    public void testContrainstProducts(){
+//        Make make = makeService.findById(2);
+//        assertEquals(7,make.getSetProducts().size());
+//    }
 }

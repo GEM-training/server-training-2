@@ -1,20 +1,17 @@
 package Tests;
 
-import Models.Dealer;
-import Models.Staff;
-import Services.DealerServices;
-import Services.StaffServices;
+import com.gem.server.model.Dealer;
+import com.gem.server.model.Staff;
+import com.gem.server.service.DealerService;
+import com.gem.server.service.StaffService;
 import junit.framework.TestCase;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by phong on 1/24/2016.
@@ -26,9 +23,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class StaffTest extends TestCase {
 
     @Autowired
-    StaffServices staffServices;
+    StaffService staffService;
     @Autowired
-    DealerServices dealerServices;
+    DealerService dealerService;
 
     @Test
     public void createStaff() {
@@ -38,13 +35,13 @@ public class StaffTest extends TestCase {
         staff.setAddress("Hanoi");
         staff.setPhone("090900909");
 
-        assertEquals(new Integer(20),staffServices.save(staff));
+        assertEquals(new Integer(20), staffService.save(staff));
     }
 
     // join 2 table
     @Test
     public void getDealerFromStaff() {
-        Dealer dealer = staffServices.findById(10).getDealer();
+        Dealer dealer = staffService.findById(10).getDealer();
         assertEquals(7,dealer.getDealerId());
     }
 }

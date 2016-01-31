@@ -1,9 +1,8 @@
 package Tests;
 
-import Models.Product;
-import Services.ProductServices;
+import com.gem.server.dao.ProductDao;
+import com.gem.server.model.Product;
 import junit.framework.TestCase;
-import org.hibernate.Hibernate;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,35 +20,35 @@ import org.springframework.transaction.annotation.Transactional;
 @Configuration
 public class ProductTest extends TestCase {
     @Autowired
-    ProductServices productServices;
+    ProductDao productDao;
 
     @Test
     public void addProduct() {
         Product product = new Product();
-        assertEquals(new Integer(8), productServices.save(product));
+        assertEquals(new Integer(8), productDao.save(product));
     }
 
     @Test
     public void dataTest() {
-        Product product = productServices.findById(3);
+        Product product = productDao.findById(3);
         assertEquals(product.getName(), "Wave Alpha");
     }
 
     @Test
     public void constraintDealersTest() {
-        Product product = productServices.findById(3);
+        Product product = productDao.findById(3);
         assertEquals(1, product.getListDealers().size());
     }
 
     @Test
     public void constraintInventoriesTest() {
-        Product product = productServices.findById(3);
+        Product product = productDao.findById(3);
         assertEquals(1, product.getListInventories().size());
     }
 
     @Test
     public void constraintSaleTest() {
-        Product product = productServices.findById(3);
+        Product product = productDao.findById(3);
         assertEquals(0, product.getListSales().size());
     }
 
@@ -58,6 +57,6 @@ public class ProductTest extends TestCase {
         Product product = new Product();
         product.setProductId(2);
         product.setName("Test-product-primary key");
-        assertEquals(new Integer(46),productServices.save(product));
+        assertEquals(new Integer(46),productDao.save(product));
     }
 }
