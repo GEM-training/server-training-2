@@ -19,9 +19,9 @@ public interface InventoryService {
 
     ResponseObject delete(Inventory inventory);
 
-    ResponseObject deleteById(long dealerId);
+    ResponseObject deleteById(Integer dealerId);
 
-    ResponseObject getInventory(int startIndex);
+    ResponseObject getInventory(Integer startIndex);
 
     ResponseObject getProducts(Integer productId);
 }
