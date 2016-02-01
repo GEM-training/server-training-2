@@ -1,5 +1,10 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
+Build-Jdk: 1.8.0_72
+Built-By: hoapham
+=======
 Build-Jdk: 1.7.0_91
 Built-By: phong
+>>>>>>> 62cedc45cf8a3a6f07c89239f31fcd022c51f803
 Created-By: IntelliJ IDEA
 

@@ -3,7 +3,7 @@ package com.gem.server.controller;
 import com.gem.server.model.ResponseObject;
 import com.gem.server.model.Sale;
 import com.gem.server.service.SaleService;
-import com.gem.server.Utils.Constants;
+import com.gem.server.utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

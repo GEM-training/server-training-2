@@ -1,6 +1,7 @@
 package com.gem.server.controller;
 
 import com.gem.server.dao.ProductDao;
+import com.gem.server.exception.ValidateException;
 import com.gem.server.model.Product;
 import com.gem.server.model.ResponseObject;
 import com.gem.server.service.ProductService;
@@ -44,9 +45,9 @@ public class ProductController {
     @RequestMapping(value = "/save")
     public
     @ResponseBody
-    ResponseObject save(@RequestBody @Valid Product product, BindingResult errors) throws Exception {
+    ResponseObject save(@RequestBody @Valid Product product, BindingResult errors) throws ValidateException {
         if (errors.hasErrors())
-            return new ResponseObject(false, errors.getAllErrors().get(0).getDefaultMessage(), null);
+            throw new ValidateException(errors.getAllErrors().get(0).getDefaultMessage());
         return productService.save(product);
     }
 
@@ -55,14 +56,14 @@ public class ProductController {
     @ResponseBody
     ResponseObject update(@RequestBody @Valid Product product, BindingResult errors) throws Exception {
         if (errors.hasErrors())
-            return new ResponseObject(false, errors.getAllErrors().get(0).getDefaultMessage(), null);
+            throw new ValidateException(errors.getAllErrors().get(0).getDefaultMessage());
         return productService.update(product);
     }
 
     @RequestMapping(value = "/get-parts")
     public
     @ResponseBody
-    ResponseObject getParts(@RequestParam("productId") Integer productId) throws Exception {
+    ResponseObject getParts(@RequestParam("productId") Integer productId){
         return productService.getParts(productId);
 
     }
@@ -70,9 +71,8 @@ public class ProductController {
     @RequestMapping(value = "/find")
     public
     @ResponseBody
-    ResponseObject getProduct(@RequestParam("productId") Integer productId) throws Exception {
+    ResponseObject getProduct(@RequestParam("productId") Integer productId) {
         return productService.findById(productId);
-
     }
 
     @RequestMapping(value = "/get-dealers")

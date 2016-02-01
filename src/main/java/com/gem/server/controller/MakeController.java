@@ -1,17 +1,13 @@
 package com.gem.server.controller;
 
 import com.gem.server.model.Make;
-import com.gem.server.model.Product;
 import com.gem.server.model.ResponseObject;
 import com.gem.server.service.MakeService;
-import com.gem.server.Utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by hoapham on 19/01/2016.

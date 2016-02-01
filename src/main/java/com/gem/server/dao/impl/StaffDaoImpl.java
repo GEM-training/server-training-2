@@ -1,6 +1,6 @@
 package com.gem.server.dao.impl;
 
-import com.gem.server.Utils.Constants;
+import com.gem.server.utils.Constants;
 import com.gem.server.dao.StaffDao;
 import com.gem.server.model.Staff;
 import org.hibernate.Criteria;

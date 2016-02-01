@@ -1,6 +1,6 @@
 package com.gem.server.dao.impl;
 
-import com.gem.server.Utils.Constants;
+import com.gem.server.utils.Constants;
 import com.gem.server.dao.MakeDao;
 import com.gem.server.model.Make;
 import com.gem.server.model.Product;
@@ -25,8 +25,6 @@ import java.util.Set;
 public class MakeDaoImpl extends GenericDaoImpl<Make> implements MakeDao {
     @Autowired
     Environment env;
-    @Autowired
-    SessionFactory sessionFactory;
 
     public MakeDaoImpl() {
         super(Make.class);
