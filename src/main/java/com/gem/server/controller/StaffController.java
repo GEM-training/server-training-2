@@ -1,12 +1,15 @@
 package com.gem.server.controller;
 
+import com.gem.server.model.Dealer;
 import com.gem.server.model.ResponseObject;
 import com.gem.server.model.Staff;
 import com.gem.server.service.StaffService;
 import com.gem.server.utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 /**
@@ -35,6 +38,16 @@ public class StaffController {
     ResponseObject delete(@RequestParam("staffId") int staffId) {
         return staffService.deleteById(staffId);
 
+    }
+
+    @RequestMapping(value = "/update")
+    public
+    @ResponseBody
+    ResponseObject update(@RequestBody @Valid Staff staff, BindingResult error) throws Exception {
+
+        if (error.hasErrors())
+            return new ResponseObject(false, error.getAllErrors().get(0).getDefaultMessage(), null);
+        return staffService.update(staff);
     }
 
     @RequestMapping(value = "/find", method = RequestMethod.GET)

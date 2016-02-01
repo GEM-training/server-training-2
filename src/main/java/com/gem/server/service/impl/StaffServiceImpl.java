@@ -61,4 +61,15 @@ public class StaffServiceImpl implements StaffService {
 
         }
     }
+
+    public ResponseObject update(Staff staff) {
+        try{
+            staffDao.update(staff);
+            return new ResponseObject(true, "", null);
+        }
+        catch (Exception e)
+        {
+            return new ResponseObject(false, "", null);
+        }
+    }
 }

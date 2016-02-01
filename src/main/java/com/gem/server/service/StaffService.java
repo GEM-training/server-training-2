@@ -19,5 +19,7 @@ public interface StaffService {
 
     ResponseObject findAlls();
 
+    ResponseObject update(Staff staff);
+
 
 }
