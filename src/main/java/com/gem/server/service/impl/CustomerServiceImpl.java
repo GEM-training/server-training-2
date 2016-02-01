@@ -48,6 +48,16 @@ public class CustomerServiceImpl implements CustomerService {
         }
     }
 
+    public ResponseObject update(Customer customer) {
+        try{
+            customerDao.update(customer);
+            return new ResponseObject(true, "", null);
+        }
+        catch(Exception e){
+            return new ResponseObject(false, "", null);
+        }
+    }
+
     public ResponseObject delete(Integer customerId) {
         try {
             customerDao.deleteById(customerId);

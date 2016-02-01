@@ -16,6 +16,8 @@ public interface CustomerService {
 
     ResponseObject save(Customer customer);
 
+    ResponseObject update(Customer customer);
+
     ResponseObject delete(Integer customerId);
 
     ResponseObject findById(Integer customerId);

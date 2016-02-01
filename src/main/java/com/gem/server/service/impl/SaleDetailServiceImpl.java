@@ -45,6 +45,16 @@ public class SaleDetailServiceImpl implements SaleDetailService {
         }
     }
 
+    public ResponseObject update(SaleDetail saleDetail) {
+        try{
+            saleDetailDao.update(saleDetail);
+            return new ResponseObject(true, "", null);
+        }
+        catch (Exception e){
+            return new ResponseObject(false, "", null);
+        }
+    }
+
     public ResponseObject delete(Integer saleDetailId) {
         try{
             saleDetailDao.deleteById(saleDetailId);

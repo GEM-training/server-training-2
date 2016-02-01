@@ -1,6 +1,7 @@
 package com.gem.server.service;
 
 import com.gem.server.model.ResponseObject;
+import com.gem.server.model.Sale;
 import com.gem.server.model.SaleDetail;
 
 import java.util.List;
@@ -14,6 +15,8 @@ public interface SaleDetailService {
     ResponseObject getSaleDetails(int startIndex);
 
     ResponseObject save(SaleDetail saleDetail);
+
+    ResponseObject update(SaleDetail saleDetail);
 
     ResponseObject delete(Integer saleDetailId);
 

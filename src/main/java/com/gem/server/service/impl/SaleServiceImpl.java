@@ -35,11 +35,23 @@ public class SaleServiceImpl implements SaleService {
             return new ResponseObject(false, "", null);
         }
     }
+
     public ResponseObject save(Sale sale){
         try{
             return new ResponseObject(true, "", saleDao.save(sale));
         }
         catch (Exception e){
+            return new ResponseObject(false, "", null);
+        }
+    }
+
+    public ResponseObject update(Sale sale) {
+        try{
+            saleDao.update(sale);
+            return new ResponseObject(true, "", null);
+        }
+        catch (Exception e)
+        {
             return new ResponseObject(false, "", null);
         }
     }

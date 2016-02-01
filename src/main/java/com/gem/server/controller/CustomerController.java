@@ -47,6 +47,16 @@ public class CustomerController {
             return customerServices.save(customer);
     }
 
+    @RequestMapping(value = "/update")
+    public
+    @ResponseBody
+    ResponseObject update(@RequestBody @Valid Customer customer, BindingResult error) throws Exception{
+        if(error.hasErrors()){
+            return new ResponseObject(false, error.getAllErrors().get(0).getDefaultMessage(), null);
+        }
+        return customerServices.update(customer);
+    }
+
     @RequestMapping(value = "/delete")
     public
     @ResponseBody

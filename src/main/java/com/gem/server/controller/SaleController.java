@@ -39,6 +39,13 @@ public class SaleController {
         return saleService.save(sale);
     }
 
+    @RequestMapping(value = "/update")
+    public
+    @ResponseBody
+    ResponseObject update(@RequestBody Sale sale) throws Exception{
+        return saleService.update(sale);
+    }
+
     @RequestMapping(value = "/delete")
     public
     @ResponseBody

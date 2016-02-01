@@ -39,6 +39,13 @@ public class SaleDetailController {
         return saleDetailService.save(saleDetail);
     }
 
+    @RequestMapping(value = "/update")
+    public
+    @ResponseBody
+    ResponseObject update(@RequestBody SaleDetail saleDetail) {
+        return saleDetailService.update(saleDetail);
+    }
+
     @RequestMapping(value = "/delete")
     public
     @ResponseBody

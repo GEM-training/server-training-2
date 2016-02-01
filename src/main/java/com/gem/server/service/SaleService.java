@@ -15,6 +15,8 @@ public interface SaleService {
 
     ResponseObject save(Sale sale);
 
+    ResponseObject update(Sale sale);
+
     ResponseObject delete(Integer saleId);
 
     ResponseObject findById(Integer saleId);
