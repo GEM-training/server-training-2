@@ -1,5 +1,6 @@
 package com.gem.server.service;
 
+import com.gem.server.model.ResponseObject;
 import com.gem.server.model.Staff;
 
 import java.util.List;
@@ -8,14 +9,15 @@ import java.util.List;
  * Created by phong on 1/22/2016.
  */
 public interface StaffService {
-    List<Staff> getAllStaffs();
+    ResponseObject getStaffs(int staffIndex);
 
-    Integer save(Staff staff);
+    ResponseObject save(Staff staff);
 
-    boolean delete(Integer staffId);
+    ResponseObject deleteById(Integer staffId);
 
-    Staff findById(Integer staffId);
+    ResponseObject findById(Integer staffId);
 
-    List<Staff> getStaff(int startIndex);
+    ResponseObject findAlls();
+
 
 }

@@ -2,10 +2,7 @@ package com.gem.server.dao.impl;
 
 import com.gem.server.Utils.Constants;
 import com.gem.server.dao.DealerDao;
-import com.gem.server.model.Dealer;
-import com.gem.server.model.Inventory;
-import com.gem.server.model.Product;
-import com.gem.server.model.Sale;
+import com.gem.server.model.*;
 import org.hibernate.Criteria;
 import org.hibernate.Hibernate;
 import org.hibernate.criterion.Order;
@@ -14,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +19,7 @@ import java.util.List;
 /**
  * Created by phong on 20/01/2016.
  */
+
 @Configuration
 @PropertySource("classpath:config.properties")
 public class DealerDaoImpl extends GenericDaoImpl<Dealer> implements DealerDao {
@@ -40,7 +39,7 @@ public class DealerDaoImpl extends GenericDaoImpl<Dealer> implements DealerDao {
         return products;
     }
 
-    public List<Dealer> getDealer(int startIndex) {
+    public List<Dealer> getDealers(int startIndex) {
         dealerPageSize = Integer.parseInt(env.getProperty(Constants.DEALER.page_size));
         dealerOrderAttribute = env.getProperty(Constants.DEALER.order);
         Criteria criteria = getSession().createCriteria(Dealer.class);
@@ -50,17 +49,35 @@ public class DealerDaoImpl extends GenericDaoImpl<Dealer> implements DealerDao {
         return (List<Dealer>) criteria.list();
     }
 
-    public List<Inventory> getInventories(Integer dealerId) {
+    public List<Product> getProducts(int dealerId) {
+        Dealer dealer = findById(dealerId);
+        Hibernate.initialize(dealer.getProducts());
+        List<Product> products = new ArrayList<Product>(dealer.getProducts());
+        return products;
+    }
+
+    public List<Inventory> getInventories(int dealerId) {
         Dealer dealer = findById(dealerId);
         Hibernate.initialize(dealer.getInventories());
         List<Inventory> inventories = new ArrayList<Inventory>(dealer.getInventories());
         return inventories;
     }
 
-    public List<Sale> getSales(Integer dealerId) {
+    public List<Staff> getStaffs(int dealerId) {
         Dealer dealer = findById(dealerId);
-        Hibernate.initialize(dealer.getInventories());
+        Hibernate.initialize(dealer.getStaffs());
+        List<Staff> staffs = new ArrayList<Staff>(dealer.getStaffs());
+        return staffs;
+
+    }
+
+    public List<Sale> getSales(int dealerId) {
+        Dealer dealer = findById(dealerId);
+        Hibernate.initialize(dealer.getSales());
         List<Sale> sales = new ArrayList<Sale>(dealer.getSales());
         return sales;
     }
+
+
+
 }

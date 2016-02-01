@@ -10,4 +10,5 @@ import java.util.List;
 
 public interface StaffDao extends GenericDao<Staff> {
     List<Staff> getStaffs(int startIndex);
+
 }

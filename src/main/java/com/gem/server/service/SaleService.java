@@ -1,5 +1,6 @@
 package com.gem.server.service;
 
+import com.gem.server.model.ResponseObject;
 import com.gem.server.model.Sale;
 
 import java.util.List;
@@ -8,13 +9,17 @@ import java.util.List;
  * Created by jojo on 22/01/2016.
  */
 public interface SaleService {
-    List<Sale> getAllSales();
+    ResponseObject findAll();
 
-    List<Sale> getSales(int startIndex);
+    ResponseObject getSales(int startIndex);
 
-    Integer save(Sale sale);
+    ResponseObject save(Sale sale);
 
-    boolean delete(Integer saleId);
+    ResponseObject update(Sale sale);
 
-    Sale findById(Integer saleId);
+    ResponseObject delete(Integer saleId);
+
+    ResponseObject findById(Integer saleId);
+
+    ResponseObject getSaleDetail(Integer saleId);
 }
