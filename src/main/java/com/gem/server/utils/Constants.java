@@ -29,8 +29,8 @@ public class Constants {
     }
 
     public interface INVENTORY {
-        String order = "INVENTORY.ORDER_ATTRIBUTE";
-        String page_size = "INVENTORY.PAGE_SIZE";
+        String order = "inventory_order_attribute";
+        String page_size = "inventory_page_size";
     }
 
     public interface CUSTOMER {

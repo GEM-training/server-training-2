@@ -1,5 +1,6 @@
 package Tests;
 
+import com.gem.server.dao.SaleDetailDao;
 import com.gem.server.model.SaleDetail;
 import com.gem.server.service.SaleDetailService;
 import junit.framework.TestCase;
@@ -20,7 +21,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Configuration
 public class SaleDetailTest extends TestCase {
     @Autowired
-    SaleDetailService saleDetailService;
+    SaleDetailDao saleDetailDao;
     /*@Autowired
     DealerService dealerService;
     @Autowired
@@ -31,16 +32,16 @@ public class SaleDetailTest extends TestCase {
         SaleDetail saleDetail = new SaleDetail();
         saleDetail.setSaleDetailId(2);
         saleDetail.setQuantity(10);
-        assertEquals((Integer)2, saleDetailService.save(saleDetail));
+        assertEquals((Integer)2, saleDetailDao.save(saleDetail));
     }
 
     @Test
     public void testDeleteSaleDetail(){
-        assertEquals(true, saleDetailService.delete(10));
+        //assertEquals(true, saleDetailDao.delete(10));
     }
 
     @Test
     public void testFindSaleDetail(){
-        assertEquals(10, saleDetailService.findById(1).getQuantity());
+        assertEquals(10, saleDetailDao.findById(1).getQuantity());
     }
 }
