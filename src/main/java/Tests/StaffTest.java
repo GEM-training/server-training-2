@@ -1,5 +1,7 @@
 package Tests;
 
+import com.gem.server.dao.DealerDao;
+import com.gem.server.dao.StaffDao;
 import com.gem.server.model.Dealer;
 import com.gem.server.model.Staff;
 import com.gem.server.service.DealerService;
@@ -23,9 +25,9 @@ import org.springframework.transaction.annotation.Transactional;
 public class StaffTest extends TestCase {
 
     @Autowired
-    StaffService staffService;
+    StaffDao staffDao;
     @Autowired
-    DealerService dealerService;
+    DealerDao dealerDao;
 
     @Test
     public void createStaff() {
@@ -35,13 +37,13 @@ public class StaffTest extends TestCase {
         staff.setAddress("Hanoi");
         staff.setPhone("090900909");
 
-        assertEquals(new Integer(20), staffService.save(staff));
+        assertEquals(new Integer(20), staffDao.save(staff));
     }
 
     // join 2 table
     @Test
     public void getDealerFromStaff() {
-        Dealer dealer = staffService.findById(10).getDealer();
+        Dealer dealer = staffDao.findById(10).getDealer();
         assertEquals(7,dealer.getDealerId());
     }
 }

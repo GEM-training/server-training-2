@@ -20,79 +20,40 @@ public class StaffController {
     StaffService staffService;
 
 
-    @RequestMapping(value = "/view-all")
+
+
+    @RequestMapping(value = "/save")
     public
     @ResponseBody
-    ResponseObject viewAll() {
-        try {
-            List<Staff> staffs = staffService.getAllStaffs();
-            return new ResponseObject(true, Constants.HTTP.SUCCESS, staffs);
-        } catch (Exception e) {
-            return new ResponseObject(false, e.getMessage(), null);
-        }
-
-    }
-
-    @RequestMapping(value = "/add")
-    public
-    @ResponseBody
-    ResponseObject addStaff(@RequestBody Staff staff) {
-        try {
-            Integer staffId = staffService.save(staff);
-            return new ResponseObject(true, Constants.HTTP.SUCCESS, staff);
-        } catch (Exception e) {
-            return new ResponseObject(false, e.getMessage(), null);
-
-
-        }
+    ResponseObject save(@RequestBody Staff staff) {
+        return staffService.save(staff);
     }
 
     @RequestMapping(value = "/delete")
     public
     @ResponseBody
-    ResponseObject deleteStaff(@RequestParam("staffId") int staffId) {
-        try {
-            staffService.delete(staffId);
-            return new ResponseObject(true, Constants.HTTP.SUCCESS, staffId);
-
-        } catch (Exception e) {
-            return new ResponseObject(false, e.getMessage(), null);
-        }
+    ResponseObject delete(@RequestParam("staffId") int staffId) {
+        return staffService.deleteById(staffId);
 
     }
 
     @RequestMapping(value = "/find", method = RequestMethod.GET)
     public
     @ResponseBody
-    ResponseObject findStaff(@RequestParam("staffId") int staffId) {
-        try {
-            Staff staff = staffService.findById(staffId);
-            return new ResponseObject(true, "", staff);
-
-        } catch (Exception e) {
-            return new ResponseObject(false, e.getMessage(), null);
-        }
+    ResponseObject find(@RequestParam("staffId") int staffId) {
+       return staffService.findById(staffId);
 
 
     }
 
-    @RequestMapping(value = "/get-staffs")
+    @RequestMapping(value = "/get")
     public
     @ResponseBody
-    ResponseObject getStaffs(@RequestParam(value = "start", required = false) Integer start) {
-        List<Staff> staffs;
-        try {
-            if (start != null) {
-                staffs = staffService.getStaff(start);
-
-            } else {
-                staffs = staffService.getAllStaffs();
-            }
-            return new ResponseObject(true, Constants.HTTP.SUCCESS, staffs);
-
-        } catch (Exception e) {
-            e.getStackTrace();
-            return new ResponseObject(false, e.getMessage(), null);
+    ResponseObject get(@RequestParam(value = "start", required = false) Integer start) {
+        if(start!=null) {
+            return  staffService.getStaffs(start);
+        }else {
+            return staffService.findAlls();
         }
-    }
+        }
 }

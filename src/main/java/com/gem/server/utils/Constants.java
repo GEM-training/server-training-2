@@ -19,8 +19,8 @@ public class Constants {
     }
 
     public interface STAFF {
-        String order = "STAFF.ORDER_ATTRIBUTE";
-        String page_size = "STAFF.PAGE_SIZE";
+        String order = "staff_order_attribute";
+        String page_size = "staff_page_size";
     }
 
     public interface DEALER {

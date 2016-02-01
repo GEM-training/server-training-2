@@ -32,12 +32,13 @@ public class InventoryDaoImpl extends GenericDaoImpl<Inventory> implements Inven
     }
 
     public List<Inventory> getInventory(int startIndex) {
-        propertyOrder = env.getProperty(Constants.INVENTORY.order);
         pageSize = Integer.parseInt(env.getProperty(Constants.INVENTORY.page_size));
+        propertyOrder = env.getProperty(Constants.INVENTORY.order);
+
         Criteria criteria = getSession().createCriteria(Inventory.class);
         criteria.addOrder(Order.asc(propertyOrder));
-        criteria.add(Restrictions.gt(propertyOrder, startIndex));
         criteria.setMaxResults(pageSize);
+        criteria.add(Restrictions.gt(propertyOrder, startIndex));
         return (List<Inventory>) criteria.list();
     }
 

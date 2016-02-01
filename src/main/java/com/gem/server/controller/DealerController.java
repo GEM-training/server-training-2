@@ -15,14 +15,16 @@ import org.springframework.web.bind.annotation.*;
 
 public class DealerController {
     @Autowired
-    @Qualifier(value = "dealerServices")
     DealerService dealerService;
 
+
+    //@Qualifier(value = "dealerServices")
     @RequestMapping(value = "/get")
     public
     @ResponseBody
     ResponseObject get(@RequestParam(value = "start", required = false) Integer start) throws Exception {
         if (start != null) {
+            //return  dealerService.findAll();
             return dealerService.getDealers(start);
         } else {
             return dealerService.findAll();
@@ -56,7 +58,7 @@ public class DealerController {
     public
     @ResponseBody
     ResponseObject getStaff(@RequestParam("dealerId") int dealerId) throws Exception {
-        return dealerService.findById(dealerId);
+        return dealerService.getStaffs(dealerId);
     }
 
     @RequestMapping(value = "/get-inventory", method = RequestMethod.GET)

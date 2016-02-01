@@ -12,7 +12,7 @@ import java.util.List;
  */
 public interface DealerService{
 
-    ResponseObject findById(long id);
+    ResponseObject findById(Integer id);
 
     ResponseObject findAll();
 
@@ -22,7 +22,7 @@ public interface DealerService{
 
     ResponseObject delete(Dealer dealer);
 
-    ResponseObject deleteById(long dealerId);
+    ResponseObject deleteById(Integer dealerId);
 
     ResponseObject getDealers(int startIndex);
 
@@ -31,4 +31,6 @@ public interface DealerService{
     ResponseObject getInventories(Integer dealerId);
 
     ResponseObject getSales(Integer dealerId);
+
+    ResponseObject getStaffs(Integer dealerId);
 }
