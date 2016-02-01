@@ -22,11 +22,11 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @Configuration
 public class DealerTest extends TestCase {
     @Autowired
-    ProductDao productServices;
+    ProductDao productDao;
     @Autowired
-    DealerDao dealerServices;
+    DealerDao dealerDao;
     @Autowired
-    ProductDealerDao productDealerServices;
+    ProductDealerDao productDealerDao;
 
     @Test
     public void testDealerTable() {
@@ -34,22 +34,22 @@ public class DealerTest extends TestCase {
         dealer.setDealerId(10);
         dealer.setName("Hello");
         dealer.setAddress("Vn");
-        assertEquals(new Integer(3), dealerServices.save(dealer));
+        assertEquals(new Integer(3), dealerDao.save(dealer));
     }
     @Test
     public void getStaffFromDealer(){
-        Dealer dealer = dealerServices.findById(1);
+        Dealer dealer = dealerDao.findById(1);
         assertEquals(3,dealer.getStaffs().size());
 
     }
     @Test
     void  getProductFromDealer(){
-        Dealer dealer = dealerServices.findById(1);
+        Dealer dealer = dealerDao.findById(1);
         assertEquals(5,dealer.getProducts().size());
     }
     @Test
     public  void getSalesFromDealer(){
-        Dealer dealer = dealerServices.findById(1);
+        Dealer dealer = dealerDao.findById(1);
         assertEquals(1, dealer.getSales());
     }
 }
