@@ -2,170 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6323ecd4-2353-405d-a49a-45f6366086ab" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Config.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/AbstractDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/CustomerDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/DealersDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/CustomerDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/DealerDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/InventoryDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/MakeDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/ProductDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/ProductDealerDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/ProductInventoryDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/SaleDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/SaleDetailDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/Impls/StaffDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/InventoryDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/MakeDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/ProductDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/ProductDealerDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/ProductInventoryDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/SaleDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/SaleDetailDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Dao/StaffDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Models/Customer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Models/Dealer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Models/Inventory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Models/Make.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Models/Product.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Models/ProductDealer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Models/ProductInventory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Models/ResponseObject.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Models/Sale.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Models/SaleDetail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Models/Staff.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/RESTControllers/RESTCustomerController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/RESTControllers/RESTDealerController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/RESTControllers/RESTInventoryController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/RESTControllers/RESTMakeController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/RESTControllers/RESTProductController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/RESTControllers/RESTSaleController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/RESTControllers/RESTSaleDetailController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/RESTControllers/RESTStaffController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/CustomerServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/DealerServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/CustomerServicesImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/DealerServicesImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/InventoryServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/MakeServicesImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/ProductDealerServicesImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/ProductInventoryServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/ProductServicesImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/SaleDetailServicesImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/SaleServicesImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/Impls/StaffServicesImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/InventoryServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/MakeServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/ProductDealerServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/ProductInventoryServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/ProductServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/SaleDetailServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/SaleServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Services/StaffServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Utils/CommonUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Utils/Constants$HTTP.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Utils/Constants$MAKE.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Utils/Constants$PRODUCT.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Utils/Constants.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Config.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/AbstractDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/CustomerDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/DealersDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/Impls/CustomerDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/Impls/DealerDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/Impls/InventoryDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/Impls/MakeDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/Impls/ProductDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/Impls/ProductDealerDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/Impls/ProductInventoryDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/Impls/SaleDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/Impls/SaleDetailDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/Impls/StaffDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/InventoryDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/MakeDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/ProductDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/ProductDealerDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/ProductInventoryDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/SaleDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/SaleDetailDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Dao/StaffDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Models/Customer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Models/Dealer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Models/Inventory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Models/Make.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Models/Product.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Models/ProductDealer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Models/ProductInventory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Models/ResponseObject.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Models/Sale.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Models/SaleDetail.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Models/Staff.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/RESTControllers/RESTCustomerController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/RESTControllers/RESTDealerController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/RESTControllers/RESTInventoryController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/RESTControllers/RESTMakeController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/RESTControllers/RESTProductController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/RESTControllers/RESTSaleController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/RESTControllers/RESTSaleDetailController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/RESTControllers/RESTStaffController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Services/CustomerServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Services/DealerServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Services/Impls/CustomerServicesImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Services/Impls/DealerServicesImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Services/Impls/InventoryServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Services/Impls/MakeServicesImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Services/Impls/ProductDealerServicesImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Services/Impls/ProductInventoryServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Services/Impls/ProductServicesImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Services/Impls/SaleDetailServicesImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Services/Impls/SaleServicesImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Services/Impls/StaffServicesImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Services/InventoryServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Services/MakeServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Services/ProductDealerServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Services/ProductInventoryServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Services/ProductServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Services/SaleDetailServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Services/SaleServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Services/StaffServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Utils/CommonUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Utils/Constants$HTTP.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Utils/Constants$MAKE.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Utils/Constants$PRODUCT.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Utils/Constants.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/Config.properties" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/gem/server/exception/ValidateException.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/views/products.jsp" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gem/server/Utils/CommonUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/gem/server/utils/CommonUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gem/server/Utils/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/com/gem/server/utils/Constants.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/gem/server/controller/ExceptionControllerAdvice.java" afterPath="$PROJECT_DIR$/src/main/java/com/gem/server/exception/ExceptionControllerAdvice.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Tests/CustomerTest.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Tests/CustomerTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Tests/DealerTest.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Tests/DealerTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Tests/InventoryTest.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Tests/InventoryTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Tests/MakeTest.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Tests/MakeTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Tests/ProductDealerTest.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Tests/ProductDealerTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Tests/ProductTest.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Tests/ProductTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Tests/SaleDetailTest.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Tests/SaleDetailTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Tests/SaleTest.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Tests/SaleTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Tests/StaffTest.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Tests/StaffTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Tests/CustomerTest.class" afterPath="$PROJECT_DIR$/target/classes/Tests/CustomerTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Tests/DealerTest.class" afterPath="$PROJECT_DIR$/target/classes/Tests/DealerTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Tests/InventoryTest.class" afterPath="$PROJECT_DIR$/target/classes/Tests/InventoryTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Tests/MakeTest.class" afterPath="$PROJECT_DIR$/target/classes/Tests/MakeTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Tests/ProductDealerTest.class" afterPath="$PROJECT_DIR$/target/classes/Tests/ProductDealerTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Tests/ProductTest.class" afterPath="$PROJECT_DIR$/target/classes/Tests/ProductTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Tests/SaleDetailTest.class" afterPath="$PROJECT_DIR$/target/classes/Tests/SaleDetailTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Tests/SaleTest.class" afterPath="$PROJECT_DIR$/target/classes/Tests/SaleTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Tests/StaffTest.class" afterPath="$PROJECT_DIR$/target/classes/Tests/StaffTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Main.class" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Main.class" afterPath="$PROJECT_DIR$/target/classes/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gem/server/controller/CustomerController.java" afterPath="$PROJECT_DIR$/src/main/java/com/gem/server/controller/CustomerController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gem/server/controller/InventoryController.java" afterPath="$PROJECT_DIR$/src/main/java/com/gem/server/controller/InventoryController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gem/server/controller/MakeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/gem/server/controller/MakeController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gem/server/controller/ProductController.java" afterPath="$PROJECT_DIR$/src/main/java/com/gem/server/controller/ProductController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gem/server/controller/SaleController.java" afterPath="$PROJECT_DIR$/src/main/java/com/gem/server/controller/SaleController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gem/server/controller/SaleDetailController.java" afterPath="$PROJECT_DIR$/src/main/java/com/gem/server/controller/SaleDetailController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gem/server/controller/StaffController.java" afterPath="$PROJECT_DIR$/src/main/java/com/gem/server/controller/StaffController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gem/server/dao/impl/CustomerDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/gem/server/dao/impl/CustomerDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gem/server/dao/impl/DealerDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/gem/server/dao/impl/DealerDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gem/server/dao/impl/InventoryDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/gem/server/dao/impl/InventoryDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gem/server/dao/impl/MakeDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/gem/server/dao/impl/MakeDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gem/server/dao/impl/ProductDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/gem/server/dao/impl/ProductDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gem/server/dao/impl/SaleDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/gem/server/dao/impl/SaleDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gem/server/dao/impl/SaleDetailDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/gem/server/dao/impl/SaleDetailDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/gem/server/dao/impl/StaffDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/gem/server/dao/impl/StaffDaoImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/META-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/META-INF/dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/META-INF/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/META-INF/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/META-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/target/classes/META-INF/dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/META-INF/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/target/classes/META-INF/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/hibernate.cfg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/classes/dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/target/ServiceTeam2-1.0-SNAPSHOT/WEB-INF/dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/target/classes/dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
     </list>
     <ignored path="ServiceTeam2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -187,7 +53,55 @@
     <favorites_list name="ServiceTeam2" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="ProductService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gem/server/service/ProductService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="25" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gem/server/service/impl/ProductServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StaffServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gem/server/service/impl/StaffServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1977716">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductInventoryServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gem/server/service/impl/ProductInventoryServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -200,7 +114,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Utils/Config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/Dao/ProductDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/Services/ProductServices.java" />
@@ -221,6 +134,11 @@
         <option value="$PROJECT_DIR$/src/main/java/RESTControllers/RESTMakeController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gem/server/exception/ValidateException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gem/server/dao/impl/MakeDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gem/server/controller/ProductController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gem/server/exception/ExceptionControllerAdvice.java" />
       </list>
     </option>
   </component>
@@ -335,6 +253,246 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server-training-2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server-training-2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server-training-2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server-training-2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server-training-2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exception" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server-training-2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server-training-2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServiceTeam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server-training-2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -865,15 +1023,15 @@
       <updated>1453949715722</updated>
       <workItem from="1453949717529" duration="12493000" />
       <workItem from="1454290780736" duration="229000" />
-      <workItem from="1454291011014" duration="666000" />
+      <workItem from="1454291011014" duration="9163000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13388000" />
+    <option name="totallyTimeSpent" value="21885000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1275" height="744" extended-state="4" />
+    <frame x="65" y="24" width="1275" height="744" extended-state="5" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -887,18 +1045,18 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990307" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5970149" sideWeight="0.5027027" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985073" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39686275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.4972973" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24165988" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37156704" sideWeight="0.4972973" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -911,7 +1069,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -949,14 +1109,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24615385">
-          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.736841">
@@ -981,18 +1133,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gem/server/dao/impl/ProductDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8235294">
-          <caret line="46" column="33" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.20833333">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gem/server/dao/GenericDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6084507">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gem/server/dao/ProductDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20588236">
-          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gem/server/dao/impl/ProductDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gem/server/dao/impl/GenericDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4056338">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4390244">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gem/server/dao/impl/MakeDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="62" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gem/server/exception/ExceptionControllerAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6225352">
+          <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gem/server/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03661972">
+          <caret line="73" column="64" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gem/server/exception/ValidateException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35492957">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding>
+            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gem/server/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gem/server/service/impl/ProductInventoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gem/server/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gem/server/service/impl/StaffServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1977716">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>

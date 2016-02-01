@@ -1,6 +1,6 @@
 package com.gem.server.dao.impl;
 
-import com.gem.server.Utils.Constants;
+import com.gem.server.utils.Constants;
 import com.gem.server.dao.SaleDetailDao;
 import com.gem.server.model.Sale;
 import com.gem.server.model.SaleDetail;
