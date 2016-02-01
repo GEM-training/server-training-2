@@ -17,15 +17,15 @@
         <!-- DB schema will be updated if needed -->
 
 
-        <mapping class="Models.Make"/>
-        <mapping class="Models.Product"/>
-        <mapping class="Models.Inventory"/>
-        <mapping class="Models.Customer"/>
-        <mapping class="Models.Dealer"/>
-        <mapping class="Models.ProductInventory"/>
-        <mapping class="Models.Sale"/>
-        <mapping class="Models.SaleDetail"/>
-        <mapping class="Models.Staff"/>
-        <mapping class="Models.ProductDealer"/>
+        <mapping class="com.gem.server.model.Make"/>
+        <mapping class="com.gem.server.model.Product"/>
+        <mapping class="com.gem.server.model.Inventory"/>
+        <mapping class="com.gem.server.model.Customer"/>
+        <mapping class="com.gem.server.model.Dealer"/>
+        <mapping class="com.gem.server.model.ProductInventory"/>
+        <mapping class="com.gem.server.model.Sale"/>
+        <mapping class="com.gem.server.model.SaleDetail"/>
+        <mapping class="com.gem.server.model.Staff"/>
+        <mapping class="com.gem.server.model.ProductDealer"/>
     </session-factory>
 </hibernate-configuration>

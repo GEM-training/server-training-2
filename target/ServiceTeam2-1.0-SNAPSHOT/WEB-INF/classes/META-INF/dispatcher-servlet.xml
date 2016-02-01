@@ -32,25 +32,25 @@
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
-    <bean id="makeDao" class="Dao.Impls.MakeDaoImpl"/>
-    <bean id="customerDao" class="Dao.Impls.CustomerDaoImpl"/>
-    <bean id="dealerDao" class="Dao.Impls.DealerDaoImpl"/>
-    <bean id="inventoryDao" class="Dao.Impls.InventoryDaoImpl"/>
-    <bean id="productDao" class="Dao.Impls.ProductDaoImpl"/>
-    <bean id="saleDao" class="Dao.Impls.SaleDaoImpl"/>
-    <bean id="saleDetailDao" class="Dao.Impls.SaleDetailDaoImpl"/>
-    <bean id="staffDao" class="Dao.Impls.StaffDaoImpl"/>
-    <bean id="productDealerDao" class="Dao.Impls.ProductDealerDaoImpl"/>
-    <bean id="productInventoryDao" class="Dao.Impls.ProductInventoryDaoImpl"/>
+    <bean id="makeDao" class="com.gem.server.dao.impl.MakeDaoImpl"/>
+    <bean id="customerDao" class="com.gem.server.dao.impl.CustomerDaoImpl"/>
+    <bean id="dealerDao" class="com.gem.server.dao.impl.DealerDaoImpl"/>
+    <bean id="inventoryDao" class="com.gem.server.dao.impl.InventoryDaoImpl"/>
+    <bean id="productDao" class="com.gem.server.dao.impl.ProductDaoImpl"/>
+    <bean id="saleDao" class="com.gem.server.dao.impl.SaleDaoImpl"/>
+    <bean id="saleDetailDao" class="com.gem.server.dao.impl.SaleDetailDaoImpl"/>
+    <bean id="staffDao" class="com.gem.server.dao.impl.StaffDaoImpl"/>
+    <bean id="productDealerDao" class="com.gem.server.dao.impl.ProductDealerDaoImpl"/>
+    <bean id="productInventoryDao" class="com.gem.server.dao.impl.ProductInventoryDaoImpl"/>
 
-    <bean id="makeServices" class="Services.Impls.MakeServicesImpl"/>
-    <bean id="productServices" class="Services.Impls.ProductServicesImpl"/>
-    <bean id="customerServices" class="Services.Impls.CustomerServicesImpl"/>
-    <bean id="saleServices" class="Services.Impls.SaleServicesImpl"/>
-    <bean id="saleDetailServices" class="Services.Impls.SaleDetailServicesImpl"/>
-    <bean id="productDealerServices" class="Services.Impls.ProductDealerServicesImpl"/>
-    <bean id="dealerServices" class="Services.Impls.DealerServicesImpl"/>
-    <bean id="staffServices" class="Services.Impls.StaffServicesImpl"/>
-    <bean id="productInventoryServices" class="Services.Impls.ProductInventoryServiceImpl"/>
-    <bean id="inventoryService" class="Services.Impls.InventoryServiceImpl"/>
+    <bean id="makeServices" class="com.gem.server.service.impl.MakeServiceImpl"/>
+    <bean id="productServices" class="com.gem.server.service.impl.ProductServiceImpl"/>
+    <bean id="customerServices" class="com.gem.server.service.impl.CustomerServiceImpl"/>
+    <bean id="saleServices" class="com.gem.server.service.impl.SaleServiceImpl"/>
+    <bean id="saleDetailServices" class="com.gem.server.service.impl.SaleDetailServiceImpl"/>
+    <bean id="productDealerServices" class="com.gem.server.service.impl.ProductDealerServiceImpl"/>
+    <bean id="dealerServices" class="com.gem.server.service.impl.DealerServiceImpl"/>
+    <bean id="staffServices" class="com.gem.server.service.impl.StaffServiceImpl"/>
+    <bean id="productInventoryServices" class="com.gem.server.service.impl.ProductInventoryServiceImpl"/>
+    <bean id="inventoryService" class="com.gem.server.service.impl.InventoryServiceImpl"/>
 </beans>
