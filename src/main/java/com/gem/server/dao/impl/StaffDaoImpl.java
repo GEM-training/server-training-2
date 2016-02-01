@@ -17,7 +17,7 @@ import java.util.List;
 /**
  * Created by phong on 20/01/2016.
  */
-@Transactional
+
 @Configuration
 @PropertySource("classpath:config.properties")
 public class StaffDaoImpl extends GenericDaoImpl<Staff> implements StaffDao {

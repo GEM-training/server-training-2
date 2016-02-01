@@ -18,33 +18,52 @@ public class DealerServiceImpl implements DealerService {
     //TODO catch business exceptions
 
 
-    public ResponseObject findById(long id) {
-        return null;
+
+
+    public ResponseObject findById(Integer id) {
+        return new ResponseObject(true,"",dealerDao.findById(id));
     }
 
     public ResponseObject findAll() {
-        return null;
+        return new ResponseObject(true,"",dealerDao.findAll());
     }
 
     public ResponseObject save(Dealer dealer) {
-        return null;
+        try {
+            Integer dealerId = dealerDao.save(dealer);
+            return new ResponseObject(true, "", dealerId);
+        } catch (Exception e) {
+            return new ResponseObject(false, "", null);
+        }
     }
 
     public ResponseObject update(Dealer dealer) {
-        return null;
+        Dealer oldDealer = dealerDao.findById(dealer.getDealerId());
+        try {
+            dealerDao.update(dealer);
+            return new ResponseObject(true, "", dealer);
+        } catch (Exception e) {
+            return new ResponseObject(false, "", oldDealer);
+        }
     }
 
     public ResponseObject delete(Dealer dealer) {
         return null;
     }
 
-    public ResponseObject deleteById(long dealerId) {
-        return null;
+
+    public ResponseObject deleteById(Integer dealerId) {
+        try {
+            dealerDao.deleteById(dealerId);
+            return new ResponseObject(true, "", null);
+        } catch (Exception e) {
+            return new ResponseObject(false, "", null);
+        }
     }
 
     public ResponseObject getDealers(int startIndex) {
         try {
-            return new ResponseObject(true, "", dealerDao.getDealer(startIndex));
+            return new ResponseObject(true, "", dealerDao.getDealers(startIndex));
         } catch (Exception e) {
             return new ResponseObject(false, "", null);
         }
@@ -69,6 +88,14 @@ public class DealerServiceImpl implements DealerService {
     public ResponseObject getSales(Integer dealerId) {
         try {
             return new ResponseObject(true, "", dealerDao.getSales(dealerId));
+        } catch (Exception e) {
+            return new ResponseObject(false, "", null);
+        }
+    }
+
+    public ResponseObject getStaffs(Integer dealerId) {
+        try {
+            return new ResponseObject(true, "", dealerDao.getStaffs(dealerId));
         } catch (Exception e) {
             return new ResponseObject(false, "", null);
         }
