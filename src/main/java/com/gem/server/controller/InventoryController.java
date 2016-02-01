@@ -67,4 +67,10 @@ public class InventoryController {
         return inventoryService.findById(inventoryId);
     }
 
+    @RequestMapping("/get-product")
+    public
+    @ResponseBody
+    ResponseObject getProduct(@RequestParam("inventoryId") Integer inventoryId) {
+        return inventoryService.getProducts(inventoryId);
+    }
 }
