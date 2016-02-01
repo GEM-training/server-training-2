@@ -1,6 +1,7 @@
 package com.gem.server.service;
 
 import com.gem.server.model.Inventory;
+import com.gem.server.model.ResponseObject;
 
 import java.util.List;
 
@@ -8,12 +9,19 @@ import java.util.List;
  * Created by nguyenkhoi on 1/25/16.
  */
 public interface InventoryService {
-    List<Inventory> getAllInventory();
-    List<Inventory> getInventory(int startIndex);
+    ResponseObject findById(Integer id);
 
-    boolean delete(Integer inventoryId);
+    ResponseObject findAll();
 
-    Inventory findById(Integer inventoryId);
+    ResponseObject save(Inventory inventory);
 
-    Integer save(Inventory inventory);
+    ResponseObject update(Inventory inventory);
+
+    ResponseObject delete(Inventory inventory);
+
+    ResponseObject deleteById(long dealerId);
+
+    ResponseObject getInventory(int startIndex);
+
+    ResponseObject getProducts(Integer productId);
 }
