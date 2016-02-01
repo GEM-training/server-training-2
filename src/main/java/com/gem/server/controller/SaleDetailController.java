@@ -14,29 +14,21 @@ import java.util.List;
  */
 
 @RestController
-@RequestMapping("/api/saleDetail")
+@RequestMapping("/saleDetail")
 
 public class SaleDetailController {
     @Autowired
     SaleDetailService saleDetailService;
 
-    @RequestMapping(value = "/get-sale-details", method = RequestMethod.GET)
+    @RequestMapping(value = "/get", method = RequestMethod.GET)
     public
     @ResponseBody
-    ResponseObject getSaleDetails(@RequestParam(value = "start", required = false) Integer start) {
-        List<SaleDetail> saleDetais;
-        try {
-            if(start == null) {
-                saleDetais = saleDetailService.getAllSaleDetails();
-            }
-            else{
-                saleDetais = saleDetailService.getSaleDetails(start);
-            }
-            return new ResponseObject(true, Constants.HTTP.SUCCESS, saleDetais);
+    ResponseObject get(@RequestParam(value = "start", required = false) Integer start) {
+        if(start == null) {
+            return saleDetailService.findAll();
         }
-        catch (Exception e){
-            e.getStackTrace();
-            return new ResponseObject(false, e.getMessage(), null);
+        else{
+            return saleDetailService.getSaleDetails(start);
         }
     }
 
@@ -44,39 +36,20 @@ public class SaleDetailController {
     public
     @ResponseBody
     ResponseObject add(@RequestBody SaleDetail saleDetail) {
-        try{
-            saleDetailService.save(saleDetail);
-            return new ResponseObject(true, "", saleDetail);
-        }
-        catch (Exception e)
-        {
-            return new ResponseObject(false, e.getMessage(), null);
-        }
+        return saleDetailService.save(saleDetail);
     }
 
     @RequestMapping(value = "/delete")
     public
     @ResponseBody
     ResponseObject delete(@RequestParam("saleDetailId") Integer saleDetailId) {
-        try{
-            saleDetailService.delete(saleDetailId);
-            return new ResponseObject(true, "", null);
-        }
-        catch (Exception e){
-            return new ResponseObject(false, e.getMessage(), null);
-        }
+        return saleDetailService.delete(saleDetailId);
     }
 
     @RequestMapping(value = "/find")
     public
     @ResponseBody
     ResponseObject find(@RequestParam Integer saleDetailId) {
-        try{
-            SaleDetail saleDetail = saleDetailService.findById(saleDetailId);
-            return new ResponseObject(true, "", saleDetail);
-        }
-        catch (Exception e){
-            return new ResponseObject(false, e.getMessage(), null);
-        }
+        return saleDetailService.findById(saleDetailId);
     }
 }

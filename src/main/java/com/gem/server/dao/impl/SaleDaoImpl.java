@@ -3,6 +3,7 @@ package com.gem.server.dao.impl;
 import com.gem.server.Utils.Constants;
 import com.gem.server.dao.SaleDao;
 import com.gem.server.model.Sale;
+import com.gem.server.model.SaleDetail;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
@@ -40,6 +41,11 @@ public class SaleDaoImpl extends GenericDaoImpl<Sale> implements SaleDao {
         criteria.setMaxResults(salePageSize);
         criteria.add(Restrictions.gt(propertyOrderSale, startIndex));
         return (List<Sale>) criteria.list();
+    }
+
+    public List<SaleDetail> getAllSaleDetail(int saleId) {
+        Sale sale = findById(saleId);
+        return (List<SaleDetail>)sale.getListSaleDetails();
     }
 
 }
