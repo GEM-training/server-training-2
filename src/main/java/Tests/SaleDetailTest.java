@@ -1,3 +1,4 @@
+/*
 package Tests;
 
 import com.gem.server.model.SaleDetail;
@@ -11,9 +12,11 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
+*/
 /**
  * Created by jojo on 25/01/2016.
- */
+ *//*
+
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "/META-INF/dispatcher-servlet.xml" })
 @Transactional
@@ -21,10 +24,12 @@ import org.springframework.transaction.annotation.Transactional;
 public class SaleDetailTest extends TestCase {
     @Autowired
     SaleDetailService saleDetailService;
-    /*@Autowired
+    */
+/*@Autowired
     DealerService dealerService;
     @Autowired
-    ProductDealerService productDealerServices;*/
+    ProductDealerService productDealerServices;*//*
+
 
     @Test
     public void testCreateSaleDetail(){
@@ -44,3 +49,4 @@ public class SaleDetailTest extends TestCase {
         assertEquals(10, saleDetailService.findById(1).getQuantity());
     }
 }
+*/
