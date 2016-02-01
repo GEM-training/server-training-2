@@ -60,6 +60,13 @@ public class InventoryController {
         return inventoryService.update(inventory);
     }
 
+    @RequestMapping("/find")
+    public
+    @ResponseBody
+    ResponseObject find(@RequestParam("inventoryId") Integer inventoryId) {
+        return inventoryService.findById(inventoryId);
+    }
+
 
 
 //
