@@ -36,7 +36,7 @@ public class InventoryTest extends TestCase {
 
     @Test
     public void testFindInventory() {
-        assertEquals("Kho Bắc Ninh", inventoryService.findById(8).getName());
+        assertEquals("Kho Bắc Ninh", inventoryService.findById());
     }
     @Test
     public void getDealerFromInventory() {
